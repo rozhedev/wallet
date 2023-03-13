@@ -1,0 +1,37 @@
+@use "sass:math";
+
+// * FONTS
+@import 'base/fonts.scss';
+
+// * VARIABLES
+@import "base/vars.scss";
+
+// * NULLSTYLE
+@import "base/null.scss";
+
+// * GRID
+@import "base/grid.scss";
+
+// * MIXINS
+@import "base/mixins.scss";
+
+// * UI & DONE CLASSES>
+@import "base/ui.scss";
+// * All buttons styles in inputs.scss
+@import "base/inputs.scss";
+
+// * LIBS
+// @import 'libs/swiper.scss';
+
+// * COMPONENTS
+@import "components/select.scss";
+@import "components/scroll.scss";
+
+// * CHUNKS
+@import 'chunks/preloader.scss';
+@import 'chunks/header.scss';
+@import "chunks/footer.scss";
+
+// * PAGES
+@import "pages/main.scss";
+@import "pages/about.scss";

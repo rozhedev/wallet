@@ -1,0 +1,74 @@
+// * <UI CLASSES>==========================================
+
+.section {
+    @include bp(md) {
+    }
+}
+
+.section-page {
+    @include bp(md) {
+    }
+}
+
+.h1 {
+    font-size: 40px;
+    
+    @include bp(md) {
+    }
+}
+
+.h2 {
+    font-size: 32px;
+    
+    @include bp(md) {
+    }
+}
+
+.h3 {
+    
+    @include bp(md) {
+    }
+}
+
+.h4 {
+    
+    @include bp(md) {
+    }
+}
+
+.price {
+    
+    @include bp(md) {
+    }
+}
+
+.descr {
+    
+    @include bp(md) {
+    }
+}
+
+.navlink {
+    
+    @include hover {
+    }
+    @include bp(md) {
+    }
+}
+
+.label {
+    
+    @include bp(md) {
+    }
+}
+
+.btn {
+    
+    @include hover {
+    }
+    &:active {
+    }
+
+    @include bp(md) {
+    }
+}

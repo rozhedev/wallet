@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('chunks/_head.html',{
+"title":"Главная"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <main class="main page" id="main">
+            <section class="promo" id="promo">
+                <!-- * HEADER -->
+                @@include('chunks/_header.html',{})
+
+                <div class="container">
+                    <div class="content">
+                        <h1>Start template by <a href="https://github.com/rozhedev">rozhedev</a></h1>
+                    </div>
+
+                    <div class="news">
+                        <span><a href="test.html">Тестовая страница</a></span>
+                        <span>Контент, который я вывожу через JSON</span>
+                        @@loop("components/_news-item.html", "../json/language.json")
+
+                        <span>Проверка на норм. вывод картинок</span>
+                        <img class="news__img" src="img/photos/first.webp" alt="first">
+                        <img class="news__img" src="img/photos/illustration.webp" alt="illustration">
+
+                        <span>Проверка на норм. вывод иконок</span>
+
+                        <div class="icons">
+                            <div class="icons__item">
+                                <svg>
+                                    <use href="img/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </div>
+                            <div class="icons__item">
+                                <svg>
+                                    <use href="img/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </div>
+                            <div class="icons__item">
+                                <svg>
+                                    <use href="img/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </div>
+                            <div class="icons__item">
+                                <svg>
+                                    <use href="img/icons/sprite.svg#youtube"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- * FOOTER -->
+        @@include('chunks/_footer.html',{})
+    </div>
+
+    <!-- * POPUP -->
+    <!-- @@include('chunks/_popup.html',{}) -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>

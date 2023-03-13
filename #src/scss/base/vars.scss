@@ -1,0 +1,41 @@
+// * DEFAULT FONT
+$font-family: "Open Sans";
+$font-size: 18px;
+$font-size-mobile: 16px;
+
+// * GRID (MY DEFAULT GRID)
+$max-width: 1920px;
+$grid-gap: 32px !default;
+$grid-gap-side: calc($grid-gap / 2);
+
+$container-max-widths: (
+    xs: 336px,
+    sm: 512px,
+    md: 696px,
+    lg: 936px,
+    xl: 1072px,
+    xxl: 1312px,
+);
+
+$grid-breakpoints: (
+    xs: calc( map-get( $container-max-widths, xs ) + calc( $grid-gap * 6.25 ) ),   // * 536
+    sm: calc( map-get( $container-max-widths, sm ) + calc( $grid-gap * 6.75 ) ),   // * 728
+    md: calc( map-get( $container-max-widths, md ) + calc( $grid-gap * 8.5 ) ),   // * 968
+    lg: calc( map-get( $container-max-widths, lg ) + calc( $grid-gap * 5.75 ) ),   // * 1120
+    xl: calc( map-get( $container-max-widths, xl ) + calc( $grid-gap * 9 ) ),      // * 1360  
+);
+
+// * COLORS
+$dark-color: #252525;
+$light-color: #FFFFFF;
+$primary-accent-color: #E0BEA2;
+$secondary-accent-color: #CCA88A;
+$success-green: #007560;
+$error-red: #C35354;
+
+// * EFFECTS
+$transition: .6s all;
+$border: 1px solid $dark-color;
+$shadow: 0 0 2px 4px #000;
+
+// * OTHER

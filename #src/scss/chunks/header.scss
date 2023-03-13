@@ -1,0 +1,18 @@
+.header {
+    
+
+    // * 1024
+
+    @include bp(lg) {
+    }
+    
+    // * 768
+
+    @include bp(md) {
+    }
+
+    // * 375
+
+    @include bp(sm) {
+    }
+}
