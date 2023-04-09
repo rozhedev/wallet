@@ -6,6 +6,25 @@
     }
 }
 
+@mixin navlink-anim {
+    color: $primary-accent-color;
+    transition: $transition;
+    cursor: pointer;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.3rem;
+        opacity: 1;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-accent-color;
+    }
+    &:active {
+        color: $primary-accent-color;
+    }
+}
+
 @mixin centering {
     display: flex;
     justify-content: center;

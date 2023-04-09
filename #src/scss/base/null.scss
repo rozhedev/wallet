@@ -29,12 +29,9 @@ html {
     font-size: $font-size;
     font-family: $font-family, sans-serif;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.3333;
     letter-spacing: 0.02em;
-
-    @media screen and (max-width: map-get($grid-breakpoints, lg)) {
-        font-size: $font-size-mobile;
-    }
+    color: $dark-color;
 }
 html,
 body {
@@ -45,7 +42,10 @@ body {
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
+    font-size: 1.125rem;
+    @media screen and (max-width: map-get($grid-breakpoints, lg)) {
+        font-size: 1rem;
+    }
     body._lock {
         overflow: hidden;
     }
@@ -90,6 +90,29 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
+select {
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+
+    // Stack above custom arrow
+    z-index: 1;
+    &::-ms-expand {
+        display: none;
+    }
+
+    // Remove focus outline, will add on alternate element
+    outline: none;
+}
+
 //-webkit-overflow-scrolling: touch;
 /*
 &::-webkit-scrollbar {
