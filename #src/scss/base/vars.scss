@@ -36,12 +36,13 @@ $lighten-accent: #9999F2;
 $darken-accent: #7170C9;
 $secondary-accent-color: #008BE9;
 $success-green: #00C896;
+$darken-green64: #004836;          // * Darken $success-green to 64%
 $error-red: #EE6464;
 
 // * EFFECTS
 $transition: .5s all;
 $btn-light-text-shadow: 0 0 0.33rem rgba($color: $white, $alpha: 0.25);
-$btn-dark-inset-shadow: inset 0 0 6px 3px rgba($color: $dark-color, $alpha: 0.25);
+$btn-dark-inset-shadow: inset 0 0 8px 3px rgba($color: $dark-color, $alpha: 0.25);
 $inp-focus-shadow: 0 0 4px 1px rgba($color: $darken-accent, $alpha: 0.5);
 
 $sm-border-radius: 4px;
