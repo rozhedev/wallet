@@ -2,7 +2,7 @@
 <html lang="ru">
 
 @@include('chunks/_head.html',{
-"title":"Главная"
+"title":"Main"
 })
 
 <body>
@@ -15,45 +15,6 @@
                 @@include('chunks/_header.html',{})
 
                 <div class="container">
-                    <div class="content">
-                        <h1 class="h1">Start template by <a href="https://github.com/rozhedev">rozhedev</a></h1>
-                    </div>
-
-                    <div class="news">
-                        <span><a href="test.html" class="navlink">Test page</a></span>
-                        <h2 class="h2">Content, outputed via JSON</h2>
-                        @@loop("components/_news-item.html", "../json/language.json")
-
-                        <span>Проверка на норм. вывод картинок</span>
-                        <img class="news__img" src="img/photos/first.webp" alt="first">
-                        <img class="news__img" src="img/photos/illustration.webp" alt="illustration">
-
-                        <h3 class="h3">Icons output via svg sprite</h3>
-
-                        <div class="icons">
-                            <div class="icons__item">
-                                <svg>
-                                    <use href="img/icons/sprite.svg#facebook"></use>
-                                </svg>
-                            </div>
-                            <div class="icons__item">
-                                <svg>
-                                    <use href="img/icons/sprite.svg#instagram"></use>
-                                </svg>
-                            </div>
-                            <div class="icons__item">
-                                <svg>
-                                    <use href="img/icons/sprite.svg#twitter"></use>
-                                </svg>
-                            </div>
-                            <div class="icons__item">
-                                <svg>
-                                    <use href="img/icons/sprite.svg#youtube"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
             </section>
         </main>

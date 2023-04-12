@@ -1,16 +1,8 @@
-# Start template
+# Wallet
 
-Description
-
-## Features
-
-* List of features
-
-## Demo
-
-**Some page page**
-
-![main-page](blob/main-demo.png)
+Temp:
+@@loop("components/_news-item.html", "../json/language.json")
+@@include('chunks/_preloader.html',{})
 
 ## Usage
 
