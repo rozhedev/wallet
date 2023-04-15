@@ -9,7 +9,7 @@
 
     border-radius: $sm-border-radius;
     background-color: $primary-accent-color;
-    color: $white;
+    color: $white-color;
     text-shadow: $btn-light-text-shadow;
     transition: $transition;
     @include hover {
@@ -23,7 +23,7 @@
     }
     &:disabled {
         color: $dark-color36;
-        background-color: $white;
+        background-color: $white-color;
         border: 3px solid $dark-color36;
         box-shadow: $btn-dark-inset-shadow;
         cursor: not-allowed;
@@ -32,7 +32,7 @@
         align-items: center;
         font-weight: 500;
         color: $dark-color24;
-        background-color: $white;
+        background-color: $white-color;
         border: 3px solid $primary-accent-color;
         transition: $transition;
         span {
@@ -46,7 +46,7 @@
             height: 1.25rem;
         }
         @include hover {
-            background-color: $white;
+            background-color: $white-color;
             border-color: $btn-darken-accent;
             box-shadow: $btn-dark-inset-shadow;
             color: $dark-color;
@@ -74,7 +74,7 @@
 
     border: 3px solid $dark-color24;
     border-radius: $sm-border-radius;
-    background-color: $white;
+    background-color: $white-color;
     transition: 0.6s all;
     &:focus {
         outline: 0;
@@ -179,7 +179,7 @@
             height: 1.5rem;
             border: 2px solid $primary-accent-color;
             border-radius: $sm-border-radius;
-            background-color: $white;
+            background-color: $white-color;
         }
         &::after {
             content: '✓';
@@ -316,7 +316,7 @@ select {
     font-size: 1.25rem;
     cursor: pointer;
     line-height: 1.333;
-    background-color: $white;
+    background-color: $white-color;
 
     &::before {
         content: '';

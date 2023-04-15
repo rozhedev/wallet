@@ -46,9 +46,9 @@ body {
     @media screen and (max-width: map-get($grid-breakpoints, lg)) {
         font-size: 1rem;
     }
-    body._lock {
-        overflow: hidden;
-    }
+}
+body._lock {
+    overflow: hidden !important;
 }
 input,
 button,

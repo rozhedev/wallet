@@ -25,7 +25,7 @@ $grid-breakpoints: (
 );
 
 // * COLORS
-$white: #FFF;
+$white-color: #FFF;
 $light-color: #FAF8FF;
 $dark-color: #111;
 $dark-color24: #4A4A4A;     // * Lighten $dark-color to 24%
@@ -41,7 +41,7 @@ $error-red: #EE6464;
 
 // * EFFECTS
 $transition: .5s all;
-$btn-light-text-shadow: 0 0 0.33rem rgba($color: $white, $alpha: 0.25);
+$btn-light-text-shadow: 0 0 0.33rem rgba($color: $white-color, $alpha: 0.25);
 $btn-dark-inset-shadow: inset 0 0 8px 3px rgba($color: $dark-color, $alpha: 0.25);
 $inp-focus-shadow: 0 0 4px 1px rgba($color: $darken-accent, $alpha: 0.5);
 

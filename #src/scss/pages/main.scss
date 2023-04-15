@@ -1,5 +1,10 @@
 .promo {
     min-height: 100vh;
-    padding: 40px 0;
-    background-color: $dark-color;
+    padding: 2.66rem 0;
+    background: url("../img/photos/bg/promo.svg") center / cover no-repeat;
+
+    & .header {
+        position: static;
+        padding-top: 0rem;
+    }
 }

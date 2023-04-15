@@ -1,18 +1,256 @@
 .header {
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: $dark-color;
+    padding: 1.33rem 0rem;
 
-    // * 1024
-
-    @include bp(lg) {
+    .promo & {
+        position: static;
+        background-color: transparent;
     }
-    
-    // * 768
-
-    @include bp(md) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    .logo {
+        z-index: 5;
+    }
+    .menu__list {
+        & > li {
+            position: relative;
+            margin: 0rem 0rem 0rem 2rem;
+            display: flex;
+            align-items: center;
+        }
+        & > li > svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0.4rem 0 0;
+            transition: $transition;
+        }
+    }
+    .dropdown {
+        cursor: pointer;
+        // * Hard rule for better selector specifity
+        & .navlink ~ svg {
+            margin: 0rem 0rem 0rem 0.4rem;
+        }
+        @include hover {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .dropdown > .navlink {
+        color: $white-color;
+    }
+    .dropdown > .navlink::after,
+    .inline-btn > .navlink::after {
+        display: none;
+    }
+    .inline-btn {
+        cursor: pointer;
+        svg {
+            stroke: $white-color;
+        }
+        @include hover {
+            .navlink {
+                color: $primary-accent-color;
+            }
+            svg {
+                stroke: $primary-accent-color;
+            }
+        }
+    }
+    .dropdown__sub-list {
+        $min-width: 14rem;
+        position: absolute;
+        top: 100%;
+        left: calc($min-width / 3 * -1);
+        background-color: $light-color;
+        padding: 0.5rem 0.75rem;
+        min-width: $min-width;
+        border-radius: 0.25rem;
+        text-align: center;
+        border: 2px solid $lightgray-color;
+        & li {
+            font-size: 1.1rem;
+            &:not(:first-of-type) {
+                margin: 0.4rem 0rem 0rem 0rem;
+            }
+        }
+        .dropdown__sub-link {
+            transition-duration: 0.3s;
+            color: $dark-color;
+            &::after {
+                display: none;
+            }
+            @include hover {
+                color: $darken-accent;
+            }
+        }
+    }
+}
 
-    // * 375
+// * SERVICE CLASSES
 
-    @include bp(sm) {
+body._pc .menu__list > li:hover .dropdown__sub-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+    pointer-events: all;
+}
+
+body._touch .menu__list > li {
+    display: flex;
+    align-items: center;
+}
+
+body._touch .menu__link {
+    flex: 1 1 auto;
+}
+
+body._touch .menu__list > .dropdown._active .dropdown__sub-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+    pointer-events: all;
+}
+body._touch .menu__list > .dropdown._active svg {
+    transform: rotate(-180deg);
+}
+
+// * SUBMENU
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+    .menu__list {
+        display: flex;
+        align-items: center;
+        & > li {
+            padding: 0.5rem 0;
+        }
+    }
+    .dropdown__sub-list {
+        transform: translate(0px, 10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+// * ADAPTIVE
+
+@include bp(lg) {
+    // TODO Finished this
+    .header .menu {
+        &__icon {
+            z-index: 5;
+            display: block;
+            position: relative;
+            width: 3.25rem;
+            height: 2rem;
+            cursor: pointer;
+
+            span,
+            &::before,
+            &::after {
+                right: 0;
+                position: absolute;
+                height: 3px;
+                transition: all 0.3s ease 0s;
+                background-color: #fff;
+                border-radius: 1px;
+            }
+            &::before,
+            &::after {
+                content: '';
+            }
+            &::before {
+                top: 0;
+                width: 100%;
+            }
+            &::after {
+                bottom: 0;
+                width: 50%;
+            }
+            span {
+                top: 50%;
+                width: 73%;
+                transform: scale(1) translate(0px, -50%);
+            }
+            &._active span {
+                transform: scale(0) translate(0px, -50%);
+            }
+            &._active::before {
+                top: 50%;
+                width: 100%;
+                transform: rotate(-45deg) translate(0px, -50%);
+            }
+            &._active::after {
+                bottom: 50%;
+                width: 100%;
+                transform: rotate(45deg) translate(0px, 50%);
+            }
+        }
+
+        &__body {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.92);
+            padding: 10rem 4rem 2rem 4rem;
+            transition: left 0.3s ease 0s;
+            overflow: auto;
+            &._active {
+                left: 0;
+            }
+        }
+        &__list {
+            & > li {
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 0px 0px 30px 0px;
+            }
+            & > li:last-child {
+                margin-bottom: 0;
+            }
+
+        }
+        &__list > li._active .dropdown__sub-list {
+            display: block;
+        }
+        .navlink {
+            font-size: 1.5rem;
+        }
+        .dropdown__sub-list {
+            display: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            flex: 1 1 100%;
+            margin: 1rem 0rem 0rem 0rem;
+            padding: 1rem 1.5rem;
+            background-color: transparent;
+            text-align: left;
+            border: none;
+            li {
+                display: flex;
+                justify-content: center;
+                &:not(:first-of-type) {
+                    margin: 0.8rem 0 0 0;
+                }
+            }
+        }
+        .dropdown__sub-link {
+            font-size: 1.3rem;
+            color: $white-color;
+        }
     }
 }
