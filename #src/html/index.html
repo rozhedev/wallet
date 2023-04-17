@@ -15,12 +15,60 @@
                 @@include('chunks/_header.html',{})
 
                 <div class="container">
+                    <div class="promo__inner">
+                        <h1 class="h1">Accessible wallet for different solutions</h1>
+                        <div class="promo__btn">
+                            <form method="get" action="assets.html">
+                                <button class="btn btn--outline">Supported assets</button>
+                            </form>
+                            <form action="register.html">
+                                <button class="btn">Create account</button>
+                            </form>
+                        </div>
+                        <!-- <form action="index.html#main-assets"> -->
+                            <div class="scroll-btn">
+                                <button class="btn scroll-btn__toggle" data-goto="#main-assets">
+                                    <svg width="32" height="52" viewBox="0 0 32 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26.24 10.88L16 21.12L5.76001 10.88" stroke-miterlimit="5" />
+                                        <path d="M26.24 20.8801L16 31.1201L5.76001 20.8801" stroke-miterlimit="5" />
+                                        <path d="M26.24 30.8801L16 41.1201L5.76001 30.8801" stroke-miterlimit="5" />
+                                    </svg>
+                                </button>
+                                <span>Scroll down</span>
+                            </div>
+                        <!-- </form> -->
+                    </div>
                 </div>
             </section>
 
             <!-- * MAIN ASSETS -->
             <section class="main-assets" id="main-assets">
+                <div class="container">
+                    <div class="main-assets__header">
+                        <span class="main-assets__count">+70</span>
+                        <span class="h4">Flem Wallet supports more than 70 cryptocurrency assets</span>
+                    </div>
+                    <div class="inner">
+                        @@loop("components/_main-assets-item.html", "../json/main-assets-items.json")
+                    </div>
+                </div>
+            </section>
 
+            <!-- * EXCHANGE RATE -->
+
+            <section class="exchange-rate" id="exchange-rate">
+                <div class="container">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
+                </div>
             </section>
         </main>
 

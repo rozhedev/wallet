@@ -1,9 +1,5 @@
 # Wallet
 
-Temp:
-@@loop("components/_news-item.html", "../json/language.json")
-@@include('chunks/_preloader.html',{})
-
 ## Usage
 
 I use an improved Gulp-based build taken from this video: [Click](https://youtu.be/qSZvGlIKGPg)

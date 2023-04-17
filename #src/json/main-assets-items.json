@@ -1,0 +1,202 @@
+[
+    {
+        "imgPath": "img/icons/crypto/bitcoin-BTC.svg",
+        "imgAlt": "bitcoin",
+        "title": "Bitcoin (BTC)"
+    },
+    {
+        "imgPath": "img/icons/crypto/ethereum-ETH.svg",
+        "imgAlt": "ethereum",
+        "title": "Ethereum (ETH)"
+    },
+    {
+        "imgPath": "img/icons/crypto/binance-coin-BNB.svg",
+        "imgAlt": "binance-coin",
+        "title": "Binance Coin (BNB)"
+    },
+    {
+        "imgPath": "img/icons/crypto/tether-USDT.svg",
+        "imgAlt": "tether",
+        "title": "Tether (USDT)"
+    },
+    {
+        "imgPath": "img/icons/crypto/solana-SOL.svg",
+        "imgAlt": "solana",
+        "title": "Solana (SOL)"
+    },
+    {
+        "imgPath": "img/icons/crypto/cardano-ADA.svg",
+        "imgAlt": "cardano",
+        "title": "Cardano (ADA)"
+    },
+    {
+        "imgPath": "img/icons/crypto/ripple-XRP.svg",
+        "imgAlt": "ripple",
+        "title": "Ripple (XRP)"
+    },
+    {
+        "imgPath": "img/icons/crypto/terra-LUNA.svg",
+        "imgAlt": "terra",
+        "title": "Terra (LUNA)"
+    },
+    {
+        "imgPath": "img/icons/crypto/polkadot-DOT.svg",
+        "imgAlt": "polkadot",
+        "title": "Polkadot (DOT)"
+    },
+    {
+        "imgPath": "img/icons/crypto/avalanche-AVAX.svg",
+        "imgAlt": "avalanche",
+        "title": "Avalanche (AVAX)"
+    },
+    {
+        "imgPath": "img/icons/crypto/dogecoin-DOGE.svg",
+        "imgAlt": "dogecoin",
+        "title": "Dogecoin (DOGE)"
+    },
+    {
+        "imgPath": "img/icons/crypto/shiba-inu-SHIB.svg",
+        "imgAlt": "shiba-inu",
+        "title": "Shiba Inu (SHIB)"
+    },
+    {
+        "imgPath": "img/icons/crypto/polygon-MATIC.svg",
+        "imgAlt": "polygon",
+        "title": "Polygon (MATIC)"
+    },
+    {
+        "imgPath": "img/icons/crypto/cronos-CRO.svg",
+        "imgAlt": "cronos",
+        "title": "Cronos (CRO)"
+    },
+    {
+        "imgPath": "img/icons/crypto/wrapped-bitcoin-WBTC.svg",
+        "imgAlt": "wrapped-bitcoin",
+        "title": "Wrapped Bitcoin (WBTC)"
+    },
+    {
+        "imgPath": "img/icons/crypto/algorand-ALGO.svg",
+        "imgAlt": "algorand",
+        "title": "Algorand (ALGO)"
+    },
+    {
+        "imgPath": "img/icons/crypto/litecoin-LTC.svg",
+        "imgAlt": "litecoin",
+        "title": "Litecoin (LTC)"
+    },
+    {
+        "imgPath": "img/icons/crypto/chainlink-LINK.svg",
+        "imgAlt": "chainlink",
+        "title": "Chainlink (LINK)"
+    },
+    {
+        "imgPath": "img/icons/crypto/dai-DAI.svg",
+        "imgAlt": "dai",
+        "title": "Dai (DAI)"
+    },
+    {
+        "imgPath": "img/icons/crypto/bitcoin-cash-BCH.svg",
+        "imgAlt": "bitcoin-cash",
+        "title": "Bitcoin Cash (BCH)"
+    },
+    {
+        "imgPath": "img/icons/crypto/fantom-FTM.svg",
+        "imgAlt": "fantom",
+        "title": "Fantom (FTM)"
+    },
+    {
+        "imgPath": "img/icons/crypto/axie-infinity-AXS.svg",
+        "imgAlt": "axie-infinity",
+        "title": "Axie Infinity (AXS)"
+    },
+    {
+        "imgPath": "img/icons/crypto/tron-TRX.svg",
+        "imgAlt": "tron",
+        "title": "Tron (TRX)"
+    },
+    {
+        "imgPath": "img/icons/crypto/stellar-XLM.svg",
+        "imgAlt": "stellar",
+        "title": "Stellar (XLM)"
+    },
+    {
+        "imgPath": "img/icons/crypto/near-NEAR.svg",
+        "imgAlt": "near",
+        "title": "Near (NEAR)"
+    },
+    {
+        "imgPath": "img/icons/crypto/ftx-token-FTX.svg",
+        "imgAlt": "ftx token",
+        "title": "FTX Token (FTX)"
+    },
+    {
+        "imgPath": "img/icons/crypto/cosmos-ATOM.svg",
+        "imgAlt": "cosmos",
+        "title": "Cosmos (ATOM)"
+    },
+    {
+        "imgPath": "img/icons/crypto/ve-chain-VET.svg",
+        "imgAlt": "ve chain",
+        "title": "Ve Chain (VET)"
+    },
+    {
+        "imgPath": "img/icons/crypto/hedera-hashgraph-HBAR.svg",
+        "imgAlt": "hedera-hashgraph",
+        "title": "Hedera Hashgraph (HBAR)"
+    },
+    {
+        "imgPath": "img/icons/crypto/sandbox-SAND.svg",
+        "imgAlt": "sandbox",
+        "title": "Sandbox (SAND)"
+    },
+    {
+        "imgPath": "img/icons/crypto/filecoin-FIL.svg",
+        "imgAlt": "filecoin",
+        "title": "Filecoin (FIL)"
+    },
+    {
+        "imgPath": "img/icons/crypto/internet-computer-ICP.svg",
+        "imgAlt": "internet computer",
+        "title": "Internet Computer (ICP)"
+    },
+    {
+        "imgPath": "img/icons/crypto/theta-THETA.svg",
+        "imgAlt": "theta",
+        "title": "Theta Network (THETA)"
+    },
+    {
+        "imgPath": "img/icons/crypto/elrond-EGLD.svg",
+        "imgAlt": "elrond",
+        "title": "Elrond (EGLD)"
+    },
+    {
+        "imgPath": "img/icons/crypto/ethereum-classic-ETC.svg",
+        "imgAlt": "ethereum-classic",
+        "title": "Ethereum Classic (ETC)"
+    },
+    {
+        "imgPath": "img/icons/crypto/monero-XMR.svg",
+        "imgAlt": "monero",
+        "title": "Monero (XMR)"
+    },
+    {
+        "imgPath": "img/icons/crypto/helium-HNT.svg",
+        "imgAlt": "helium",
+        "title": "Helium (HNT)"
+    },
+    {
+        "imgPath": "img/icons/crypto/tezos-XTZ.svg",
+        "imgAlt": "tezos-XTZ",
+        "title": "Tezos (XTZ)"
+    },
+    {
+        "imgPath": "img/icons/crypto/iota-MIOTA.svg",
+        "imgAlt": "iota",
+        "title": "IOTA (MIOTA)"
+    },
+    {
+        "imgPath": "img/icons/crypto/aave-AAVE.svg",
+        "imgAlt": "aave",
+        "title": "Aave (AAVE)"
+    }
+]
