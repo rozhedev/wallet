@@ -1,5 +1,5 @@
 // * LIBS
-import "./libs/swiper";
+import "./libs/tooltip";
 
 // * MODULES
 import "./modules/example";

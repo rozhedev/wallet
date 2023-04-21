@@ -1,0 +1,100 @@
+[
+    {
+        "id": "main-bitcoin-rate",
+        "currencyIconPath": "img/icons/crypto/bitcoin-BTC.svg",
+        "currencyIconAlt": "bitcoin",
+        "title": "Bitcoin (BTC)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-ethereum-rate",
+        "currencyIconPath": "img/icons/crypto/ethereum-ETH.svg",
+        "currencyIconAlt": "ethereum",
+        "title": "Ethereum (ETH)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-binance-coin-rate",
+        "currencyIconPath": "img/icons/crypto/binance-coin-BNB.svg",
+        "currencyIconAlt": "binance-coin",
+        "title": "Binance Coin (BNB)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-solana-rate",
+        "currencyIconPath": "img/icons/crypto/solana-SOL.svg",
+        "currencyIconAlt": "solana",
+        "title": "Solana (SOL)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-cardano-rate",
+        "currencyIconPath": "img/icons/crypto/cardano-ADA.svg",
+        "currencyIconAlt": "cardano",
+        "title": "Cardano (ADA)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-xrp-rate",
+        "currencyIconPath": "img/icons/crypto/xrp-XRP.svg",
+        "currencyIconAlt": "xrp",
+        "title": "XRP (XRP)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-terra-rate",
+        "currencyIconPath": "img/icons/crypto/terra-LUNA.svg",
+        "currencyIconAlt": "terra",
+        "title": "Terra (LUNA)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-polkadot-rate",
+        "currencyIconPath": "img/icons/crypto/polkadot-DOT.svg",
+        "currencyIconAlt": "polkadot",
+        "title": "Polkadot (DOT)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-avalanche-rate",
+        "currencyIconPath": "img/icons/crypto/avalanche-AVAX.svg",
+        "currencyIconAlt": "avalanche",
+        "title": "Avalanche (AVAX)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-dogecoin-rate",
+        "currencyIconPath": "img/icons/crypto/dogecoin-DOGE.svg",
+        "currencyIconAlt": "dogecoin",
+        "title": "Dogecoin (DOGE)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-shiba-inu-rate",
+        "currencyIconPath": "img/icons/crypto/shiba-inu-SHIB.svg",
+        "currencyIconAlt": "shiba-inu",
+        "title": "Shiba Inu (SHIB)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-polygon-rate",
+        "currencyIconPath": "img/icons/crypto/polygon-MATIC.svg",
+        "currencyIconAlt": "polygon",
+        "title": "Polygon (MATIC)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-algorand-rate",
+        "currencyIconPath": "img/icons/crypto/algorand-ALGO.svg",
+        "currencyIconAlt": "algorand",
+        "title": "Algorand (ALGO)",
+        "rate": "$88888.88"
+    },
+    {
+        "id": "main-litecoin-rate",
+        "currencyIconPath": "img/icons/crypto/litecoin-LTC.svg",
+        "currencyIconAlt": "litecoin",
+        "title": "Litecoin (LTC)",
+        "rate": "$88888.88"
+    }
+]

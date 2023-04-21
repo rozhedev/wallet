@@ -26,16 +26,16 @@
                             </form>
                         </div>
                         <!-- <form action="index.html#main-assets"> -->
-                            <div class="scroll-btn">
-                                <button class="btn scroll-btn__toggle" data-goto="#main-assets">
-                                    <svg width="32" height="52" viewBox="0 0 32 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M26.24 10.88L16 21.12L5.76001 10.88" stroke-miterlimit="5" />
-                                        <path d="M26.24 20.8801L16 31.1201L5.76001 20.8801" stroke-miterlimit="5" />
-                                        <path d="M26.24 30.8801L16 41.1201L5.76001 30.8801" stroke-miterlimit="5" />
-                                    </svg>
-                                </button>
-                                <span>Scroll down</span>
-                            </div>
+                        <div class="scroll-btn">
+                            <button class="btn scroll-btn__toggle" data-goto="#main-assets">
+                                <svg width="32" height="52" viewBox="0 0 32 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26.24 10.88L16 21.12L5.76001 10.88" stroke-miterlimit="5" />
+                                    <path d="M26.24 20.8801L16 31.1201L5.76001 20.8801" stroke-miterlimit="5" />
+                                    <path d="M26.24 30.8801L16 41.1201L5.76001 30.8801" stroke-miterlimit="5" />
+                                </svg>
+                            </button>
+                            <span>Scroll down</span>
+                        </div>
                         <!-- </form> -->
                     </div>
                 </div>
@@ -50,6 +50,17 @@
                     </div>
                     <div class="inner">
                         @@loop("components/_main-assets-item.html", "../json/main-assets-items.json")
+                        <div class="main-assets__btn-overlay">
+                            <button class="btn">
+                                <span>View full list</span>
+                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M26 16V28H4V6H16" stroke-miterlimit="5" />
+                                    <path d="M28 12V4H20" stroke-miterlimit="5" />
+                                    <path d="M18 14L28 4" stroke-miterlimit="5" />
+                                </svg>
+
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -58,17 +69,10 @@
 
             <section class="exchange-rate" id="exchange-rate">
                 <div class="container">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat veritatis aperiam porro repudiandae dolore possimus pariatur nisi dolorem. Numquam aut sit voluptate ea quos? Laudantium, nisi. Debitis delectus saepe minima?
-                </div>
+                    <div class="inner">
+                        @@loop("components/_main-rate-item.html", "../json/main-rate-items.json")
+                    </div>
+
             </section>
         </main>
 
