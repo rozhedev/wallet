@@ -18,16 +18,15 @@
                     <div class="promo__inner">
                         <h1 class="h1">Accessible wallet for different solutions</h1>
                         <div class="promo__btn">
-                            <form method="get" action="assets.html">
-                                <button class="btn btn--outline">Supported assets</button>
+                            <form action="assets.html">
+                                <button type="button" class="btn btn--outline">Supported assets</button>
                             </form>
-                            <form action="register.html">
-                                <button class="btn">Create account</button>
+                            <form method="get" action="register.html">
+                                <button type="button" class="btn">Create account</button>
                             </form>
                         </div>
-                        <!-- <form action="index.html#main-assets"> -->
                         <div class="scroll-btn">
-                            <button class="btn scroll-btn__toggle" data-goto="#main-assets">
+                            <button type="button" class="btn scroll-btn__toggle" data-goto="#main-assets">
                                 <svg width="32" height="52" viewBox="0 0 32 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M26.24 10.88L16 21.12L5.76001 10.88" stroke-miterlimit="5" />
                                     <path d="M26.24 20.8801L16 31.1201L5.76001 20.8801" stroke-miterlimit="5" />
@@ -36,7 +35,6 @@
                             </button>
                             <span>Scroll down</span>
                         </div>
-                        <!-- </form> -->
                     </div>
                 </div>
             </section>
@@ -51,15 +49,16 @@
                     <div class="inner">
                         @@loop("components/_main-assets-item.html", "../json/main-assets-items.json")
                         <div class="main-assets__btn-overlay">
-                            <button class="btn">
-                                <span>View full list</span>
-                                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M26 16V28H4V6H16" stroke-miterlimit="5" />
-                                    <path d="M28 12V4H20" stroke-miterlimit="5" />
-                                    <path d="M18 14L28 4" stroke-miterlimit="5" />
-                                </svg>
-
-                            </button>
+                            <form method="get" action="assets.html">
+                                <button type="button" class="btn">
+                                    <span>View full list</span>
+                                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M26 16V28H4V6H16" stroke-miterlimit="5" />
+                                        <path d="M28 12V4H20" stroke-miterlimit="5" />
+                                        <path d="M18 14L28 4" stroke-miterlimit="5" />
+                                    </svg>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -80,6 +79,10 @@
                     <div class="inner">
                         @@loop("components/_advant-item.html", "../json/advant-items.json")
                     </div>
+                    <form method="get" action="register.html">
+                        <button type="button" class="btn">Register wallet</button>
+                    </form>
+                </div>
             </section>
         </main>
 

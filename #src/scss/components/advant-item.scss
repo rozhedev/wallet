@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 304px;
     height: auto;
     padding: 1rem;
     background-color: $white-color;
@@ -25,12 +24,21 @@
     @include hover {
         box-shadow: 0px 0px 0px 0px rgba($color: $dark-color, $alpha: 0), $advant-inset-shadow;
     }
+    @include bp(sm) {
+        width: 100%;
+    }
+
+    // * ELEMENTS
     .h5 {
         margin: 0.5rem 0 1rem;
         font-size: 1.375rem;
         font-weight: 400;
         line-height: 1.46;
         letter-spacing: 0.02em;
+        @include bp(md) {
+            font-size: 1.125rem;
+            line-height: 1.56;
+        }
     }
     &__descr {
         padding-top: 0.5rem;
@@ -44,6 +52,10 @@
         height: 6rem;
         stroke: $dark-color;
         stroke-width: 0.66;
+        @include bp(md) {
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
     // * COLORING ICONS
