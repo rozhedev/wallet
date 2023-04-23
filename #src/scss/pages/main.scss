@@ -235,3 +235,20 @@
         }
     }
 }
+
+// * ADVANTAGES
+
+.advant {
+    padding: 3.5rem 0 5rem;
+    .inner {
+        margin-top: 4rem;
+        display: grid;
+        grid-template: 1fr / repeat(4, 1fr);
+        grid-gap: $grid-gap;
+        align-items: start;
+        justify-items: center;
+    }
+    .h2 {
+        text-align: center;
+    }
+}

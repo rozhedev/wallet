@@ -49,6 +49,7 @@
         svg {
             transition: $transition;
             stroke: $dark-color24;
+            stroke-width: 1.5;
             stroke-miterlimit: 5;
             width: 1.25rem;
             height: 1.25rem;
@@ -68,6 +69,7 @@
         }
     }
 }
+
 
 .inp {
     display: inline-flex;
@@ -404,6 +406,9 @@ option {
 }
 
 // * ERROR MESSAGE UNDER INPUT
+.form-test {
+    background-color: $dark-color;
+}
 .form-conroller__message {
     display: block;
     visibility: hidden;

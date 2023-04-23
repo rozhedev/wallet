@@ -108,11 +108,18 @@ select {
     &::-ms-expand {
         display: none;
     }
-
     // Remove focus outline, will add on alternate element
     outline: none;
 }
 
+/* Убираем стандартный маркер Chrome */
+// details summary::-webkit-details-marker {
+//     display: none;
+// }
+// /* Убираем стандартный маркер Firefox */
+// details > summary {
+//     list-style: none;
+// }
 //-webkit-overflow-scrolling: touch;
 /*
 &::-webkit-scrollbar {

@@ -1,3 +1,5 @@
-// import tippy from 'tippy.js';
-
-// tippy('[data-tippy-content]');
+tippy('.main-assets-item', { 
+    content: 'tooltip',
+    theme: "main-asset",
+    delay: "200",
+ });

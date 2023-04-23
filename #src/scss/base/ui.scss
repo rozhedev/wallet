@@ -142,3 +142,59 @@
         }
     }
 }
+
+// * DETAILS
+
+.advant-details {
+    transition: $transition;
+    & > .summary {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        cursor: pointer;
+        // * Icon for close state
+        &::after {
+            content: '';
+            display: block;
+            background: url('../../img/icons/interface/chevron_details.svg') center / cover no-repeat;
+        }
+        svg,
+        svg *,
+        &::after {
+            width: 1.33rem;
+            height: 1.33rem;
+            stroke: $secondary-accent-color;
+            stroke-width: 2.5;
+        }
+        .link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            padding: 0 0.5rem 0 0.3rem;
+            font-size: 1.2rem;
+        }
+    }
+    // * Icon for close state
+    &[open] .summary::after {
+        transform: rotate(180deg);
+    }
+}
+
+// TODO Create advanced animation
+details[open] {
+    .advant-item__descr {
+        animation: slide 0.5s ease-in-out;
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translate(0, -0.66rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}

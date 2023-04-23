@@ -19,6 +19,9 @@
     @include bp(lg) {
         padding: 1rem;
     }
+    @include hover {
+        background-color: $white-color;
+    }
     &__icon img,
     &__dir-icon svg {
         width: 2rem;
@@ -47,7 +50,6 @@
             margin-top: 1rem;
         }
         .output {
-            color: $success-green;
             margin-right: 0.5rem;
             text-align: right;
             @include bp(md) {
@@ -60,11 +62,27 @@
         justify-content: center;
         align-items: center;
         svg {
-            stroke: $success-green;
             stroke-width: 2;
         }
     }
-    @include hover {
-        background-color: $white-color;
-    }
+
+    // * STATE CLASSES
+    &.top {
+        .main-rate-item__output .output {
+            color: $success-green;
+        }
+        .main-rate-item__dir-icon svg {
+            stroke: $success-green;
+            transform: rotate(0deg);
+        }
+    } 
+    &.bottom {
+        .main-rate-item__output .output {
+            color: $error-red;
+        }
+        .main-rate-item__dir-icon svg {
+            stroke: $error-red;
+            transform: rotate(0deg);
+        }
+    }   
 }

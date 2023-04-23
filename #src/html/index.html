@@ -66,13 +66,20 @@
             </section>
 
             <!-- * EXCHANGE RATE -->
-
             <section class="exchange-rate" id="exchange-rate">
                 <div class="container">
                     <div class="inner">
                         @@loop("components/_main-rate-item.html", "../json/main-rate-items.json")
                     </div>
+            </section>
 
+            <!-- * ADVANTAGES -->
+            <section class="advant" id="advant">
+                <div class="container">
+                    <h2 class="h2">Why Flem Wallet?</h2>
+                    <div class="inner">
+                        @@loop("components/_advant-item.html", "../json/advant-items.json")
+                    </div>
             </section>
         </main>
 
