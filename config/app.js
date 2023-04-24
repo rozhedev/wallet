@@ -18,7 +18,7 @@ module.exports = {
         progressive: true,
         svgoPlugins: [{ removeViewBox: false }],
         interlaced: true,
-        optimizationLevel: 5, // 0 to 7
+        optimizationLevel: 3, // 0 to 7
         verbose: true,
     },
     fonter: {

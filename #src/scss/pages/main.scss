@@ -111,10 +111,7 @@
     &__header {
         margin: 0 auto;
         width: 50%;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
         @include bp(lg) {
             width: 100%;
         }
@@ -267,5 +264,142 @@
     .btn {
         margin: 2.5rem auto 0;
         padding: 0.63rem 0.75rem;
+    }
+}
+
+// * DOWNLOAD
+
+.download {
+    $gradient-bg-color: #ececec;
+    $sm-title-size: 1.38rem;
+    $subtitle-shadow-color: rgba(
+        $color: $dark-color,
+        $alpha: 0.16,
+    );
+
+    background-image: linear-gradient(to bottom, rgba($gradient-bg-color, 0), $gradient-bg-color);
+    padding: 3rem 0 8.5rem;
+    box-shadow: 0 -8px 16px 0px rgba($color: $dark-color, $alpha: 0.24);
+    &__header {
+        span {
+            font-weight: 400;
+            @include bp(sm) {
+                font-size: $sm-title-size;
+            }
+        }
+        svg,
+        svg * {
+            margin-right: 1rem;
+            width: 2.25rem;
+            height: 2.25rem;
+            stroke: $dark-color;
+            stroke-width: 2;
+            @include bp(sm) {
+                margin-right: 0.5rem;
+                width: 1.63rem;
+                height: 1.63rem;
+            }
+        }
+    }
+    &__mockup {
+        display: block;
+        margin: 2rem auto 0;
+        img {
+            width: 100%;
+        }
+    }
+    .h3 {
+        margin-top: 2.25rem;
+        @include bp(md) {
+            margin-top: 4rem;
+        }
+        @include bp(sm) {
+            font-size: $sm-title-size;
+        }
+    }
+    .inner {
+        margin-top: 3rem;
+        column-count: 2;
+        column-width: 50%;
+        column-gap: 9rem;
+        text-align: center;
+        @include bp(lg) {
+            column-gap: 5.5rem;
+        }
+        @include bp(md) {
+            column-count: 1;
+            column-gap: 0;
+            margin-top: 3rem;
+        }
+        .inner__column {
+            @include bp(md) {
+                &:not(:first-of-type) {
+                    margin-top: 3rem;
+                }
+            }
+            & > div {
+                margin-top: 4rem;
+                display: flex;
+                justify-content: space-between;
+                @include bp(md) {
+                    justify-content: space-around;
+                    margin-top: 3.25rem;
+                }
+                @include bp(xs) {
+                    flex-direction: column;
+                    margin-top: 4rem;
+                    form {
+                        display: flex;
+                        justify-content: center;
+                        &:not(:first-of-type) {
+                            margin-top: 3rem;
+                        }
+                    }
+                }
+                .btn {
+                    position: relative;
+                    padding: 0;
+                    justify-content: flex-start;
+                    background-color: initial;
+                    border: none;
+                    img {
+                        display: block;
+                        width: 11rem;
+                    }
+                    &::before {
+                        position: absolute;
+                        top: -1.66rem;
+                        left: 0;
+                        display: block;
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: $dark-color24;
+                    }
+                }
+                .btn-mac-appstore::before {
+                    content: 'Coming soon';
+                }
+                .btn-windows::before {
+                    content: 'Technical works';
+                }
+                .btn-google-play::before {
+                    content: 'Tested for publication';
+                }
+                .btn-appstore::before {
+                    content: 'Tested for publication';
+                }
+            }
+        }
+    }
+    &__subtitle {
+        font-size: 4rem;
+        font-weight: 300;
+        line-height: 1;
+        letter-spacing: 0.32em;
+        color: $subtitle-shadow-color;
+        text-shadow: 0 4px 4px $subtitle-shadow-color;
+        @include bp(sm) {
+            font-size: 3rem;
+        }
     }
 }

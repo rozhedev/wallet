@@ -1,8 +1,8 @@
 // * LIBS
 import "./libs/tooltip";
+import "./libs/fslightbox";
 
 // * MODULES
-import "./modules/example";
 import "./modules/validation";
 
 // * COMPONENTS

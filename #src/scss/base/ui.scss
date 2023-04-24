@@ -1,8 +1,10 @@
 // * <UI CLASSES>==========================================
 
-.inner {
-    @include bp(md) {
-    }
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .h1 {
@@ -179,25 +181,22 @@
         }
     }
     // * Icon for close state
-    &[open] .summary::after {
-        transform: rotate(180deg);
+    &[open] {
+        .summary::after {
+            transform: rotate(180deg);
+        }
+        .advant-item__descr {
+            animation: slide-details-body 0.5s ease-in-out;
+        }
     }
-}
-
-// TODO Create advanced animation
-details[open] {
-    .advant-item__descr {
-        animation: slide 0.5s ease-in-out;
-    }
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translate(0, -0.66rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0, 0);
+    @keyframes slide-details-body {
+        0% {
+            opacity: 0;
+            transform: translate(0, -0.6rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
     }
 }

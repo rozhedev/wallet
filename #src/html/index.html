@@ -18,11 +18,11 @@
                     <div class="promo__inner">
                         <h1 class="h1">Accessible wallet for different solutions</h1>
                         <div class="promo__btn">
-                            <form action="assets.html">
-                                <button type="button" class="btn btn--outline">Supported assets</button>
+                            <form method="get" action="assets.html">
+                                <button type="submit" class="btn btn--outline">Supported assets</button>
                             </form>
                             <form method="get" action="register.html">
-                                <button type="button" class="btn">Create account</button>
+                                <button type="submit" class="btn">Create account</button>
                             </form>
                         </div>
                         <div class="scroll-btn">
@@ -42,7 +42,7 @@
             <!-- * MAIN ASSETS -->
             <section class="main-assets" id="main-assets">
                 <div class="container">
-                    <div class="main-assets__header">
+                    <div class="main-assets__header section-title">
                         <span class="main-assets__count">+70</span>
                         <span class="h4">Flem Wallet supports more than 70 cryptocurrency assets</span>
                     </div>
@@ -50,7 +50,7 @@
                         @@loop("components/_main-assets-item.html", "../json/main-assets-items.json")
                         <div class="main-assets__btn-overlay">
                             <form method="get" action="assets.html">
-                                <button type="button" class="btn">
+                                <button type="submit" class="btn">
                                     <span>View full list</span>
                                     <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M26 16V28H4V6H16" stroke-miterlimit="5" />
@@ -75,13 +75,67 @@
             <!-- * ADVANTAGES -->
             <section class="advant" id="advant">
                 <div class="container">
-                    <h2 class="h2">Why Flem Wallet?</h2>
+                    <h2 class="h1 section-title">Why Flem Wallet?</h2>
                     <div class="inner">
                         @@loop("components/_advant-item.html", "../json/advant-items.json")
                     </div>
                     <form method="get" action="register.html">
-                        <button type="button" class="btn">Register wallet</button>
+                        <button type="submit" class="btn">Register wallet</button>
                     </form>
+                </div>
+            </section>
+
+            <!-- * DOWNLOAD -->
+            <section class="download" id="download">
+                <div class="container">
+                    <h2 class="download__header section-title">
+                        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M41.1429 13.7143V10.2857C41.1429 9.37637 40.7816 8.5043 40.1387 7.86132C39.4957 7.21834 38.6236 6.85712 37.7143 6.85712H6.85715C5.94783 6.85712 5.07576 7.21834 4.43278 7.86132C3.7898 8.5043 3.42857 9.37637 3.42857 10.2857V37.7143C3.42857 38.6236 3.7898 39.4956 4.43278 40.1386C5.07576 40.7816 5.94783 41.1428 6.85715 41.1428H37.7143C38.6236 41.1428 39.4957 40.7816 40.1387 40.1386C40.7816 39.4956 41.1429 38.6236 41.1429 37.7143V34.2857" />
+                            <path
+                                d="M27.4286 13.7143H42.8571C43.3118 13.7143 43.7478 13.8949 44.0693 14.2164C44.3908 14.5379 44.5714 14.9739 44.5714 15.4286V32.5714C44.5714 33.0261 44.3908 33.4621 44.0693 33.7836C43.7478 34.1051 43.3118 34.2857 42.8571 34.2857H27.4286C24.7006 34.2857 22.0844 33.2021 20.1555 31.2731C18.2265 29.3442 17.1429 26.7279 17.1429 24C17.1429 21.2721 18.2265 18.6559 20.1555 16.7269C22.0844 14.798 24.7006 13.7143 27.4286 13.7143V13.7143Z" />
+                            <path d="M27.4286 27.4286C29.3221 27.4286 30.8571 25.8935 30.8571 24C30.8571 22.1064 29.3221 20.5714 27.4286 20.5714C25.535 20.5714 24 22.1064 24 24C24 25.8935 25.535 27.4286 27.4286 27.4286Z" />
+                        </svg>
+                        <span class="h2">Flem Wallet on your devices</span>
+                    </h2>
+                    <a class="download__mockup" data-fslightbox="main-lightbox" href="img/photos/mockups/desktop_and_phone_apps.webp">
+                        <img src="img/photos/mockups/desktop_and_phone_apps.webp" alt="desktop_and_phone_apps">
+                    </a>
+
+                    <!-- * DOWNLOAD PLATFORM -->
+                    <h4 class="h3 section-title">Download for your platform:</h4>
+                    <div class="inner">
+                        <div class="inner__column">
+                            <span class="download__subtitle">DESKTOP</span>
+                            <div>
+                                <form method="get" action="#">
+                                    <button class="btn btn-windows">
+                                        <img src="../img/photos/badges/MS-Store/English_MS_864X312.svg" alt="Download on Microsoft Store">
+                                    </button>
+                                </form>
+                                <form method="get" action="#">
+                                    <button class="btn btn-mac-appstore">
+                                        <img src="../img/photos/badges/Download-on-the-Mac-App-Store/US/Badge_US-UK_RGB_blk_092917.svg" alt="Download on the_App_Store">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="inner__column">
+                            <span class="download__subtitle">MOBILE</span>
+                            <div>
+                                <form method="get" action="#">
+                                    <button class="btn btn-appstore">
+                                        <img src="../img/photos/badges/Download-on-the-App-Store/US/App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the_App_Store">
+                                    </button>
+                                </form>
+                                <form method="get" action="#">
+                                    <button class="btn btn-google-play">
+                                        <img src="../img/photos/badges/Google-Play/google-play-badge.png" alt="Google Play">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
