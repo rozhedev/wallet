@@ -109,6 +109,18 @@
     line-height: 1.25;
 }
 
+.download-subtitle {
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: 0.32em;
+    color: $subtitle-shadow-color;
+    text-shadow: 0 4px 4px $subtitle-shadow-color;
+    @include bp(sm) {
+        font-size: 3rem;
+    }
+}
+
 // * UN- ORDERED LISTS
 
 .ordered-list {
@@ -145,9 +157,9 @@
     }
 }
 
-// * DETAILS
+// * ACCORDION
 
-.advant-details {
+.advant-accordion {
     transition: $transition;
     & > .summary {
         display: flex;
@@ -168,6 +180,7 @@
             height: 1.33rem;
             stroke: $secondary-accent-color;
             stroke-width: 2.5;
+            transition: $transition;
         }
         .link {
             display: flex;
@@ -184,19 +197,6 @@
     &[open] {
         .summary::after {
             transform: rotate(180deg);
-        }
-        .advant-item__descr {
-            animation: slide-details-body 0.5s ease-in-out;
-        }
-    }
-    @keyframes slide-details-body {
-        0% {
-            opacity: 0;
-            transform: translate(0, -0.6rem);
-        }
-        100% {
-            opacity: 1;
-            transform: translate(0, 0);
         }
     }
 }

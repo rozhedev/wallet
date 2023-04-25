@@ -4,6 +4,7 @@ import "./libs/fslightbox";
 
 // * MODULES
 import "./modules/validation";
+import "./modules/accordion-anim";
 
 // * COMPONENTS
 import "./components/preloader";

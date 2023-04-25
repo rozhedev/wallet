@@ -272,10 +272,6 @@
 .download {
     $gradient-bg-color: #ececec;
     $sm-title-size: 1.38rem;
-    $subtitle-shadow-color: rgba(
-        $color: $dark-color,
-        $alpha: 0.16,
-    );
 
     background-image: linear-gradient(to bottom, rgba($gradient-bg-color, 0), $gradient-bg-color);
     padding: 3rem 0 8.5rem;
@@ -331,75 +327,64 @@
             column-gap: 0;
             margin-top: 3rem;
         }
-        .inner__column {
-            @include bp(md) {
-                &:not(:first-of-type) {
-                    margin-top: 3rem;
-                }
-            }
-            & > div {
-                margin-top: 4rem;
-                display: flex;
-                justify-content: space-between;
-                @include bp(md) {
-                    justify-content: space-around;
-                    margin-top: 3.25rem;
-                }
-                @include bp(xs) {
-                    flex-direction: column;
-                    margin-top: 4rem;
-                    form {
-                        display: flex;
-                        justify-content: center;
-                        &:not(:first-of-type) {
-                            margin-top: 3rem;
-                        }
-                    }
-                }
-                .btn {
-                    position: relative;
-                    padding: 0;
-                    justify-content: flex-start;
-                    background-color: initial;
-                    border: none;
-                    img {
-                        display: block;
-                        width: 11rem;
-                    }
-                    &::before {
-                        position: absolute;
-                        top: -1.66rem;
-                        left: 0;
-                        display: block;
-                        font-size: 1rem;
-                        font-weight: 400;
-                        color: $dark-color24;
-                    }
-                }
-                .btn-mac-appstore::before {
-                    content: 'Coming soon';
-                }
-                .btn-windows::before {
-                    content: 'Technical works';
-                }
-                .btn-google-play::before {
-                    content: 'Tested for publication';
-                }
-                .btn-appstore::before {
-                    content: 'Tested for publication';
-                }
+    }
+    .inner-column {
+        @include bp(md) {
+            &:not(:first-of-type) {
+                margin-top: 3rem;
             }
         }
-    }
-    &__subtitle {
-        font-size: 4rem;
-        font-weight: 300;
-        line-height: 1;
-        letter-spacing: 0.32em;
-        color: $subtitle-shadow-color;
-        text-shadow: 0 4px 4px $subtitle-shadow-color;
-        @include bp(sm) {
-            font-size: 3rem;
+        & > div {
+            margin-top: 4rem;
+            display: flex;
+            justify-content: space-between;
+            @include bp(md) {
+                justify-content: space-around;
+                margin-top: 3.25rem;
+            }
+            @include bp(xs) {
+                flex-direction: column;
+                margin-top: 4rem;
+                form {
+                    display: flex;
+                    justify-content: center;
+                    &:not(:first-of-type) {
+                        margin-top: 3rem;
+                    }
+                }
+            }
+            .btn {
+                position: relative;
+                padding: 0;
+                justify-content: flex-start;
+                background-color: initial;
+                border: none;
+                img {
+                    display: block;
+                    width: 11rem;
+                }
+                &::before {
+                    position: absolute;
+                    top: -1.66rem;
+                    left: 0;
+                    display: block;
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: $dark-color24;
+                }
+            }
+            .btn--mac-appstore::before {
+                content: 'Coming soon';
+            }
+            .btn--windows::before {
+                content: 'Technical works';
+            }
+            .btn--google-play::before {
+                content: 'Tested for publication';
+            }
+            .btn--appstore::before {
+                content: 'Tested for publication';
+            }
         }
     }
 }
