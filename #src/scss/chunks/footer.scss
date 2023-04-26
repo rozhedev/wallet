@@ -1,4 +1,52 @@
 .footer {
+    padding: 2.5rem 0;
+    background: url('../img/photos/bg/footer.svg') top center / cover no-repeat;
+    color: $white-color;
+
+    &__copyright {
+        display: block;
+        margin: 2.5rem 0 7.5rem;
+        cursor: auto;
+    }
     @include bp(md) {
+        .footer__copyright {
+            margin: 2rem 0;
+        }
+        .footer__subscribe {
+            margin-top: 3rem;
+        }
+    }
+    
+    .container {
+        column-count: 3;
+        column-gap: calc($grid-gap * 1.5);
+        @include bp(md) {
+            text-align: center;
+            column-count: 1;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    .footer-nav-column {
+        .h3 {
+            font-weight: 500;
+            letter-spacing: 0.1em;
+        }
+        &__list {
+            margin-top: 1rem;
+            & > li {
+                margin-top: 1rem;
+            }
+            .navlink {
+                @include hover {
+                    color: $primary-accent-color;
+                }
+            }
+        }
+        @include bp(md) {
+            &:not(:last-of-type) {
+                margin-top: 2rem;
+            }
+        }
     }
 }

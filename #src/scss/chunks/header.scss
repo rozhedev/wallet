@@ -35,6 +35,11 @@
             margin: 0 0.4rem 0 0;
             transition: $transition;
         }
+        .navlink {
+            @include hover {
+                @include navlink-anim;
+            }
+        }
     }
     .dropdown {
         cursor: pointer;
