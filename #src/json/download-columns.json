@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Desktop",
+        "btnModif1": "btn--windows",
+        "imgPath1": "../img/photos/badges/MS-Store/English_MS_864X312.svg",
+        "imgAlt1": "Download on Microsoft Store",
+        "btnModif2": "btn--mac-appstore",
+        "imgPath2": "../img/photos/badges/Download-on-the-Mac-App-Store/US/Badge_US-UK_RGB_blk_092917.svg",
+        "imgAlt2": "Download on the Mac App Store"
+    },
+    {
+        "title": "Mobile",
+        "btnModif1": "btn--appstore",
+        "imgPath1": "../img/photos/badges/Download-on-the-App-Store/US/App_Store_Badge_US-UK_RGB_blk_092917.svg",
+        "imgAlt1": "Download on the App Store",
+        "btnModif2": "btn--google-play",
+        "imgPath2": "../img/photos/badges/Google-Play/google-play-badge.png",
+        "imgAlt2": "Get it on Google Play"
+    }
+]

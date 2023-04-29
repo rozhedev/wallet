@@ -105,36 +105,7 @@
                     <!-- * DOWNLOAD PLATFORM -->
                     <h4 class="h3 section-title">Download for your platform:</h4>
                     <div class="inner">
-                        <div class="inner-column">
-                            <span class="primary-subtitle">DESKTOP</span>
-                            <div>
-                                <form method="get" action="#">
-                                    <button class="btn btn--windows">
-                                        <img src="../img/photos/badges/MS-Store/English_MS_864X312.svg" alt="Download on Microsoft Store">
-                                    </button>
-                                </form>
-                                <form method="get" action="#">
-                                    <button class="btn btn--mac-appstore">
-                                        <img src="../img/photos/badges/Download-on-the-Mac-App-Store/US/Badge_US-UK_RGB_blk_092917.svg" alt="Download on the_App_Store">
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="inner-column">
-                            <span class="primary-subtitle">MOBILE</span>
-                            <div>
-                                <form method="get" action="#">
-                                    <button class="btn btn--appstore">
-                                        <img src="../img/photos/badges/Download-on-the-App-Store/US/App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Download on the_App_Store">
-                                    </button>
-                                </form>
-                                <form method="get" action="#">
-                                    <button class="btn btn--google-play">
-                                        <img src="../img/photos/badges/Google-Play/google-play-badge.png" alt="Google Play">
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
+                        @@loop("components/_download-column.html", "../json/download-columns.json")
                     </div>
                 </div>
             </section>

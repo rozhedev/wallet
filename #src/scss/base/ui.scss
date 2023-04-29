@@ -108,6 +108,7 @@
     letter-spacing: 0.32em;
     color: $subtitle-shadow-color;
     text-shadow: 0 4px 4px $subtitle-shadow-color;
+    text-transform: uppercase;
     @include bp(sm) {
         font-size: 3rem;
     }

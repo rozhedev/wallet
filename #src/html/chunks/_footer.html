@@ -4,24 +4,10 @@
             <a href="index.html" class="logo">
                 <img src="img/logo.svg" alt="Flem Wallet">
             </a>
-            <div class="footer__copyright navlink">&copy; 2021-2022 Flem Wallet LTD. All rights reserved.</div>
+            <div class="footer__copyright navlink">
+                &copy; 2021-2022 Flem Wallet LTD. All rights reserved.
+            </div>
         </div>
-        <div class="footer-nav-column">
-            <h5 class="h3">WALLET INFO</h5>
-            <ul class="footer-nav-column__list">
-                <li><a href="#" class="navlink">Assets</a></li>
-                <li><a href="#" class="navlink">Promoactions</a></li>
-                <li><a href="#" class="navlink">Register wallet</a></li>
-                <li><a href="#" class="navlink">Sign in</a></li>
-            </ul>
-        </div>
-        <div class="footer-nav-column">
-            <h5 class="h3">DISCOVER</h5>
-            <ul class="footer-nav-column__list">
-                <li><a href="#" class="navlink">Popular questions</a></li>
-                <li><a href="#" class="navlink">Privacy policy</a></li>
-                <li><a href="#" class="navlink">Rules</a></li>
-            </ul>
-        </div>
+        @@loop('../components/_footer-nav-column.html', '../json/footer-nav-columns.json')
     </div>
 </footer>
