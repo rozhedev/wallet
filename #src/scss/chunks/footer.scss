@@ -1,5 +1,5 @@
 .footer {
-    padding: 2.5rem 0;
+    padding: 3rem 0;
     background: url('../img/photos/bg/footer.svg') top center / cover no-repeat;
     color: $white-color;
 
@@ -15,35 +15,52 @@
     .container {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         & > div {
             width: 33.3333%;
             &:not(:first-of-type) {
                 padding-left: calc($grid-gap * 2.5);
             }
+            &:nth-child(n + 4) {
+                padding-top: 2rem;
+            }
+            &:nth-child(4n) {
+                padding-left: 0;
+            }
         }
         @include bp(xl) {
-            & > div:not(:first-of-type) {
-                padding-left: calc($grid-gap * 1.5);
+            & > div {
+                &:not(:first-of-type) {
+                    padding-left: calc($grid-gap * 1.5);
+                }
+                &:nth-child(4n) {
+                    padding-left: 0;
+                }
             }
         }
         @include bp(md) {
-            text-align: center;
             flex-direction: column-reverse;
             justify-content: flex-start;
             align-items: center;
+            text-align: center;
             & > div {
                 width: 100%;
                 &:not(:first-of-type) {
                     padding-left: 0;
                 }
+                &:nth-child(n + 4) {
+                    padding-top: 0;
+                }
             }
         }
     }
+
+    // * FOOTER CONTENT
     &__copyright {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: 2.5rem 0;
+        margin: 2rem 0;
         font-weight: 400;
         cursor: auto;
     }
