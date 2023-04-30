@@ -1,0 +1,38 @@
+[
+    {
+        "itemIcon": "",
+        "title": "#"
+    },
+    {
+        "itemIcon": "",
+        "title": "Name"
+    },
+    {
+        "itemIcon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M44.5714 3.42859H3.42859V34.2857H44.5714V3.42859Z' stroke-miterlimit='5' /><path d='M6.85712 44.5714H41.1428' stroke-miterlimit='5' /><path d='M30.8571 34.2857V44.5714' stroke-miterlimit='5' /><path d='M17.1429 34.2857V44.5714' stroke-miterlimit='5' /></svg>",
+        "title": "Send"
+    },
+    {
+        "itemIcon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M44.5714 3.42859H3.42859V34.2857H44.5714V3.42859Z' stroke-miterlimit='5' /><path d='M6.85712 44.5714H41.1428' stroke-miterlimit='5' /><path d='M30.8571 34.2857V44.5714' stroke-miterlimit='5' /><path d='M17.1429 34.2857V44.5714' stroke-miterlimit='5' /></svg>",
+        "title": "Recieve"
+    },
+    {
+        "itemIcon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32.5714 3.42859H15.4286C13.535 3.42859 12 4.96361 12 6.85716V41.1429C12 43.0364 13.535 44.5714 15.4286 44.5714H32.5714C34.465 44.5714 36 43.0364 36 41.1429V6.85716C36 4.96361 34.465 3.42859 32.5714 3.42859Z' stroke-miterlimit='10' /><path d='M20.5714 6.85712H27.4286' stroke-miterlimit='10' /><path d='M22.2857 41.1429H25.7143' stroke-miterlimit='10' /></svg>",
+        "title": "Send"
+    },
+    {
+        "itemIcon": "<svg viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32.5714 3.42859H15.4286C13.535 3.42859 12 4.96361 12 6.85716V41.1429C12 43.0364 13.535 44.5714 15.4286 44.5714H32.5714C34.465 44.5714 36 43.0364 36 41.1429V6.85716C36 4.96361 34.465 3.42859 32.5714 3.42859Z' stroke-miterlimit='10' /><path d='M20.5714 6.85712H27.4286' stroke-miterlimit='10' /><path d='M22.2857 41.1429H25.7143' stroke-miterlimit='10' /></svg>",
+        "title": "Recieve"
+    },
+    {
+        "itemIcon": "",
+        "title": "Exchange"
+    },
+    {
+        "itemIcon": "",
+        "title": "Buy"
+    },
+    {
+        "itemIcon": "",
+        "title": "Staking"
+    }
+]

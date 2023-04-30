@@ -7,6 +7,21 @@
     text-align: center;
 }
 
+.page-title {
+    margin: calc($header-height + 4rem) 0 4rem;
+    flex-direction: column;
+    & > * {
+        text-align: center;
+    }
+    .breadcrumbs a {
+        text-transform: uppercase;
+        color: $dark-color;
+    }
+    @include bp(md) {
+        margin: calc($header-height-mobile + 3rem) 0 3rem;
+    }
+}
+
 .h1 {
     font-size: 2.25rem;
     font-weight: 700;

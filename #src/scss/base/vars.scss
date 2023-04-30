@@ -62,11 +62,18 @@ $inp-focus-shadow: 0 0 4px 1px
         $color: $darken-accent,
         $alpha: 0.5,
     );
-
-// * OTHER
-$sm-border-radius: 4px;
-$blur-value: 12px;
 $subtitle-shadow-color: rgba(
     $color: $dark-color,
     $alpha: 0.16,
 );
+$item-shadow: 0 0 12px 1px rgba(
+    $color: $dark-color,
+    $alpha: 0.4,
+);
+
+// * OTHER
+$sm-border-radius: 4px;
+$blur-value: 12px;
+
+$header-height: 80px;
+$header-height-mobile: 68px;

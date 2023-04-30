@@ -5,7 +5,7 @@
     width: 100%;
     z-index: 10;
     background-color: $dark-color;
-    padding: 1.25rem 0rem;
+    padding: 1rem 0rem;
 
     .promo & {
         position: static;
@@ -18,6 +18,9 @@
     }
     .logo {
         z-index: 5;
+        img {
+            height: 42px;
+        }
     }
     .menu__list {
         & > li {
@@ -26,7 +29,8 @@
             display: flex;
             align-items: center;
         }
-        & li > svg, & li .select--header svg {
+        & li > svg,
+        & li .select--header svg {
             margin: 0 0.4rem 0 0;
         }
         & li > svg {
@@ -53,8 +57,15 @@
             }
         }
     }
+    // * Hard styling for prevent using !important
     .dropdown > .navlink {
         color: $white-color;
+        @include hover {
+            color: $white-color;
+            &:active {
+                color: $white-color;
+            }
+        }
     }
     .dropdown > .navlink::after,
     .inline-btn > .navlink::after {
@@ -66,9 +77,6 @@
             stroke: $white-color;
         }
         @include hover {
-            .navlink {
-                color: $primary-accent-color;
-            }
             svg {
                 stroke: $primary-accent-color;
             }
@@ -155,7 +163,6 @@ body._touch .menu__list > .dropdown._active svg {
 
 @include bp(lg) {
     .header {
-        padding: 1rem 0rem;
         .logo img {
             height: 36px;
         }
@@ -234,7 +241,6 @@ body._touch .menu__list > .dropdown._active svg {
             & > li:last-child {
                 margin-bottom: 0;
             }
-
         }
         &__list > li._active .dropdown__sub-list {
             display: block;

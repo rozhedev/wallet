@@ -1,0 +1,50 @@
+[
+    {
+        "orderNumber": "1",
+        "imgPath": "img/icons/crypto/bitcoin-BTC.svg",
+        "imgAlt": "bitcoin-BTC",
+        "curName": "Bitcoin (BTC)"
+    },
+    {
+        "orderNumber": "2",
+        "imgPath": "img/icons/crypto/ethereum-ETH.svg",
+        "imgAlt": "ethereum-ETH",
+        "curName": "Ethereum (ETH)"
+    },
+    {
+        "orderNumber": "3",
+        "imgPath": "img/icons/crypto/tether-USDT.svg",
+        "imgAlt": "tether-USDT",
+        "curName": "Tether (USDT)"
+    },
+    {
+        "orderNumber": "4",
+        "imgPath": "img/icons/crypto/binance-coin-BNB.svg",
+        "imgAlt": "binance-coin-BNB",
+        "curName": "Binance Coin (BNB)"
+    },
+    {
+        "orderNumber": "5",
+        "imgPath": "img/icons/crypto/usd-coin-USDC.svg",
+        "imgAlt": "usd-coin-USDC",
+        "curName": "USD Coin (USDC)"
+    },
+    {
+        "orderNumber": "6",
+        "imgPath": "img/icons/crypto/xrp-XRP.svg",
+        "imgAlt": "xrp-XRP",
+        "curName": "XRP (XRP)"
+    },
+    {
+        "orderNumber": "7",
+        "imgPath": "img/icons/crypto/terra-LUNA.svg",
+        "imgAlt": "terra-LUNA",
+        "curName": "Terra (LUNA)"
+    },
+    {
+        "orderNumber": "8",
+        "imgPath": "img/icons/crypto/cardano-ADA.svg",
+        "imgAlt": "cardano-ADA",
+        "curName": "Cardano (ADA)"
+    }
+]
