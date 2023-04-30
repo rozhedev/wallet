@@ -1,0 +1,17 @@
+.assets-root {
+    .wrapper {
+        @include bp(md) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+}
+
+.assets {
+    .table {
+        @include bp(md) {
+            overflow-x: scroll;
+            overflow-y: hidden;
+        }
+    }
+}

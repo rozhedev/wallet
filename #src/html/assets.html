@@ -5,7 +5,7 @@
 "title":"Supported assets"
 })
 
-<body>
+<body class="assets-root">
     @@include('chunks/_preloader.html',{})
 
     <div class="wrapper">
@@ -14,7 +14,6 @@
 
         <div class="main">
             <section class="assets" id="assets">
-
                 <div class="container">
                     <div class="page-title">
                         <div class="h5 breadcrumbs">
@@ -22,14 +21,18 @@
                         </div>
                         <h1 class="h1">Supported assets</h1>
                     </div>
-                    <table class="table">
-                        <thead class="table__header">
-                            @@loop("components/_table-header-title.html", "../json/table-header-titles.json")
-                        </thead>
-                        <tbody>
-                            @@loop("components/_asset-table-item.html", "../json/asset-table-items.json")
-                        </tbody>
-                    </table>
+                    
+                    <div class="page-inner">
+                        @@include('components/_small-screen-notice.html',{})
+                        <table class="assets-table table">
+                            <thead class="table__header">
+                                @@loop("components/_table-header-title.html", "../json/table-header-titles.json")
+                            </thead>
+                            <tbody>
+                                @@loop("components/_assets-table-item.html", "../json/asset-table-items.json")
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
         </div>

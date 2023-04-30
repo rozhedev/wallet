@@ -2,10 +2,17 @@ $dark-table-color: #f5f5f5;
 
 .table {
     border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
     box-shadow: $item-shadow;
     background-color: $light-color;
     border-radius: $sm-border-radius;
+
+    @include bp(md) {
+        width: map-get($map: $container-max-widths, $key: lg);
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
     &__header {
         border-bottom: 1px solid $dark-color24;
         tr > th {
@@ -16,6 +23,14 @@ $dark-table-color: #f5f5f5;
             &:last-of-type {
                 padding: 1rem 2rem 1rem 0.75rem;
             }
+            @include bp(lg) {
+                &:first-of-type {
+                    padding: 1rem 0.75rem 1rem 1.5rem;
+                }
+                &:last-of-type {
+                    padding: 1rem 1.5rem 1rem 0.75rem;
+                }
+            }
         }
     }
     & * {
@@ -23,19 +38,25 @@ $dark-table-color: #f5f5f5;
     }
 }
 
+.assets-table {
+    .table-header-title {
+        padding-left: 0.25rem;
+        &:nth-child(-n + 2) {
+            text-align: left;
+            .table-header-title__content {
+                padding-left: 0;
+            }
+        }
+        &:nth-last-child(-n + 3) {
+            .table-header-title__content {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
 // * Table header title
 .table-header-title {
-    &:nth-child(-n + 2) {
-        text-align: left;
-        .table-header-title__content {
-            padding-left: 0;
-        }
-    }
-    &:nth-last-child(-n + 3) {
-        .table-header-title__content {
-            padding-left: 0;
-        }
-    }
     text-align: center;
     svg {
         width: 1.75rem;
@@ -45,16 +66,24 @@ $dark-table-color: #f5f5f5;
         vertical-align: bottom;
     }
     &__content {
-        padding-left: 0.25rem;
         font-size: 1.25rem;
         font-weight: 400;
         color: $dark-color24;
         cursor: auto;
     }
+    @include bp(lg) {
+        svg {
+            width: 1.375rem;
+            height: 1.375rem;
+        }
+        .table-header-title__content {
+            font-size: 1.125rem;
+        }
+    }
 }
 
 // * Asset table item
-.asset-table-item {
+.assets-table-item {
     &:last-of-type {
         & > td {
             &:first-of-type {
@@ -72,6 +101,14 @@ $dark-table-color: #f5f5f5;
         }
         &:last-of-type {
             padding: 1rem 2rem 1rem 0.4rem;
+        }
+        @include bp(lg) {
+            &:first-of-type {
+                padding: 1rem 0.75rem 1rem 1.5rem;
+            }
+            &:last-of-type {
+                padding: 1rem 1.5rem 1rem 0.75rem;
+            }
         }
     }
     &:nth-child(2n) {
@@ -91,7 +128,9 @@ $dark-table-color: #f5f5f5;
         display: inline-block;
         margin-left: 0.5rem;
     }
-    .icon-checkmark, .icon-unaviable, .icon-none {
+    .icon-checkmark,
+    .icon-unaviable,
+    .icon-none {
         width: 1.5rem;
         height: 1.5rem;
     }

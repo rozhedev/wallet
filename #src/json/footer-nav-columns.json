@@ -2,15 +2,23 @@
     {
         "title": "Wallet Info",
         "link1": "Assets",
+        "hrefPath1": "assets.html",
         "link2": "Promoactions",
+        "hrefPath2": "promoactions.html",
         "link3": "Register wallet",
-        "link4": "Sign in"
+        "hrefPath3": "register.html",
+        "link4": "Sign in",
+        "hrefPath4": "sign-in.html"
     },
     {
         "title": "Discover",
         "link1": "Popular questions",
+        "hrefPath1": "faq.html",
         "link2": "Privacy policy",
+        "hrefPath2": "privacy-policy.html",
         "link3": "Rules",
-        "link4": ""
+        "hrefPath3": "rules.html",
+        "link4": "",
+        "hrefPath4": "#"
     }
 ]

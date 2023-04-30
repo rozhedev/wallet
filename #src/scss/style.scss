@@ -30,6 +30,7 @@
 @import "components/advant-item.scss";
 @import "components/download-column.scss";
 @import "components/table.scss";
+@import "components/small-screen-notice.scss";
 
 // * CHUNKS
 @import 'chunks/preloader.scss';
@@ -38,5 +39,5 @@
 
 // * PAGES
 @import "pages/main.scss";
-@import "pages/assets.scss";
+@import "pages/pages-layout.scss";
 @import "pages/test.scss";
