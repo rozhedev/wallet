@@ -1,13 +1,4 @@
 .advant-item {
-    $advant-outset-shadow: 4px -4px 8px 0px rgba(
-            $color: $dark-color,
-            $alpha: 0.24,
-        );
-    $advant-inset-shadow: inset 4px -4px 8px 0px rgba(
-            $color: $dark-color,
-            $alpha: 0.24,
-        );
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +27,7 @@
         line-height: 1.46;
         letter-spacing: 0.02em;
         @include bp(md) {
-            font-size: 1.125rem;
+            font-size: 1.25rem;
             line-height: 1.56;
         }
     }

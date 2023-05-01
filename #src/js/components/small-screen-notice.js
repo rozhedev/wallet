@@ -7,6 +7,8 @@ function checkScreenWidth(messageBlock, width) {
     }
 }
 
-document.addEventListener("DOMContentLoaded", (e) => {
-    checkScreenWidth(smallScreenNotice, smBreakpoint);
-})
+if (smallScreenNotice) {
+    document.addEventListener("DOMContentLoaded", (e) => {
+        checkScreenWidth(smallScreenNotice, smBreakpoint);
+    });
+}

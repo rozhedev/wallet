@@ -15,3 +15,13 @@
         }
     }
 }
+
+.terms,
+.privacy-policy {
+    .ordered-list li::before {
+        color: $dark-color;
+    }
+    .unordered-list li::before {
+        background-color: $dark-color;
+    }
+}

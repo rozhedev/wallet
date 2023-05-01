@@ -150,9 +150,30 @@
             content: counter(myCounter);
             color: $primary-accent-color;
             display: inline;
-            font-weight: 600;
+            font-weight: 500;
             margin: 0 0.66rem 0 0;
         }
+    }
+    &--privacy1 li:before {
+        content: '1.' counter(myCounter);
+    }
+    &--privacy2 li:before {
+        content: '2.' counter(myCounter);
+    }
+    &--privacy3 li:before {
+        content: '3.' counter(myCounter);
+    }
+    &--privacy4 li:before {
+        content: '4.' counter(myCounter);
+    }
+    &--privacy5 li:before {
+        content: '5.' counter(myCounter);
+    }
+    &--privacy6 li:before {
+        content: '6.' counter(myCounter);
+    }
+    &--privacy7 li:before {
+        content: '7.' counter(myCounter);
     }
 }
 
