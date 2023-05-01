@@ -1,14 +1,17 @@
 const SELECTOR_LIST = {
-    advantDetails: ".advant .inner .advant-details",
-    advantDetailsOpen: ".advant .inner .advant-details[open]",
-}   
+    advantAccordion: ".advant .inner .advant-accordion",
+    advantAccordionOpen: ".advant .inner .advant-accordion[open]",
+    faqAccordion: ".faq-accordion",
+    faqAccordionOpen: ".faq-accordion[open]",
+}
 
-const advantAccordions = document.querySelectorAll(`${SELECTOR_LIST.advantDetails}`);
+const advantAccordionsList = document.querySelectorAll(`${SELECTOR_LIST.advantAccordion}`);
+const faqAccordionsList = document.querySelectorAll(`${SELECTOR_LIST.faqAccordion}`);
 
 function toggleAccordion(e) {
     if (e.target.open) {
         document
-            .querySelectorAll(`${SELECTOR_LIST.advantDetails}`)
+            .querySelectorAll(`details`)
             .forEach((item) => {
                 if (item === e.target) {
                     return;
@@ -18,4 +21,12 @@ function toggleAccordion(e) {
     }
 }
 
-advantAccordions.forEach((item) => item.addEventListener("toggle", toggleAccordion));
+if (advantAccordionsList.length > 0) {
+    advantAccordionsList.forEach((item) => item.addEventListener("toggle", toggleAccordion));
+}
+
+if (faqAccordionsList.length > 0) {
+    faqAccordionsList.forEach((item) => {
+        item.addEventListener("toggle", toggleAccordion);
+    });
+}

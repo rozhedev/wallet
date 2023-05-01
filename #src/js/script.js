@@ -10,3 +10,4 @@ import "./modules/accordion-anim";
 import "./components/preloader";
 import "./components/burger";
 import "./components/accordions";
+import "./components/tabs";

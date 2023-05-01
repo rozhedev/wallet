@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('chunks/_head.html',{
+"title":"Popular questions"
+})
+
+<body class="assets-root">
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <!-- * HEADER -->
+        @@include('chunks/_header.html',{})
+
+        <div class="page">
+            <section class="faq" id="faq">
+                <div class="container">
+                    @@include('components/_page-title.html',{
+                    "breadcrumbsLink1": "Home",
+                    "breadcrumbsLink2": "Popular questions",
+                    "title": "Popular questions"
+                    })
+                    <div class="page-inner">
+                        <div class="tabs-wrapper">
+                            <div class="tabs">
+                                <div class="tabs__nav">
+                                    <button class="tabs__nav-item navlink">General questions</button>
+                                    <button class="tabs__nav-item navlink">Financial questions</button>
+                                    <button class="tabs__nav-item navlink">Security questions</button>
+                                </div>
+                                <div class="tabs__content">
+                                    <div class="tabs__content-item">
+                                        <details class="faq-accordion">
+                                            <summary class="faq-accordion__title">
+                                                <span>What is cryptocurrency?</span>
+                                                <span class="faq-accordion__icon">x</span>
+                                            </summary>
+                                            <div class="faq-accordion__content accordion-content">
+                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
+                                            </div>
+                                        </details>
+                                        <details class="faq-accordion">
+                                            <summary class="faq-accordion__title">
+                                                <span>What is cryptocurrency?</span>
+                                                <span class="faq-accordion__icon">x</span>
+                                            </summary>
+                                            <div class="faq-accordion__content accordion-content">
+                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
+                                            </div>
+                                        </details>
+                                        <details class="faq-accordion">
+                                            <summary class="faq-accordion__title">
+                                                <span>What is cryptocurrency?</span>
+                                                <span class="faq-accordion__icon">x</span>
+                                            </summary>
+                                            <div class="faq-accordion__content accordion-content">
+                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
+                                            </div>
+                                        </details>
+                                    </div>
+                                    <div class="tabs__content-item">
+                                        2
+                                    </div>
+                                    <div class="tabs__content-item">
+                                        3
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+        <!-- * FOOTER -->
+        @@include('chunks/_footer.html',{})
+    </div>
+
+    <!-- * POPUP -->
+    <!-- @@include('chunks/_popup.html',{}) -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>

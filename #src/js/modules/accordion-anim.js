@@ -117,6 +117,6 @@ class Accordion {
 }
 
 // * Add class instance on details elements
-document.querySelectorAll('.advant-accordion').forEach(el => {
+document.querySelectorAll('details').forEach(el => {
     new Accordion(el)
 })
