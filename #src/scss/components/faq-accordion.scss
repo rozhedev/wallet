@@ -1,0 +1,84 @@
+.faq-accordion {
+    &__trigger {
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0.75rem 1.33rem;
+
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: $dark-color;
+        background-color: $light-color;
+        border: 3px solid $dark-color24;
+        border-radius: 8px 8px 0 0;
+        cursor: pointer;
+        transition: $transition;
+        @include bp(sm) {
+            font-size: 1.125rem;
+        }
+
+        .faq-accordion__icon {
+            $primary-icon-size: 28px;
+            $secondary-icon-size: 2.4px;
+            position: relative;
+            transition: $transition;
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                background-color: $darken-accent;
+            }
+            &::before {
+                top: calc($primary-icon-size / 2 * -1);
+                left: calc($primary-icon-size / 2 * -1);
+                width: $secondary-icon-size;
+                height: $primary-icon-size; 
+            }
+            &::after {
+                top: calc($secondary-icon-size / 2 * -1);
+                left: calc($primary-icon-size * -1 + $secondary-icon-size / 2);
+                width: $primary-icon-size;
+                height: $secondary-icon-size;
+            }
+        }
+    }
+    .accordion-content {
+        height: 0px;
+        opacity: 0;
+        overflow: hidden;
+        display: block;
+        padding: 0 1.5rem;
+
+        overflow-wrap: break-word;
+        text-align: justify;
+        border-radius: 0 0 8px 8px;
+        border-bottom: 3px solid $primary-accent-color;
+        border-left: 3px solid $primary-accent-color;
+        border-right: 3px solid $primary-accent-color;
+        transition: $transition;
+    }
+    &[open] &__trigger {
+        background-color: $secondary-lightgray-color;
+        border-bottom: none;
+        cursor: default;
+        .faq-accordion__icon::before {
+            width: 0px;
+        }
+    }
+    &[open] .accordion-content {
+        opacity: 1;
+        overflow: visible;
+        height: auto;
+        padding: 1rem 1.5rem;
+        border-bottom: 3px solid $dark-color24;
+        border-left: 3px solid $dark-color24;
+        border-right: 3px solid $dark-color24;
+    }
+}

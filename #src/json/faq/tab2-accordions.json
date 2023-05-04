@@ -1,0 +1,26 @@
+[
+    {
+        "question": "How many crypto assets does Flem Wallet support?",
+        "answer": "To date, Flem Wallet supports storage of seventy five cryptocurrencies. But due to technical reasons of our product and systems of functioning of the cryptocurrencies we can't provide exchange, sending, receiving to the wallet of some of them. All supported cryptocurrencies and operations with them can be viewed on the <a href='assets.html' class='link'>Assets page</a>"
+    },
+    {
+        "question": "Does Flem have transaction fees to send or receive?",
+        "answer": "Almost all blockchain transactions incur network or miner fees (with a few exceptions). Other than these transaction fees, 100% of which go to the network, Flem Wallet does not charge fees for sending. You will never pay transaction fees when receiving in Flem Wallet. The commission of the cryptocurrency network is about 1 - 3 percent of the transaction amount."
+    },
+    {
+        "question": "Do I have the ability to exchange cryptocurrencies?",
+        "answer": "Yes you can exchange cryptocurrency without leaving your account. To do this, go to the Exchanger tab, select the desired currency pair, enter the desired amount and wait for the transaction."
+    },
+    {
+        "question": "How can I replenish my wallet?",
+        "answer": "You can repnish your wallet using third-party services such as <a href='https://bestchange.com' class='link'>bestchange.com</a>. The possibility to replenish via Visa/Mastercard bank cards is in the process of development."
+    },
+    {
+        "question": "What is the minimum replenish amount?",
+        "answer": "The minimum replenish amount is $40, amounts less than that will not be able to pass due to limits on the side of the cryptocurrency networks. We do not set limits on the maximum amount of replenish and their frequency. If you are told about any additional limits on behalf of the administration - it's a scammers."
+    },
+    {
+        "question": "What is the minimum withdraw amount?",
+        "answer": "The minimum withdraw amount is $10, amounts less than that will not be able to pass due to limits on the side of the cryptocurrency networks. We do not set limits on the minimum amount of replenish and their frequency. If you are told about any additional limits on behalf of the administration - it's a scammers."
+    }
+]

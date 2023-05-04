@@ -1,0 +1,26 @@
+[
+    {
+        "question": "What is cryptocurrency?",
+        "answer": "We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets."
+    },
+    {
+        "question": "What is Flem Wallet?",
+        "answer": "Flem Wallet is a universal cryptocurrency wallet developed by Flem Wallet LTD, which is based in the United Kingdom. We have been in the cryptocurrency storage and exchange business since 2020. Our main goal is to popularize cryptocurrency among ordinary citizens through the products developed by our company."
+    },
+    {
+        "question": "Who can register a wallet on your service?",
+        "answer": "Everyone may be register wallet on Flem Wallet Service, regardless of nationality or residence. The only condition is, you must be of mature age (at least 18 years old) to become our client."
+    },
+    {
+        "question": "How do I register a wallet on your service?",
+        "answer": "Registration wallet on our service is totally free of charge. All you have to do is go through a few steps in the  <a href='register.html' class='link'>registration form</a>. First, you need to enter your username and email. If the data are entered correctly you will proceed to the second step, which will be generated your passphrase to sign in the wallet. You must write it down and keep it in a safe place because if it gets lost you won't be able to restore it. In the third step you need to enter the passphrase from the second step."
+    },
+    {
+        "question": "How many accounts can I create?",
+        "answer": "The number of accounts is limited to three per person. It is strictly forbidden to create new accounts to take illegally earned assets, multi-accounting and other types of fraud. If we notice such actions, your account will be blocked and your balance will be frozen."
+    },
+    {
+        "question": "What services does Flem Wallet provide?",
+        "answer": "In addition to storing cryptocurrency, our service allows you to exchange cryptocurrencies at the rate of Binance, view the current rate, the history of transactions on your wallet without going to third-party sites and securely display some of your private data."
+    }
+]

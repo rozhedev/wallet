@@ -30,39 +30,13 @@
                                 </div>
                                 <div class="tabs__content">
                                     <div class="tabs__content-item">
-                                        <details class="faq-accordion">
-                                            <summary class="faq-accordion__title">
-                                                <span>What is cryptocurrency?</span>
-                                                <span class="faq-accordion__icon">x</span>
-                                            </summary>
-                                            <div class="faq-accordion__content accordion-content">
-                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
-                                            </div>
-                                        </details>
-                                        <details class="faq-accordion">
-                                            <summary class="faq-accordion__title">
-                                                <span>What is cryptocurrency?</span>
-                                                <span class="faq-accordion__icon">x</span>
-                                            </summary>
-                                            <div class="faq-accordion__content accordion-content">
-                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
-                                            </div>
-                                        </details>
-                                        <details class="faq-accordion">
-                                            <summary class="faq-accordion__title">
-                                                <span>What is cryptocurrency?</span>
-                                                <span class="faq-accordion__icon">x</span>
-                                            </summary>
-                                            <div class="faq-accordion__content accordion-content">
-                                                We define cryptocurrencies as: a digital medium of exchange using strong cryptography to secure financial transactions, control the creation of additional units, and verify the transfer of assets.
-                                            </div>
-                                        </details>
+                                        @@loop("components/_faq-accordion.html", "../json/faq/tab1-accordions.json")
                                     </div>
                                     <div class="tabs__content-item">
-                                        2
+                                        @@loop("components/_faq-accordion.html", "../json/faq/tab2-accordions.json")
                                     </div>
                                     <div class="tabs__content-item">
-                                        3
+                                        @@loop("components/_faq-accordion.html", "../json/faq/tab3-accordions.json")
                                     </div>
                                 </div>
                             </div>

@@ -1,0 +1,26 @@
+[
+    {
+        "question": "How will my data be transferred to you?",
+        "answer": "All your data will be securely transmitted to us via SSL. On the left side of our URL, you can see our green, active SSL certificate. This also confirms that we own the domain."
+    },
+    {
+        "question": "How can I secure my account additionally?",
+        "answer": "For additional protection, we recommend enabling it in the wallet settings: hide balance when logging into the wallet; allow login to the wallet ONLY if IP address is the same; And do not under any circumstances disclose your passphrase to any third party, even if you are asked on behalf of Flem Wallet LTD."
+    },
+    {
+        "question": "Is your platform protect from DDoS attacks?",
+        "answer": "Yes. We rely exclusively on the very best and most modern protection mechanisms that the market offers."
+    },
+    {
+        "question": "What data is stored by you?",
+        "answer": "We store all data that you voluntarily specify in addition to the registration in your user account. <br> Your passwords are completely encrypted transferred and stored. Further information can be found in our <a href='privacy-policy.html' class='link'>privacy policy</a>."
+    },
+    {
+        "question": "Where do you store my data?",
+        "answer": "All data is stored exclusively on our own servers. <br> Please note all the information and guidelines of the General Data Protection Regulation (GDPR). You can find more information in our <a href='privacy-policy.html' class='link'>privacy policy</a>."
+    },
+    {
+        "question": "How do I store my data in the system?",
+        "answer": "All data that you voluntarily specify in addition to the registration in your user account will be securely stored.<br> According to our security requirements all passphrase is stored encrypted and can be decrypted only with the help of proprietary AI."
+    }
+]
