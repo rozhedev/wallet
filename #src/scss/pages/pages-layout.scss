@@ -25,3 +25,17 @@
         background-color: $dark-color;
     }
 }
+
+.promoactions {
+    .page-inner {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+        grid-auto-flow: row dense;
+
+        margin: 4rem auto 6rem;
+        width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 10);
+    }
+}
