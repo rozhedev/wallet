@@ -21,21 +21,7 @@
                     "title": "Promoactions"
                     })
                     <div class="page-inner">
-                        <div class="promoactions-item">1</div>
-                        <div class="promoactions-item">2</div>
-                        <div class="promoactions-item">3</div>
-                        <div class="promoactions-item">4</div>
-                        <div class="promoactions-item">5</div>
-                        <div class="promoactions-item">6</div>
-                        <div class="promoactions-item">7</div>
-                        <div class="promoactions-item">8</div>
-                        <div class="promoactions-item">9</div>
-                        <div class="promoactions-item">10</div>
-                        <div class="promoactions-item">11</div>
-                        <div class="promoactions-item">12</div>
-                        <div class="promoactions-item">13</div>
-                        <div class="promoactions-item">14</div>
-                        <div class="promoactions-item">15</div>
+                        @@loop("components/_promoactions-item.html", "../json/promoactions-items.json")
                     </div>
             </section>
         </div>

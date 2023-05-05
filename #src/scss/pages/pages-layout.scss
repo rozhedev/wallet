@@ -30,12 +30,20 @@
     .page-inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(7, 1fr);
         grid-column-gap: 2rem;
         grid-row-gap: 3rem;
         grid-auto-flow: row dense;
 
         margin: 4rem auto 6rem;
         width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 10);
+        @include bp(xl) {
+            width: 100%;
+        }
+        @include bp(md) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            grid-column-gap: 0rem;
+        }
     }
 }
