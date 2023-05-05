@@ -31,7 +31,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#update",
         "hashtag3": "#UTXO",
-        "formAction": "#",
+        "formAction": "https://github.com/airgap-it/airgap-wallet",
         "btnType": "submit",
         "btnLabel": "See changelog"
     },
@@ -58,7 +58,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#update",
         "hashtag3": "#API",
-        "formAction": "#",
+        "formAction": "https://github.com/airgap-it/airgap-wallet",
         "btnType": "submit",
         "btnLabel": "See changelog"
     },
@@ -81,7 +81,7 @@
         "btnLabel": "Get airdrop"
     },
     {
-        "title": "1 year with Flem Wallet. We <br> continue to add support for new currencies and functionality.",
+        "title": "1 year with Flem Wallet. We <br> continue to add new currencies and functionality.",
         "hashtag1": "#flem",
         "hashtag2": "#flemwallet",
         "hashtag3": "#levelone",

@@ -1,4 +1,11 @@
 .download-column {
+    $btn-labels: (
+        'mac-appstore': 'Coming soon',
+        'windows': 'Technical works',
+        'google-play': 'Tested for publication',
+        'appstore': 'Tested for publication',
+    );
+
     @include bp(md) {
         &:not(:first-of-type) {
             margin-top: 3rem;
@@ -43,17 +50,11 @@
                 color: $dark-color24;
             }
         }
-        .btn--mac-appstore::before {
-            content: 'Coming soon';
-        }
-        .btn--windows::before {
-            content: 'Technical works';
-        }
-        .btn--google-play::before {
-            content: 'Tested for publication';
-        }
-        .btn--appstore::before {
-            content: 'Tested for publication';
+
+        @each $name, $label in $btn-labels {
+            .btn--#{$name}::before {
+                content: $label;
+            }
         }
     }
 }

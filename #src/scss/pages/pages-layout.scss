@@ -36,7 +36,7 @@
         grid-auto-flow: row dense;
 
         margin: 4rem auto 6rem;
-        width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 10);
+        width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 9.95);
         @include bp(xl) {
             width: 100%;
         }

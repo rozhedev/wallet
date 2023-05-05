@@ -26,24 +26,22 @@
             $primary-icon-size: 28px;
             $secondary-icon-size: 2.4px;
             position: relative;
+            margin-left: 0.5rem;
             transition: $transition;
 
             &::before,
             &::after {
                 content: '';
                 display: block;
-                position: absolute;
                 background-color: $darken-accent;
             }
             &::before {
-                top: calc($primary-icon-size / 2 * -1);
-                left: calc($primary-icon-size / 2 * -1);
+                transform: translateX(600%);
                 width: $secondary-icon-size;
                 height: $primary-icon-size; 
             }
             &::after {
-                top: calc($secondary-icon-size / 2 * -1);
-                left: calc($primary-icon-size * -1 + $secondary-icon-size / 2);
+                transform: translate(5%, -600%);
                 width: $primary-icon-size;
                 height: $secondary-icon-size;
             }

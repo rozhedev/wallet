@@ -1,4 +1,36 @@
 .promoactions-item {
+    $promo-items-config: (
+        1 '../img/photos/promoactions/level-two.webp',
+
+        2 '../img/photos/promoactions/avalanche.webp',
+
+        3 '../img/photos/promoactions/polygon.webp',
+
+        4 '../img/photos/promoactions/wallet-banner.webp',
+
+        5 '../img/photos/promoactions/stellar.svg',
+
+        6 '../img/photos/promoactions/chainlink.webp',
+
+        7 '../img/photos/promoactions/wallet-banner.webp',
+
+        8 '../img/photos/promoactions/polkadot.svg',
+
+        9 '../img/photos/promoactions/algorand-foundation.webp',
+
+        10 '../img/photos/promoactions/level-one.svg',
+
+        11 '../img/photos/promoactions/terra.webp',
+
+        12 '../img/photos/promoactions/neo.svg',
+
+        13 '../img/photos/promoactions/compound-coin.svg',
+
+        14 '../img/photos/promoactions/tezos.webp',
+
+        15 '../img/photos/promoactions/cronos.webp'
+    );
+
     position: relative;
     min-height: 27.25rem;
     border-radius: 8px;
@@ -11,6 +43,9 @@
         bottom: 0;
         right: 0;
         border-radius: 8px 0 8px 0;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
 
         .hashtag-container {
             display: flex;
@@ -32,67 +67,15 @@
             padding: 0.5rem 0.75rem;
         }
     }
+    &:first-of-type {
+        grid-area: 1 / span 2;      // * first block expand to 2 columns
+    }
 
-    // TODO REWRITE IN CYCLE
-    &:nth-of-type(1) {
-        grid-area: 1 / 1 / 2 / 3;
-        background: url('../img/photos/promoactions/level-two.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(2) {
-        grid-area: 2 / 1 / 3 / 2;
-        background: url('../img/photos/promoactions/avalanche.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(3) {
-        grid-area: 2 / 2 / 3 / 3;
-        background: url('../img/photos/promoactions/polygon.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(4) {
-        grid-area: 3 / 1 / 4 / 2;
-        background: url('../img/photos/promoactions/wallet-banner.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(5) {
-        grid-area: 3 / 2 / 4 / 3;
-        background: url('../img/photos/promoactions/stellar.svg') center / cover no-repeat;
-    }
-    &:nth-of-type(6) {
-        grid-area: 4 / 1 / 5 / 2;
-        background: url('../img/photos/promoactions/chainlink.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(7) {
-        grid-area: 4 / 2 / 5 / 3;
-        background: url('../img/photos/promoactions/wallet-banner.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(8) {
-        grid-area: 5 / 1 / 6 / 2;
-        background: url('../img/photos/promoactions/polkadot.svg') center / cover no-repeat;
-    }
-    &:nth-of-type(9) {
-        grid-area: 5 / 2 / 6 / 3;
-        background: url('../img/photos/promoactions/algorand-foundation.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(10) {
-        grid-area: 6 / 1 / 7 / 2;
-        background: url('../img/photos/promoactions/level-one.svg') center / cover no-repeat;
-    }
-    &:nth-of-type(11) {
-        grid-area: 6 / 2 / 7 / 3;
-        background: url('../img/photos/promoactions/terra.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(12) {
-        grid-area: 7 / 1 / 8 / 2;
-        background: url('../img/photos/promoactions/neo.svg') center / cover no-repeat;
-    }
-    &:nth-of-type(13) {
-        grid-area: 7 / 2 / 8 / 3;
-        background: url('../img/photos/promoactions/compound-coin.svg') center / cover no-repeat;
-    }
-    &:nth-of-type(14) {
-        grid-area: 8 / 1 / 9 / 2;
-        background: url('../img/photos/promoactions/tezos.webp') center / cover no-repeat;
-    }
-    &:nth-of-type(15) {
-        grid-area: 8 / 2 / 9 / 3;
-        background: url('../img/photos/promoactions/cronos.webp') center / cover no-repeat;
+    // * BG FOR DIFFERENT ITEMS
+    @each $number, $img-path in $promo-items-config {
+        &:nth-of-type(#{$number}) {
+            background-image: url($img-path);
+        }
     }
 
     @include bp(xl) {
