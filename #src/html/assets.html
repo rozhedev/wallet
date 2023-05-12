@@ -16,9 +16,9 @@
             <section class="assets" id="assets">
                 <div class="container">
                     @@include('components/_page-title.html',{
-                        "breadcrumbsLink1": "Home",
-                        "breadcrumbsLink2": "Supported assets",
-                        "title": "Supported assets"
+                    "breadcrumbsLink1": "Home",
+                    "breadcrumbsLink2": "Supported assets",
+                    "title": "Supported assets"
                     })
                     <div class="page-inner">
                         @@include('components/_small-screen-notice.html',{})
@@ -39,7 +39,12 @@
     </div>
 
     <!-- * POPUP -->
-    <!-- @@include('chunks/_popup.html',{}) -->
+    <!-- @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    }) -->
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

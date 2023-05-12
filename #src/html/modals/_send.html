@@ -1,0 +1,36 @@
+<div class="modal" id="modal-send">
+    <div class="modal-dialog modal-dialog--info modal-dialog--send">
+        <div class="modal-header">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.7143 17.1429L24.0001 3.42859L10.2858 17.1429" stroke-miterlimit="5" />
+                <path d="M44.5714 44.5714H3.42859" stroke-miterlimit="5" />
+                <path d="M24 37.7143V3.42859" stroke-miterlimit="5" />
+            </svg>
+            <h4 class="h4">@@title</h4>
+            <a href="#" class="modal-header__close js-modal-close"><span>&times;</span></a>
+        </div>
+        <div class="modal-dialog__body">
+            <form action="#">
+                <div class="form-conroller">
+                    <input type="text" name="test-inp" title="Wallet address" id="send-wallet-address" class="inp" placeholder="Wallet address">
+                    <small class="form-conroller__message">Error message</small>
+                </div>
+                <div class="form-conroller">
+                    <input type="text" name="test-inp" title="Amount" id="send-amount" class="inp" placeholder="Amount">
+                    <small class="form-conroller__message">Error message</small>
+                </div>
+                <div class="form-conroller">
+                    <input type="text" name="test-inp2" title="Network commission" id="send-commission" class="inp" placeholder="Network commission" disabled>
+                    <small class="form-conroller__message">Error message</small>
+                </div>
+                <p class="modal-info"> 
+                    Funds will be credited after 3 confirmations in cryptocurrency network (approximately 30-50 min.)
+                </p>
+                
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn--filled-sm">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

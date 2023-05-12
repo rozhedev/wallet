@@ -4,7 +4,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#flemwallet",
         "hashtag3": "#leveltwo",
-        "formAction": "#",
+        "formAction": "#modal-send",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -13,7 +14,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#avalanche",
         "hashtag3": "#avax",
-        "formAction": "#",
+        "formAction": "#modal-get",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -22,7 +24,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#polygon",
         "hashtag3": "#matic",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -32,6 +35,7 @@
         "hashtag2": "#update",
         "hashtag3": "#UTXO",
         "formAction": "https://github.com/airgap-it/airgap-wallet",
+        "triggerClass": "",
         "btnType": "submit",
         "btnLabel": "See changelog"
     },
@@ -40,7 +44,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#stellar",
         "hashtag3": "#xlm",
-        "formAction": "#",
+        "formAction": "#modal-success",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -49,7 +54,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#chainlink",
         "hashtag3": "#link",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -59,6 +65,7 @@
         "hashtag2": "#update",
         "hashtag3": "#API",
         "formAction": "https://github.com/airgap-it/airgap-wallet",
+        "triggerClass": "",
         "btnType": "submit",
         "btnLabel": "See changelog"
     },
@@ -67,7 +74,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#polkadot",
         "hashtag3": "#dot",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -76,7 +84,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#algorand",
         "hashtag3": "#algo",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -85,7 +94,8 @@
         "hashtag1": "#flem",
         "hashtag2": "#flemwallet",
         "hashtag3": "#levelone",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -94,7 +104,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#terra",
         "hashtag3": "#luna",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -103,7 +114,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#neo-ecosystem",
         "hashtag3": "#neo",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -112,7 +124,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#compoundcoin",
         "hashtag3": "#comp",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -121,7 +134,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#tezos",
         "hashtag3": "#xtz",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     },
@@ -130,7 +144,8 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#cronos",
         "hashtag3": "#cro",
-        "formAction": "#",
+        "formAction": "#modal-error",
+        "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
     }

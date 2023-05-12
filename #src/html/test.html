@@ -5,160 +5,167 @@
 "title":"Test"
 })
 
+<style>
+
+</style>
+
 <body>
     @@include('chunks/_preloader.html',{})
 
     <div class="wrapper">
-        <main class="main page" id="main">
-            <section class="test promo" id="test">
-                <!-- * HEADER -->
-                @@include('chunks/_header.html',{})
+        <section class="test assets" id="test">
+            <!-- * HEADER -->
+            @@include('chunks/_header.html',{})
 
-                <div class="container">
-                    <a href="index.html" class="link">Home</a><br>
-                    <h1 class="h1">h1 Lorem ipsum dolor sit amet...</h1>
-                    <h2 class="h2">h2 Lorem ipsum dolor sit amet...</h2>
-                    <h3 class="h3">h3 Lorem ipsum dolor sit amet...</h3>
-                    <h4 class="h4">h4 Lorem ipsum dolor sit amet...</h4>
-                    <h5 class="h5">h5 Lorem ipsum dolor sit amet...</h5>
-                    <span class="output">Output Lorem ipsum dolor sit amet...</span><br>
-                    <a href="#" class="navlink">Promoactions</a><br>
-                    <br>
-                    <p class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo mollitia enim soluta unde porro alias labore, illum aspernatur, ratione vero accusantium possimus facilis error iure nostrum libero ipsam perspiciatis impedit.</p>
-                    <span class="label-text">Lorem ipsum dolor</span>
-                    <br>
-                    <br>
-                    <button type="button" class="btn">
-                        <span>
-                            Create account
-                        </span>
-                    </button>
-                    <br>
-                    <br>
-                    <button type="button" class="btn btn--outline">
-                        <span>
-                            Create account
-                        </span>
-                        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_784_68054)">
-                                <path d="M17.1428 10V18.5714H1.42856V2.85715H9.99999" />
-                                <path d="M18.5714 7.14284V1.42856H12.8571" />
-                                <path d="M11.4286 8.57142L18.5714 1.42856" />
-                            </g>
-                        </svg>
-                    </button>
-                    <br>
-                    <br>
-                    <button type="button" class="btn" disabled>
-                        <span>
-                            Create account
-                        </span>
-                    </button>
-                    <br>
-                    <br>
-                    <input type="text" name="test-inp" title="test-inp" id="test-inp" class="inp" placeholder="Enter Amount to convert">
-                    <br>
-                    <br>
-                    <input type="text" name="test-inp2" title="test-inp2" id="test-inp2" class="inp" placeholder="Disabled input" disabled>
-                    <br>
-                    <br>
-                    <div class="select">
-                        <select id="standard-select" title="standard-select">
-                            <option value="Option 1" selected disabled>Choose option</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            <option value="Option 4">Option 4</option>
-                            <option value="Option 5">Option 5</option>
-                            <option value="Option length">Option that has too long of a value to fit</option>
-                        </select>
-                        <span class="focus"></span>
-                    </div>
-                    <br>
-                    <div class="select select--disabled">
-                        <select id="standard-select-disabled" title="standard-select-disabled" disabled>
-                            <option value="Option 1" selected disabled>Choose option</option>
-                            <option value="Option 2">Option 2</option>
-                            <option value="Option 3">Option 3</option>
-                            <option value="Option 4">Option 4</option>
-                            <option value="Option 5">Option 5</option>
-                            <option value="Option length">Option that is a long value and could wrap</option>
-                        </select>
-                    </div>
-                    <br>
-                    <br>
+            <div class="container">
+                <a href="index.html" class="link">Home</a><br>
+                <h1 class="h1">h1 Lorem ipsum dolor sit amet...</h1>
+                <h2 class="h2">h2 Lorem ipsum dolor sit amet...</h2>
+                <h3 class="h3">h3 Lorem ipsum dolor sit amet...</h3>
+                <h4 class="h4">h4 Lorem ipsum dolor sit amet...</h4>
+                <h5 class="h5">h5 Lorem ipsum dolor sit amet...</h5>
+                <span class="output">Output Lorem ipsum dolor sit amet...</span><br>
+                <a href="#" class="navlink">Promoactions</a><br>
+                <br>
+                <p class="descr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo mollitia enim soluta unde porro alias labore, illum aspernatur, ratione vero accusantium possimus facilis error iure nostrum libero ipsam perspiciatis impedit.</p>
+                <span class="label-text">Lorem ipsum dolor</span>
+                <br>
+                <br>
+                <button type="button" class="btn">
+                    <span>
+                        Create account
+                    </span>
+                </button>
+                <br>
+                <br>
+                <button type="button" class="btn btn--outline">
+                    <span>
+                        Create account
+                    </span>
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_784_68054)">
+                            <path d="M17.1428 10V18.5714H1.42856V2.85715H9.99999" />
+                            <path d="M18.5714 7.14284V1.42856H12.8571" />
+                            <path d="M11.4286 8.57142L18.5714 1.42856" />
+                        </g>
+                    </svg>
+                </button>
+                <br>
+                <br>
+                <button type="button" class="btn" disabled>
+                    <span>
+                        Create account
+                    </span>
+                </button>
+                <br>
+                <br>
+                <input type="text" name="test-inp" title="test-inp" id="test-inp" class="inp" placeholder="Enter Amount to convert">
+                <br>
+                <br>
+                <input type="text" name="test-inp2" title="test-inp2" id="test-inp2" class="inp" placeholder="Disabled input" disabled>
+                <br>
+                <br>
+                <div class="select">
+                    <select id="standard-select" title="standard-select">
+                        <option value="Option 1" selected disabled>Choose option</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that has too long of a value to fit</option>
+                    </select>
+                    <span class="focus"></span>
+                </div>
+                <br>
+                <div class="select select--disabled">
+                    <select id="standard-select-disabled" title="standard-select-disabled" disabled>
+                        <option value="Option 1" selected disabled>Choose option</option>
+                        <option value="Option 2">Option 2</option>
+                        <option value="Option 3">Option 3</option>
+                        <option value="Option 4">Option 4</option>
+                        <option value="Option 5">Option 5</option>
+                        <option value="Option length">Option that is a long value and could wrap</option>
+                    </select>
+                </div>
+                <br>
+                <br>
 
-                    <div class="form-wrapper">
-                        <form action="" id="signup-form" class="form form-test">
-                            <div class="radio-group">
-                                <div class="form-conroller__label">Your gender</div>
-                                <br>
-                                <div class="form-conroller radio">
-                                    <input type="radio" name="gender-radio-btn" id="radio-btn-male" class="radio__input">
-                                    <label for="radio-btn-male" class="radio__label">Male</label>
-                                </div>
-                                <div class="form-conroller radio">
-                                    <input type="radio" name="gender-radio-btn" id="radio-btn-female" class="radio__input">
-                                    <label for="radio-btn-female" class="radio__label">Female</label>
-                                    <small class="form-conroller__message">Error message</small>
-                                </div>
-                                <div class="form-conroller radio">
-                                    <input type="radio" name="gender-radio-btn" id="radio-btn-female" class="radio__input" disabled>
-                                    <label for="radio-btn-female" class="radio__label">Female</label>
-                                    <small class="form-conroller__message">Error message</small>
-                                </div>
-                            </div>
+                <div class="form-wrapper">
+                    <form action="" id="signup-form" class="form form-test">
+                        <div class="radio-group">
+                            <div class="form-conroller__label">Your gender</div>
                             <br>
-                            <div class="form-conroller checkbox">
-                                <input type="checkbox" class="checkbox__input form-conroller__checkbox"
-                                    id="signup-checkbox">
-                                <label for="signup-checkbox" class="checkbox__label">I agree with
-                                    <a href="#" class="link">Terms of Use</a>
-                                </label>
+                            <div class="form-conroller radio">
+                                <input type="radio" name="gender-radio-btn" id="radio-btn-male" class="radio__input">
+                                <label for="radio-btn-male" class="radio__label">Male</label>
+                            </div>
+                            <div class="form-conroller radio">
+                                <input type="radio" name="gender-radio-btn" id="radio-btn-female" class="radio__input">
+                                <label for="radio-btn-female" class="radio__label">Female</label>
                                 <small class="form-conroller__message">Error message</small>
                             </div>
-                            <div class="form-conroller checkbox">
-                                <input type="checkbox" class="checkbox__input form-conroller__checkbox"
-                                    id="signup-checkbox2" disabled>
-                                <label for="signup-checkbox2" class="checkbox__label">I agree with
-                                    <a href="#" class="link">Terms of Use</a>
-                                </label>
+                            <div class="form-conroller radio">
+                                <input type="radio" name="gender-radio-btn" id="radio-btn-female" class="radio__input" disabled>
+                                <label for="radio-btn-female" class="radio__label">Female</label>
                                 <small class="form-conroller__message">Error message</small>
                             </div>
-                            <br>
-                            <div class="form-conroller toggle">
-                                <label class="toggle__inner">
-                                    <input class="toggle__checkbox" type="checkbox">
-                                    <div class="toggle__switch"></div>
-                                    <span class="toggle__label">Wi-fi</span>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="form-conroller toggle--disabled">
-                                <label class="toggle__inner">
-                                    <input class="toggle__checkbox" type="checkbox" disabled>
-                                    <div class="toggle__switch"></div>
-                                    <span class="toggle__label">Wi-fi</span>
-                                </label>
-                            </div>
-                            <br>
-                            <div class="form-conroller toggle--readonly">
-                                <label class="toggle__inner">
-                                    <input class="toggle__checkbox" type="checkbox" disabled="disabled" checked="checked">
-                                    <div class="toggle__switch"></div>
-                                    <span class="toggle__label">Wi-fi</span>
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-            </section>
-        </main>
+                        </div>
+                        <br>
+                        <div class="form-conroller checkbox">
+                            <input type="checkbox" class="checkbox__input form-conroller__checkbox"
+                                id="signup-checkbox">
+                            <label for="signup-checkbox" class="checkbox__label">I agree with
+                                <a href="#" class="link">Terms of Use</a>
+                            </label>
+                            <small class="form-conroller__message">Error message</small>
+                        </div>
+                        <div class="form-conroller checkbox">
+                            <input type="checkbox" class="checkbox__input form-conroller__checkbox"
+                                id="signup-checkbox2" disabled>
+                            <label for="signup-checkbox2" class="checkbox__label">I agree with
+                                <a href="#" class="link">Terms of Use</a>
+                            </label>
+                            <small class="form-conroller__message">Error message</small>
+                        </div>
+                        <br>
+                        <div class="form-conroller toggle">
+                            <label class="toggle__inner">
+                                <input class="toggle__checkbox" type="checkbox">
+                                <div class="toggle__switch"></div>
+                                <span class="toggle__label">Wi-fi</span>
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-conroller toggle--disabled">
+                            <label class="toggle__inner">
+                                <input class="toggle__checkbox" type="checkbox" disabled>
+                                <div class="toggle__switch"></div>
+                                <span class="toggle__label">Wi-fi</span>
+                            </label>
+                        </div>
+                        <br>
+                        <div class="form-conroller toggle--readonly">
+                            <label class="toggle__inner">
+                                <input class="toggle__checkbox" type="checkbox" disabled="disabled" checked="checked">
+                                <div class="toggle__switch"></div>
+                                <span class="toggle__label">Wi-fi</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+        </section>
 
         <!-- * FOOTER -->
         @@include('chunks/_footer.html',{})
     </div>
 
     <!-- * POPUP -->
-    <!-- @@include('chunks/_popup.html',{}) -->
+    <!-- @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    }) -->
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

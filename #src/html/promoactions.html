@@ -5,7 +5,7 @@
 "title":"Promoactions"
 })
 
-<body class="assets-root">
+<body>
     @@include('chunks/_preloader.html',{})
 
     <div class="wrapper">
@@ -30,7 +30,18 @@
     </div>
 
     <!-- * POPUP -->
-    <!-- @@include('chunks/_popup.html',{}) -->
+    @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    })
+    @@include('modals/_send.html',{
+        "title": "Send cryptocurrency",
+    })
+    @@include('modals/_get.html',{
+        "title": "Get cryptocurrency",
+    })
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

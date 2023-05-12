@@ -5,7 +5,7 @@
 "title":"Terms and Conditions"
 })
 
-<body class="assets-root">
+<body>
     @@include('chunks/_preloader.html',{})
 
     <div class="wrapper">
@@ -160,8 +160,13 @@
     </div>
 
     <!-- * POPUP -->
-    <!-- @@include('chunks/_popup.html',{}) -->
-    <!-- * JS -->
+    <!-- @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    }) -->
+     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>
 

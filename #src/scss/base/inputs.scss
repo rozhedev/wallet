@@ -12,12 +12,21 @@
     line-height: 1.4;
     letter-spacing: 0.06em;
 
-    border: 3px solid $primary-accent-color;
+    border: 2px solid $primary-accent-color;
     border-radius: $sm-border-radius;
     background-color: $primary-accent-color;
     color: $white-color;
     text-shadow: $btn-light-text-shadow;
     transition: $transition;
+
+    svg {
+        width: 1.35rem;
+        height: 1.35rem;
+        stroke: $dark-color24;
+        stroke-width: 1.75;
+        stroke-miterlimit: 5;
+        transition: $transition;
+    }
 
     @include hover {
         background-color: $btn-darken-accent;
@@ -32,27 +41,24 @@
     &:disabled {
         color: $dark-color36;
         background-color: $white-color;
-        border: 3px solid $dark-color36;
+        border: 2px solid $dark-color36;
         box-shadow: $btn-dark-inset-shadow;
         cursor: not-allowed;
     }
+    &--filled-sm {
+        padding: 0.5rem 0.75rem;
+    }
     &--outline {
         align-items: center;
-        font-weight: 500;
         color: $dark-color24;
         background-color: $white-color;
-        border: 3px solid $primary-accent-color;
+        border: 2px solid $primary-accent-color;
         transition: $transition;
         span {
             padding-right: 1rem;
         }
         svg {
-            transition: $transition;
             stroke: $dark-color24;
-            stroke-width: 1.5;
-            stroke-miterlimit: 5;
-            width: 1.25rem;
-            height: 1.25rem;
         }
         @include hover {
             background-color: $white-color;
@@ -70,11 +76,10 @@
     }
 }
 
-
 .inp {
     display: inline-flex;
     min-width: 18rem;
-    padding: 0.75rem;
+    padding: 0.5rem 0.75rem;
 
     font-size: 1.25rem;
     font-family: inherit;
@@ -82,7 +87,7 @@
     line-height: 1.4;
     letter-spacing: 0.02em;
 
-    border: 3px solid $dark-color24;
+    border: 2px solid $dark-color24;
     border-radius: $sm-border-radius;
     background-color: $white-color;
     transition: 0.6s all;
@@ -320,7 +325,7 @@ select {
     min-width: 9rem;
     max-width: 20rem;
 
-    border: 3px solid $dark-color24;
+    border: 2px solid $dark-color24;
     border-radius: $sm-border-radius;
     padding: 0.75rem;
     font-size: 1.25rem;
@@ -356,7 +361,7 @@ select:focus + .focus {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border: 3px solid $primary-accent-color;
+    border: 2px solid $primary-accent-color;
     border-radius: inherit;
     box-shadow: $inp-focus-shadow;
 }
@@ -378,10 +383,6 @@ option {
     min-width: 0rem;
     padding: 0;
     background-color: transparent;
-    // img {
-    //     width: 1.5rem;
-    //     height: 1.5rem;
-    // }
     svg {
         width: 2.5rem;
         height: 2.5rem;
@@ -406,9 +407,6 @@ option {
 }
 
 // * ERROR MESSAGE UNDER INPUT
-.form-test {
-    background-color: $dark-color;
-}
 .form-conroller__message {
     display: block;
     visibility: hidden;

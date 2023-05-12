@@ -57,15 +57,16 @@
             .btn {
                 width: 100%;
             }
-            // * #
+        }
+        .btn {
+            border-width: 3px;
         }
         .btn--outline {
             background-color: transparent;
             color: $white-color;
-            font-weight: 600;
             @include hover {
                 box-shadow: none;
-                background-color: rgba($white-color, 0.66);
+                background-color: rgba($white-color, 0.8);
                 color: $dark-color;
                 text-shadow: none;
             }
@@ -96,8 +97,10 @@
         height: 4rem;
         padding: 0.4rem;
         svg {
+            width: 2.75rem;
+            height: 2.75rem;
             stroke: $white-color;
-            stroke-width: 2;
+            stroke-width: 3;
         }
     }
 }
@@ -141,7 +144,7 @@
         justify-items: center;
 
         background-color: rgba($color: $dark-color, $alpha: 0.36);
-        backdrop-filter: blur(6px);
+        backdrop-filter: blur($blur-value);
         border-radius: 0.25rem 0.25rem 0 0;
         border: 2px solid rgba($color: $dark-color, $alpha: 0.44);
 
@@ -171,7 +174,7 @@
         margin: 0 auto;
 
         background-color: rgba($color: $dark-color36, $alpha: 0.72);
-        backdrop-filter: blur($blur-value);
+        backdrop-filter: blur(calc($blur-value * 2));
         border: 1px solid rgba($color: $dark-color36, $alpha: 0.88);
         border-radius: $sm-border-radius;
 

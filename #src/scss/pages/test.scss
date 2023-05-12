@@ -1,5 +1,18 @@
 // * Allegro form style
 
+.test {
+    background: none;
+    margin: 150px 0 100px;
+    color: initial;
+    .header {
+        background-color: $dark-color;
+    }
+}
+
+.form-test {
+    background-color: $light-color;
+}
+
 .form-wrapper {
     width: 400px;
     max-width: 100%;

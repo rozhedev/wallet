@@ -1,39 +1,26 @@
 .promoactions-item {
     $promo-items-config: (
         1 '../img/photos/promoactions/level-two.webp',
-
         2 '../img/photos/promoactions/avalanche.webp',
-
         3 '../img/photos/promoactions/polygon.webp',
-
         4 '../img/photos/promoactions/wallet-banner.webp',
-
         5 '../img/photos/promoactions/stellar.svg',
-
         6 '../img/photos/promoactions/chainlink.webp',
-
         7 '../img/photos/promoactions/wallet-banner.webp',
-
         8 '../img/photos/promoactions/polkadot.svg',
-
         9 '../img/photos/promoactions/algorand-foundation.webp',
-
         10 '../img/photos/promoactions/level-one.svg',
-
         11 '../img/photos/promoactions/terra.webp',
-
         12 '../img/photos/promoactions/neo.svg',
-
         13 '../img/photos/promoactions/compound-coin.svg',
-
         14 '../img/photos/promoactions/tezos.webp',
-
         15 '../img/photos/promoactions/cronos.webp'
     );
 
     position: relative;
     min-height: 27.25rem;
     border-radius: 8px;
+    outline: 2px solid $secondary-lightgray-color;
 
     &__content {
         @include blur-rect;
@@ -63,12 +50,9 @@
                 }
             }
         }
-        .btn {
-            padding: 0.5rem 0.75rem;
-        }
     }
     &:first-of-type {
-        grid-area: 1 / span 2;      // * first block expand to 2 columns
+        grid-area: 1 / span 2; // * first block expand to 2 columns
     }
 
     // * BG FOR DIFFERENT ITEMS
@@ -87,6 +71,7 @@
     @include bp(md) {
         .promoactions-item__content {
             width: 100%;
+            border-radius: 0 0 8px 8px;
         }
         &:nth-of-type(n) {
             grid-area: auto / auto / auto / auto;

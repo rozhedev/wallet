@@ -48,6 +48,7 @@ $error-red: #ee6464;
 
 // * EFFECTS
 $transition: 0.5s all;
+$blur-value: 6px;
 $btn-light-text-shadow: 0 0 0.33rem
     rgba(
         $color: $white-color,
@@ -78,7 +79,7 @@ $advant-outset-shadow: 4px -4px 8px 0px rgba(
         $color: $dark-color,
         $alpha: 0.24,
     );
-    
+   
 $advant-inset-shadow: inset 4px -4px 8px 0px rgba(
         $color: $dark-color,
         $alpha: 0.24,
@@ -86,7 +87,6 @@ $advant-inset-shadow: inset 4px -4px 8px 0px rgba(
 
 // * OTHER
 $sm-border-radius: 4px;
-$blur-value: 12px;
-
 $header-height: 80px;
 $header-height-mobile: 68px;
+$icon-stroke-width: 1.75;
