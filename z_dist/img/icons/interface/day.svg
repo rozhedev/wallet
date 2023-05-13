@@ -1,11 +1,11 @@
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16 25.1429C21.0494 25.1429 25.1428 21.0495 25.1428 16C25.1428 10.9505 21.0494 6.85715 16 6.85715C10.9505 6.85715 6.85712 10.9505 6.85712 16C6.85712 21.0495 10.9505 25.1429 16 25.1429Z" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M16 2.28571V6.85713" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M16 29.7143V25.1429" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M29.7143 16H25.1429" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M2.28571 16H6.85713" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M25.6971 6.30286L22.4628 9.53714" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M6.30286 25.6971L9.53714 22.4629" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M25.6971 25.6971L22.4628 22.4629" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M6.30286 6.30286L9.53714 9.53714" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32.0001 50.2858C42.099 50.2858 50.2858 42.099 50.2858 32.0001C50.2858 21.9011 42.099 13.7144 32.0001 13.7144C21.9011 13.7144 13.7144 21.9011 13.7144 32.0001C13.7144 42.099 21.9011 50.2858 32.0001 50.2858Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 4.57153V13.7144" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 59.4285V50.2856" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M59.4285 32H50.2856" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M4.57153 32H13.7144" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M51.3944 12.6057L44.9258 19.0743" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M12.6057 51.3944L19.0743 44.9258" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M51.3944 51.3944L44.9258 44.9258" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M12.6057 12.6057L19.0743 19.0743" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
 </svg>

@@ -58,6 +58,7 @@
                 width: 100%;
             }
         }
+        // TODO Add btn anim with user icon
         .btn {
             border-width: 3px;
         }
@@ -69,6 +70,9 @@
                 background-color: rgba($white-color, 0.8);
                 color: $dark-color;
                 text-shadow: none;
+            }
+            span {
+                padding-right: 0;
             }
         }
     }

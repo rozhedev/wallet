@@ -120,13 +120,17 @@ $dark-table-color: #f5f5f5;
     &__status {
         text-align: center;
     }
-    &__currency-name,
+    &__currency,
     &__counter {
         text-align: left;
     }
-    &__currency-name span {
+    &__currency-name {
         display: inline-block;
         margin-left: 0.5rem;
+    }
+    &__currency-img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
     .icon-checkmark,
     .icon-unaviable,
@@ -140,5 +144,11 @@ $dark-table-color: #f5f5f5;
     }
     .icon-none > * {
         fill: $dark-color36;
+    }
+    .icon-unaviable circle {
+        fill: $error-red;
+        &:last-of-type {
+            fill-opacity: 0.24;
+        }
     }
 }

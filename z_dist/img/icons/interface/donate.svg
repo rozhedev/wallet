@@ -1,11 +1,11 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 36C32.2843 36 39 29.2843 39 21C39 12.7157 32.2843 6 24 6C15.7157 6 9 12.7157 9 21C9 29.2843 15.7157 36 24 36Z" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M6 36V42H42V36" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M22.5 21C21.7044 21 20.9413 20.6839 20.3787 20.1213C19.8161 19.5587 19.5 18.7956 19.5 18C19.5 17.2044 19.8161 16.4413 20.3787 15.8787C20.9413 15.3161 21.7044 15 22.5 15" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M25.5 21C26.2956 21 27.0587 21.3161 27.6213 21.8787C28.1839 22.4413 28.5 23.2044 28.5 24C28.5 24.7956 28.1839 25.5587 27.6213 26.1213C27.0587 26.6839 26.2956 27 25.5 27" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M24 12V15" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M24 27V30" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M22.5 21H25.5" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M28.5 16.5C28.5 16.5 27 15 25.5 15H22.5" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M19.5 25.5C19.5 25.5 21 27 22.5 27H25.5" stroke="white" stroke-width="2" stroke-miterlimit="5"/>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 48C43.0457 48 52 39.0457 52 28C52 16.9543 43.0457 8 32 8C20.9543 8 12 16.9543 12 28C12 39.0457 20.9543 48 32 48Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M8 48V56H56V48" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M30 28C28.9391 28 27.9217 27.5786 27.1716 26.8284C26.4214 26.0783 26 25.0609 26 24C26 22.9391 26.4214 21.9217 27.1716 21.1716C27.9217 20.4214 28.9391 20 30 20" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M34 28C35.0609 28 36.0783 28.4214 36.8284 29.1716C37.5786 29.9217 38 30.9391 38 32C38 33.0609 37.5786 34.0783 36.8284 34.8284C36.0783 35.5786 35.0609 36 34 36" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 16V20" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 36V40" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M30 28H34" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M38 22C38 22 36 20 34 20H30" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M26 34C26 34 28 36 30 36H34" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
 </svg>

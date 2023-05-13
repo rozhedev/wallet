@@ -19,6 +19,7 @@
         cursor: pointer;
         transition: $transition;
         @include bp(sm) {
+            text-align: justify;
             font-size: 1.125rem;
         }
 
@@ -26,7 +27,7 @@
             $primary-icon-size: 28px;
             $secondary-icon-size: 2.4px;
             position: relative;
-            margin-left: 0.5rem;
+            margin-left: 0.75rem;
             transition: $transition;
 
             &::before,

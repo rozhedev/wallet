@@ -44,6 +44,7 @@
             }
         }
         .navlink {
+            color: $white-color;
             @include hover {
                 @include navlink-anim;
             }
