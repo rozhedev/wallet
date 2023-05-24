@@ -61,6 +61,15 @@
         // TODO Add btn anim with user icon
         .btn {
             border-width: 3px;
+            svg {
+                width: 1.5rem;
+                height: 1.5rem;
+                stroke: $light-color;
+                stroke-width: map-get($map: $stroke-width, $key: md);
+            }
+            @include hover {
+                stroke: $light-color;
+            }
         }
         .btn--outline {
             background-color: transparent;
@@ -70,6 +79,9 @@
                 background-color: rgba($white-color, 0.8);
                 color: $dark-color;
                 text-shadow: none;
+                svg {
+                    stroke: $dark-color;
+                }
             }
             span {
                 padding-right: 0;

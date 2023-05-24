@@ -80,7 +80,7 @@
     svg {
         width: 2rem;
         height: 2rem;
-        stroke-width: 3;
+        stroke-width: map-get($map: $stroke-width, $key: sm);
         @include bp(sm) {
             width: 1.75rem;
             height: 1.75rem;
