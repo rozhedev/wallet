@@ -24,7 +24,6 @@
         width: 1.4rem;
         height: 1.4rem;
         stroke-width: map-get($map: $stroke-width, $key: md);
-        stroke-miterlimit: 5;
         transition: $transition;
     }
     svg {

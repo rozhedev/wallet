@@ -31,8 +31,8 @@
                                 <button type="submit" class="btn">
                                     <span>Create account</span>
                                     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32 40C38.6274 40 44 32.8366 44 24C44 15.1634 38.6274 8 32 8C25.3726 8 20 15.1634 20 24C20 32.8366 25.3726 40 32 40Z" />
-                                        <path d="M22 33.46C22 33.46 11.91 36.14 9.99996 41.46C8.25029 46.095 7.56672 51.0646 7.99996 56H56C56.4523 51.0691 55.7893 46.0997 54.06 41.46C52.13 36.14 42.06 33.46 42.06 33.46" />
+                                        <path d="M31.9999 41.143C39.5741 41.143 45.7142 32.9562 45.7142 22.8572C45.7142 12.7583 39.5741 4.57153 31.9999 4.57153C24.4257 4.57153 18.2856 12.7583 18.2856 22.8572C18.2856 32.9562 24.4257 41.143 31.9999 41.143Z" />
+                                        <path d="M20.5715 33.6685C20.5715 33.6685 9.04005 36.7313 6.8572 42.8113C4.85758 48.1086 4.07635 53.7881 4.57148 59.4285H59.4286C59.9456 53.7932 59.1878 48.1139 57.2115 42.8113C55.0058 36.7313 43.4972 33.6685 43.4972 33.6685" />
                                     </svg>
                                 </button>
                             </form>
@@ -55,7 +55,7 @@
             <section class="main-assets" id="main-assets">
                 <div class="container">
                     <div class="main-assets__header section-title">
-                        <span class="main-assets__count">+70</span>
+                        <span class="main-assets__count">+<span class="value" data-count-limit="70">0</span></span>
                         <span class="h4">Flem Wallet supports more than 70 cryptocurrency assets</span>
                     </div>
                     <div class="inner">
@@ -92,7 +92,15 @@
                         @@loop("components/_advant-item.html", "../json/advant-items.json")
                     </div>
                     <form method="get" action="register.html">
-                        <button type="submit" class="btn">Register wallet</button>
+                        <button type="submit" class="btn">
+                            <span>Register wallet</span>
+                            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.9999 41.143C39.5741 41.143 45.7142 32.9562 45.7142 22.8572C45.7142 12.7583 39.5741 4.57153 31.9999 4.57153C24.4257 4.57153 18.2856 12.7583 18.2856 22.8572C18.2856 32.9562 24.4257 41.143 31.9999 41.143Z"/>
+                                <path d="M20.5715 33.6687C20.5715 33.6687 9.04005 36.7316 6.8572 42.8116C4.85758 48.1088 4.07635 53.7883 4.57148 59.4287H32.0001"/>
+                                <path d="M50.2856 59.4285V41.1428"/>
+                                <path d="M41.1428 50.2856H59.4285"/>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </section>

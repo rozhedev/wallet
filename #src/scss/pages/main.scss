@@ -62,13 +62,10 @@
         .btn {
             border-width: 3px;
             svg {
-                width: 1.5rem;
-                height: 1.5rem;
-                stroke: $light-color;
-                stroke-width: map-get($map: $stroke-width, $key: md);
+                stroke: $white-color;
             }
             @include hover {
-                stroke: $light-color;
+                stroke: $white-color;
             }
         }
         .btn--outline {

@@ -47,3 +47,23 @@
         }
     }
 }
+
+// * Register & Sign in
+.register-page {
+    background: url('../img/photos/bg/register.svg');
+}
+
+.signin-page {
+    background: url('../img/photos/bg/signin.svg');
+}
+
+.register-page .page-title,
+.signin-page .page-title,
+.page-title .breadcrumbs a {
+    color: $white-color;
+}
+
+.register .form-wrapper,
+.signin .form-wrapper {
+    margin: 2rem auto 0;
+}

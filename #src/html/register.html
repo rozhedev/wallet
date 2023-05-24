@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html',{
+"title":"Register"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <!-- * HEADER -->
+        @@include('chunks/_header.html',{})
+
+        <div class="page register-page" id="register-page">
+            <section class="register" id="register">
+                <div class="container">
+                    @@include('components/_page-title.html',{
+                    "breadcrumbsLink1": "Home",
+                    "breadcrumbsLink2": "Register",
+                    "title": "Register wallet"
+                    })
+                    <div class="page-inner">
+                        <div class="form-wrapper">
+                            <form action="#" class="form">
+                                <div class="form-conroller">
+                                    <input type="text" name="test-inp" title="Wallet address" id="send-wallet-address" class="inp" placeholder="Wallet address">
+                                    <small class="form-conroller__message">Error message</small>
+                                </div>
+                                <div class="form-conroller">
+                                    <input type="text" name="test-inp" title="Amount" id="send-amount" class="inp" placeholder="Amount">
+                                    <small class="form-conroller__message">Error message</small>
+                                </div>
+                                <div class="form-conroller checkbox">
+                                    <input type="checkbox" class="checkbox__input form-conroller__checkbox"
+                                        id="signup-checkbox">
+                                    <label for="signup-checkbox" class="checkbox__label">I agree with
+                                        <a href="terms.html" class="link">Terms of Use</a>
+                                    </label>
+                                    <small class="form-conroller__message">Error message</small>
+                                </div>
+                                <button type="submit" class="btn btn--filled-sm">Send</button>
+                                <span>Already have a wallet? <a href="signin.html" class="link">Sign In</a> </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- * FOOTER -->
+        @@include('chunks/_footer.html',{})
+    </div>
+
+    <!-- * POPUP -->
+    <!-- @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    }) -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>
