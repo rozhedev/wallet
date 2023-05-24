@@ -79,14 +79,21 @@ $advant-outset-shadow: 4px -4px 8px 0px rgba(
         $color: $dark-color,
         $alpha: 0.24,
     );
-   
+
 $advant-inset-shadow: inset 4px -4px 8px 0px rgba(
         $color: $dark-color,
         $alpha: 0.24,
     );
 
+// * Stroke-width
+$stroke-width: (
+    xs: 3,
+    sm: 4,
+    md: 5,
+    lg: 6,
+);
+
 // * OTHER
 $sm-border-radius: 4px;
 $header-height: 80px;
 $header-height-mobile: 68px;
-$icon-stroke-width: 1.75;

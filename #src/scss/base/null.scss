@@ -112,6 +112,10 @@ select {
     outline: none;
 }
 
+svg, svg * {
+    stroke-miterlimit: 5;
+}
+
 /* Убираем стандартный маркер Chrome */
 // details summary::-webkit-details-marker {
 //     display: none;

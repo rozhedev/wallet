@@ -103,8 +103,7 @@
         svg {
             width: 2.75rem;
             height: 2.75rem;
-            stroke: $white-color;
-            stroke-width: 3;
+            stroke-width: calc(map-get($map: $stroke-width, $key: md) / 2);
         }
     }
 }
@@ -196,13 +195,6 @@
         }
         .btn {
             padding: 0.75rem 1.5rem;
-            svg {
-                margin-left: 0.5rem;
-                width: 1.5rem;
-                height: 1.5rem;
-                stroke: $white-color;
-                stroke-width: 2;
-            }
         }
     }
 }
@@ -298,7 +290,7 @@
             width: 2.2rem;
             height: 2.2rem;
             stroke: $dark-color;
-            stroke-width: 2;
+            stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
             @include bp(sm) {
                 margin-right: 0.5rem;
                 width: 1.7rem;

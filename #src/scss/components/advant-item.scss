@@ -42,7 +42,7 @@
         width: 6rem;
         height: 6rem;
         stroke: $dark-color;
-        stroke-width: 0.66;
+        stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 3) ;
         @include bp(md) {
             width: 4rem;
             height: 4rem;
