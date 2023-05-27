@@ -50,11 +50,11 @@
 
 // * Register & Sign in
 .register-page {
-    background: url('../img/photos/bg/register.svg');
+    background: url('../img/photos/bg/register.svg') center / cover no-repeat;
 }
 
 .signin-page {
-    background: url('../img/photos/bg/signin.svg');
+    background: url('../img/photos/bg/signin.svg') center / cover no-repeat;
 }
 
 .register-page .page-title,
@@ -66,4 +66,115 @@
 .register .form-wrapper,
 .signin .form-wrapper {
     margin: 2rem auto 0;
+    padding: 1.75rem 1.5rem;
+    width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 4);
+    box-shadow: $item-shadow;
+    border-radius: calc($sm-border-radius * 2);
+    background-color: $light-color;
+
+    .form,
+    .form-step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .form-label-manual {
+        text-align: justify;
+    }
+    .form-step {
+        margin-top: 1.5rem;
+        .form-conroller,
+        .inp,
+        .btn-group {
+            width: 100%;
+        }
+        & > *:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+        .copy-btn {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0.5rem;
+            svg {
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-left: 0.5rem;
+                stroke: $dark-color;
+                stroke-width: map-get($map: $stroke-width, $key: sm);
+            }
+        }
+    }
+    .inp,
+    .checkbox__label::before {
+        background-color: transparent;
+    }
+}
+
+.register .form .form-inp-grid,
+.signin .form .form-inp-grid {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-auto-flow: row dense;
+    grid-gap: 1rem;
+}
+
+.form-user-data {
+    .checkbox__label {
+        text-align: justify;
+    }
+}
+
+.form-passphrase .inp,
+.form-confirm .inp {
+    min-width: 7.25rem;
+    font-size: 1rem;
+    text-align: center;
+    color: $dark-color;
+}
+
+.form-conroller .passphrase-item {
+    position: relative;
+    margin: 0;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: fit-content;
+        min-width: 1.16rem;
+        font-size: 1rem;
+        transform: translate(60%, 45%);
+        color: $dark-color36;
+        margin: 0;
+    }
+    .inp {
+        padding: 0.4rem 0.4rem 0.4rem 1.4rem;
+        &:focus {
+            border-color: $dark-color24;
+            box-shadow: none;
+        }
+    }
+}
+
+.form-conroller .confirm-inp {
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+}
+
+.form .form-step .btn-group {
+    display: flex;
+    .btn {
+        flex-grow: 1;
+        &:not(:first-of-type) {
+            margin-left: 1.5rem;
+        }
+    }
+    .btn-prev ~ .btn-next {
+        margin-left: 1.5rem;
+    }
 }

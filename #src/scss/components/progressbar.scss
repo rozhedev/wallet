@@ -1,0 +1,60 @@
+// * PROGRESSBAR 
+
+.progress-bar {
+    position: relative;
+    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 1rem);
+    counter-reset: step;
+
+    &::before, .progress-line-active {
+        content: "";
+        position: absolute; 
+        top: 50%;
+        left: 0;
+        width: calc(100% - 1rem);
+        height: 4px;
+        transform: translateY(-50%);
+        background-color: $dark-color36;
+    }
+}
+
+// * Rule for prevent use !important
+.progress-bar .progress-line-active {
+    background-color: $secondary-accent-color;
+    width: 0%;
+    transition: .6s all;
+}
+
+.progress-step {
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;    
+    background-color: $dark-color36;
+    color: $white-color;
+    border-radius: 999px;
+    cursor: text;
+
+    &::before {
+        counter-increment: step;
+        content: counter(step);
+    }
+    // &::after {
+    //     content: attr(data-title);
+    //     opacity: 1;                 // * Style from .navlink
+    //     position: absolute;
+    //     top: calc(100% + 0.5rem);
+    //     font-size: 0.8rem;
+    //     font-weight: 500;
+    //     color: $dark-color;
+    // }
+}
+
+.progress-step._active {
+    background-color: $secondary-accent-color;
+    color: $white-color;
+}
