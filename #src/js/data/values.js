@@ -11,3 +11,7 @@ export const STATE_LIST = {
     setTheme: "_dark",
 };
 
+export const COMMON_NODES = {
+    passphraseInputs: document.querySelectorAll(".passphrase-item .inp"),
+
+}
