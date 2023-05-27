@@ -22,24 +22,24 @@
                     })
                     <div class="page-inner">
                         <div class="form-wrapper">
+
+                            <!-- * PROGRESSBAR -->
+                            <ul class="progress-bar">
+                                <li class="progress-line-active" id="progress-line-active"></li>
+                                <li class="progress-step navlink _active"></li>
+                                <li class="progress-step navlink"></li>
+                                <li class="progress-step navlink"></li>
+                            </ul>
+
+                            <!-- * FORM -->
                             <form action="#" class="form">
-                                <!-- * PROGRESSBAR -->
-
-                                <ul class="progress-bar">
-                                    <li class="progress-line-active" id="progress-line-active"></li>
-                                    <li class="progress-step navlink _active"></li>
-                                    <li class="progress-step navlink"></li>
-                                    <li class="progress-step navlink"></li>
-                                </ul>
-
-                                <!-- * FORM -->
                                 <div class="form-step form-user-data _active" id="form-user-data">
                                     <div class="form-conroller">
-                                        <input type="text" name="register-username" title="Username" id="register-username" class="inp" value="Username">
+                                        <input type="text" name="register-username" title="Username" id="register-username" class="inp" placeholder="Username">
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
                                     <div class="form-conroller">
-                                        <input type="email" name="register-email" title="Email" id="register-email" class="inp" value="Email">
+                                        <input type="email" name="register-email" title="Email" id="register-email" class="inp" placeholder="Email">
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
                                     <div class="form-conroller checkbox">
@@ -50,7 +50,7 @@
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn--filled-sm">Next step</button>
+                                        <button type="button" class="btn btn--filled-sm btn-next">Next step</button>
                                     </div>
                                     <span>Already have a wallet? <a href="signin.html" class="link">Sign In</a> </span>
                                 </div>
@@ -59,44 +59,44 @@
                                     <span class="form-label-manual">Write down or copy these words in the correct order and keep them in a safe place.</span>
                                     <ol class="ordered-list form-conroller form-inp-grid">
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word1" title="passphrase word 1" id="passphrase-word1" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word1" title="passphrase word 1" id="passphrase-word1" class="inp" value="word1" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word2" title="passphrase word 2" id="passphrase-word2" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word2" title="passphrase word 2" id="passphrase-word2" class="inp" value="word2" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word3" title="passphrase word 3" id="passphrase-word3" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word3" title="passphrase word 3" id="passphrase-word3" class="inp" value="word3" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word4" title="passphrase word 4" id="passphrase-word4" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word4" title="passphrase word 4" id="passphrase-word4" class="inp" value="word4" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word5" title="passphrase word 5" id="passphrase-word5" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word5" title="passphrase word 5" id="passphrase-word5" class="inp" value="word5" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word6" title="passphrase word 6" id="passphrase-word6" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word6" title="passphrase word 6" id="passphrase-word6" class="inp" value="word6" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word7" title="passphrase word 7" id="passphrase-word7" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word7" title="passphrase word 7" id="passphrase-word7" class="inp" value="word7" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word8" title="passphrase word 8" id="passphrase-word8" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word8" title="passphrase word 8" id="passphrase-word8" class="inp" value="word8" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word9" title="passphrase word 9" id="passphrase-word9" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word9" title="passphrase word 9" id="passphrase-word9" class="inp" value="word9" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word10" title="passphrase word 10" id="passphrase-word10" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word10" title="passphrase word 10" id="passphrase-word10" class="inp" value="word10" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word11" title="passphrase word 11" id="passphrase-word11" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word11" title="passphrase word 11" id="passphrase-word11" class="inp" value="word11" readonly>
                                         </li>
                                         <li class="passphrase-item">
-                                            <input type="text" name="passphrase-word12" title="passphrase word 12" id="passphrase-word12" class="inp" value="abandon" readonly>
+                                            <input type="text" name="passphrase-word12" title="passphrase word 12" id="passphrase-word12" class="inp" value="word12" readonly>
                                         </li>
                                         <small class="form-conroller__message">Error message</small>
                                     </ol>
-                                    <button type="button" class="copy-btn">
+                                    <button type="button" class="copy-btn" id="copy-btn-passphrase">
                                         <span>Copy to clipboard</span>
                                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M22.8572 41.143H4.57153V4.57153H41.143V22.8572" />
@@ -105,10 +105,11 @@
 
                                     </button>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn--filled-sm">Previous step</button>
-                                        <button type="button" class="btn btn--filled-sm">Next step</button>
+                                        <button type="button" class="btn btn--filled-sm btn-prev">Previous step</button>
+                                        <button type="button" class="btn btn--filled-sm btn-next">Next step</button>
                                     </div>
                                 </div>
+
                                 <div class="form-step form-confirm" id="register-form-confirm">
                                     <span class="form-label-manual">Paste your passphrase from the inputs below to complete registration.</span>
                                     <div class="form-conroller form-inp-grid">
@@ -127,10 +128,11 @@
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
                                     <div class="btn-group">
-                                        <button type="button" class="btn btn--filled-sm">Previous step</button>
-                                        <button type="submit" class="btn btn--filled-sm">Complete</button>
+                                        <button type="button" class="btn btn--filled-sm btn-prev">Previous step</button>
+                                        <button type="submit" class="btn btn--filled-sm btn-next">Complete</button>
                                     </div>
                                 </div>
+                            </form>
                         </div>
                     </div>
                 </div>

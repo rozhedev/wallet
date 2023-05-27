@@ -26,6 +26,8 @@
     }
 }
 
+// * PROMOACTIONS
+
 .promoactions {
     .page-inner {
         display: grid;
@@ -48,9 +50,25 @@
     }
 }
 
-// * Register & Sign in
+// * REGISTER
+
 .register-page {
-    background: url('../img/photos/bg/register.svg') center / cover no-repeat;
+    background-image: url('../img/photos/bg/register.svg');
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+
+    @include bp(xl) {
+        background-size: cover;
+        min-height: 80vh;
+    }
+    @include bp(md) {
+        background-size: 300%;
+        min-height: 60vh;
+    }
+    @include bp(xs) {
+        background-size: 550%;
+    }
 }
 
 .signin-page {
@@ -72,9 +90,13 @@
     border-radius: calc($sm-border-radius * 2);
     background-color: $light-color;
 
+    @include bp(sm) {
+        width: 100%;
+        padding: 1.33rem 1rem;
+    }
+
     .form,
     .form-step {
-        display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -118,6 +140,10 @@
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-auto-flow: row dense;
     grid-gap: 1rem;
+
+    @include bp(sm) {
+        grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    }
 }
 
 .form-user-data {
@@ -159,6 +185,7 @@
 }
 
 .form-conroller .confirm-inp {
+    padding: 0.4rem;
     border-radius: 0;
     border-top: none;
     border-left: none;
@@ -174,7 +201,33 @@
             margin-left: 1.5rem;
         }
     }
-    .btn-prev ~ .btn-next {
-        margin-left: 1.5rem;
+    @include bp(sm) {
+        flex-direction: column;
+        .btn:not(:first-of-type) {
+            margin-left: 0;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+// *  ACTIVE CLASSES & ANIM
+
+.form-step {
+    display: none;
+    transform-origin: top;
+    animation: form-slide 0.9s;
+}
+.form-step._active {
+    display: flex;
+}
+
+@keyframes form-slide {
+    from {
+        //   transform: scale(1, 0);
+        opacity: 0;
+    }
+    to {
+        //   transition: scale(1, 1);
+        opacity: 1;
     }
 }

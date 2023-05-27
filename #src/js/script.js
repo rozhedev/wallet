@@ -13,3 +13,4 @@ import "./components/burger";
 import "./components/accordions";
 import "./components/tabs";
 import "./components/modal";
+import "./components/multistep-form";
