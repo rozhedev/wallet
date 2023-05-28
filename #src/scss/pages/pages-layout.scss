@@ -158,11 +158,17 @@
 }
 
 // * Inp components & btn-group
+
+.form-passphrase .inp,
+.form-confirm .inp,
+.form-controller .passphrase-item::before {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
 .form-passphrase .inp,
 .form-confirm .inp {
     min-width: 7.25rem;
-    font-size: 1.1rem;
-    line-height: 1.5rem;
     text-align: right;
     color: $dark-color;
 }
@@ -178,9 +184,7 @@
         margin: 0;
         width: fit-content;
         min-width: 1.16rem;
-        font-size: 1.1rem;
-        line-height: 1.5rem;
-        color: $dark-color36;
+        color: $dark-color24;
         transform: translateY(33.33%);
     }
     .inp {

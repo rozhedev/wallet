@@ -1,0 +1,62 @@
+[
+    {
+        "id": "passphrase-word1",
+        "titleAttr": "passphrase word 1",
+        "value": "word1"
+    },
+    {
+        "id": "passphrase-word2",
+        "titleAttr": "passphrase word 2",
+        "value": "word2"
+    },
+    {
+        "id": "passphrase-word3",
+        "titleAttr": "passphrase word 3",
+        "value": "word3"
+    },
+    {
+        "id": "passphrase-word4",
+        "titleAttr": "passphrase word 4",
+        "value": "word4"
+    },
+    {
+        "id": "passphrase-word5",
+        "titleAttr": "passphrase word 5",
+        "value": "word5"
+    },
+    {
+        "id": "passphrase-word6",
+        "titleAttr": "passphrase word 6",
+        "value": "word6"
+    },
+    {
+        "id": "passphrase-word7",
+        "titleAttr": "passphrase word 7",
+        "value": "word7"
+    },
+    {
+        "id": "passphrase-word8",
+        "titleAttr": "passphrase word 8",
+        "value": "word8"
+    },
+    {
+        "id": "passphrase-word9",
+        "titleAttr": "passphrase word 9",
+        "value": "word9"
+    },
+    {
+        "id": "passphrase-word10",
+        "titleAttr": "passphrase word 10",
+        "value": "word10"
+    },
+    {
+        "id": "passphrase-word11",
+        "titleAttr": "passphrase word 11",
+        "value": "word11"
+    },
+    {
+        "id": "passphrase-word12",
+        "titleAttr": "passphrase word 12",
+        "value": "word12"
+    }
+]

@@ -26,18 +26,7 @@
                                 <span class="form-label-manual">Copy the passphrase you received during registration.</span>
                                 <div class="form-step">
                                     <div class="form-conroller form-inp-grid">
-                                        <input type="text" name="confirm-inp1" title="confirm input 1" id="confirm-inp1" class="inp confirm-inp" placeholder="1">
-                                        <input type="text" name="confirm-inp2" title="confirm input 2" id="confirm-inp2" class="inp confirm-inp" placeholder="2">
-                                        <input type="text" name="confirm-inp3" title="confirm input 3" id="confirm-inp3" class="inp confirm-inp" placeholder="3">
-                                        <input type="text" name="confirm-inp4" title="confirm input 4" id="confirm-inp4" class="inp confirm-inp" placeholder="4">
-                                        <input type="text" name="confirm-inp5" title="confirm input 5" id="confirm-inp5" class="inp confirm-inp" placeholder="5">
-                                        <input type="text" name="confirm-inp6" title="confirm input 6" id="confirm-inp6" class="inp confirm-inp" placeholder="6">
-                                        <input type="text" name="confirm-inp7" title="confirm input 7" id="confirm-inp7" class="inp confirm-inp" placeholder="7">
-                                        <input type="text" name="confirm-inp8" title="confirm input 8" id="confirm-inp8" class="inp confirm-inp" placeholder="8">
-                                        <input type="text" name="confirm-inp9" title="confirm input 9" id="confirm-inp9" class="inp confirm-inp" placeholder="9">
-                                        <input type="text" name="confirm-inp10" title="confirm input 10" id="confirm-inp10" class="inp confirm-inp" placeholder="10">
-                                        <input type="text" name="confirm-inp11" title="confirm input 11" id="confirm-inp11" class="inp confirm-inp" placeholder="11">
-                                        <input type="text" name="confirm-inp12" title="confirm input 12" id="confirm-inp12" class="inp confirm-inp" placeholder="12">
+                                        @@loop("components/_confirm-input.html", "../json/signin-confirm-inputs.json")
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
                                     <div class="btn-group">
