@@ -24,7 +24,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#polygon",
         "hashtag3": "#matic",
-        "formAction": "#modal-error",
+        "formAction": "#modal-survey",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
@@ -44,7 +44,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#stellar",
         "hashtag3": "#xlm",
-        "formAction": "#modal-success",
+        "formAction": "#modal-error",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
@@ -54,7 +54,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#chainlink",
         "hashtag3": "#link",
-        "formAction": "#modal-error",
+        "formAction": "#modal-success",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"

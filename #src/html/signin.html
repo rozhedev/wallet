@@ -23,8 +23,8 @@
                     <div class="page-inner">
                         <div class="form-wrapper">
                             <form action="#" class="form form-confirm" id="signin-form-confirm">
-                                <span class="form-label-manual">Copy the passphrase you received during registration.</span>
-                                <div class="form-step">
+                                <fieldset class="form-step">
+                                    <legend class="form-label-legend">Copy the passphrase you received during registration.</legend>
                                     <div class="form-conroller form-inp-grid">
                                         @@loop("components/_confirm-input.html", "../json/signin-confirm-inputs.json")
                                         <small class="form-conroller__message">Error message</small>
@@ -33,7 +33,7 @@
                                     <button type="submit" class="btn btn--filled-sm">Sign in</button>
                                 </div>
                                     <span>Don’t have wallet? <a href="register.html" class="link">Register</a></span>
-                                </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>

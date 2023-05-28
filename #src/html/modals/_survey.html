@@ -1,0 +1,75 @@
+<div class="modal" id="modal-survey">
+    <div class="modal-dialog modal-dialog--info modal-dialog--survey">
+        <div class="modal-header">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M54.8571 37.4858C54.8571 15.543 32 4.57153 32 4.57153C32 4.57153 9.14282 15.543 9.14282 37.4858C9.14282 49.6001 19.4285 59.4287 32 59.4287C44.5714 59.4287 54.8571 49.6001 54.8571 37.4858Z" />
+                <path d="M20.5714 37.4858C20.6344 40.4555 21.8733 43.2787 24.016 45.3358C26.1588 47.3928 29.0302 48.5155 32 48.4573" />
+            </svg>
+            <h4 class="h4">@@title</h4>
+            <a href="#" class="modal-header__close js-modal-close"><span>&times;</span></a>
+        </div>
+        <div class="modal-dialog__body form-wrapper">
+            <form action="#" class="form">
+                <div class="form-step form-user-data _active" id="form-survey-info">
+                    <ul class="unordered-list">
+                        <li>
+                            Two years in the market is a good reason for more understanding our clients and find best way to improve our product.
+                        </li>
+                        <li>
+                            It’s short survey created to collect common, but important data. As a final, you get airdrop in currency, which you choose at the end of survey.
+                        </li>
+                        <li>
+                            We don’t collect confidential data as phone number, card number, residence address and etc.
+                        </li>
+                    </ul>
+                    <div class="modal-footer btn-group">
+                        <button type="button" class="btn btn--outline btn--outline-sm btn-next">Next step</button>
+                    </div>
+                </div>
+
+                <!-- * FORM QUESTIONS -->
+
+                @@include('../survey-steps/_survey-radio.html',{
+                "id": "survey-question1",
+                "question": "How long have you been using cryptocurrencies?",
+                "answerId1": "survey-answer1-1",
+                "answer1": "It's my first experience.",
+
+                "answerId2": "survey-answer1-2",
+                "answer2": "Already used cryptocurrency for personal purposes.",
+
+                "answerId3": "survey-answer1-3",
+                "answer3": "Use cryptocurrency on a regular basis.",
+
+                "answerId4": "survey-answer1-4",
+                "answer4": "Use cryptocurrency and earn from it.",
+                })
+
+                @@include('../survey-steps/_survey-radio.html',{
+                "id": "survey-question2",
+                "question": "How did you find out about Flem Wallet?",
+                "answerId1": "survey-answer2-1",
+                "answer1": "Affiliate advertising in social networks.",
+
+                "answerId2": "survey-answer2-2",
+                "answer2": "Video reviews on YouTube.",
+
+                "answerId3": "survey-answer2-3",
+                "answer3": "From colleagues, friends, etc.",
+
+                "answerId4": "survey-answer2-4",
+                "answer4": "Other informational source.",
+                })
+
+                <div class="form-step" id="form-survey-finish">
+                    Finish modal
+                    <div class="modal-footer btn-group">
+                        <button type="button" class="btn btn--outline btn--outline-sm btn-prev">Prev (temp)</button>
+                        <button type="submit" class="btn btn--outline btn--outline-sm js-modal-close">Finish</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

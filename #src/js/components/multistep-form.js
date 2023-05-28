@@ -16,7 +16,10 @@ if (nextBtns && prevBtns) {
             btn.addEventListener("click", (e) => {
                 formStepsNum++;
                 updateFormsSteps();
-                updateProgressbar();
+                
+                if (progressLineActive) {
+                    updateProgressbar();
+                }
             })
         }
     })
@@ -25,8 +28,10 @@ if (nextBtns && prevBtns) {
         btn.addEventListener("click", (e) => {
             formStepsNum--;
             updateFormsSteps();
-            updateProgressbar();
 
+            if (progressLineActive) {
+                updateProgressbar();
+            }
         })
     })
 }

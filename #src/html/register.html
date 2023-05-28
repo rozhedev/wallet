@@ -33,7 +33,7 @@
 
                             <!-- * FORM -->
                             <form action="#" class="form">
-                                <div class="form-step form-user-data _active" id="form-user-data">
+                                <fieldset class="form-step form-user-data _active" id="form-user-data">
                                     <div class="form-conroller">
                                         <input type="text" name="register-username" title="Username" id="register-username" class="inp" placeholder="Username">
                                         <small class="form-conroller__message">Error message</small>
@@ -53,10 +53,10 @@
                                         <button type="button" class="btn btn--filled-sm btn-next">Next step</button>
                                     </div>
                                     <span>Already have a wallet? <a href="signin.html" class="link">Sign In</a> </span>
-                                </div>
+                                </fieldset>
 
-                                <div class="form-step form-passphrase" id="form-passphrase">
-                                    <span class="form-label-manual">Write down or copy these words in the correct order and keep them in a safe place.</span>
+                                <fieldset class="form-step form-passphrase" id="form-passphrase">
+                                    <legend class="form-label-legend">Write down or copy these words in the correct order and keep them in a safe place.</legend>
                                     <ol class="ordered-list form-conroller form-inp-grid">
                                         @@loop("components/_passphrase-item.html", "../json/passphrase-items.json")
 
@@ -74,10 +74,10 @@
                                         <button type="button" class="btn btn--filled-sm btn-prev">Previous step</button>
                                         <button type="button" class="btn btn--filled-sm btn-next">Next step</button>
                                     </div>
-                                </div>
+                                </fieldset>
 
-                                <div class="form-step form-confirm" id="register-form-confirm">
-                                    <span class="form-label-manual">Paste your passphrase from the inputs below to complete registration.</span>
+                                <fieldset class="form-step form-confirm" id="register-form-confirm">
+                                    <legend class="form-label-legend">Paste your passphrase from the inputs below to complete registration.</legend>
                                     <div class="form-conroller form-inp-grid">
                                         @@loop("components/_confirm-input.html", "../json/confirm-inputs.json")
                                         <small class="form-conroller__message">Error message</small>
@@ -86,7 +86,7 @@
                                         <button type="button" class="btn btn--filled-sm btn-prev">Previous step</button>
                                         <button type="submit" class="btn btn--filled-sm btn-next">Complete</button>
                                     </div>
-                                </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>

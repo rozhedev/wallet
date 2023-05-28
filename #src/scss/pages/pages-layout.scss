@@ -85,6 +85,15 @@
     color: $white-color;
 }
 
+
+// * form content
+.form,
+.form-step {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .register .form-wrapper,
 .signin .form-wrapper {
     margin: 2rem auto 0;
@@ -98,15 +107,7 @@
         width: 100%;
         padding: 1.33rem 1rem;
     }
-
-    // * form content
-    .form,
-    .form-step {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    .form-label-manual {
+    .form-label-legend {
         display: inline-block;
         text-align: justify;
     }
@@ -138,6 +139,10 @@
     .checkbox__label::before {
         background-color: transparent;
     }
+}
+
+.signin .form-wrapper .form-step {
+    margin-top: 0;
 }
 
 // * Input grid
@@ -206,7 +211,8 @@
     text-align: center;
 }
 
-.form .form-step .btn-group {
+.btn-group {
+    width: 100%;
     display: flex;
     .btn {
         flex-grow: 1;

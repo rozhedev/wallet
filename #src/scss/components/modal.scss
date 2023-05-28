@@ -26,7 +26,7 @@
         flex-direction: column;
     }
     &-dialog {
-        max-width: calc((map-get($container-max-widths, xxl) / 12) * 4);
+        width: calc((map-get($container-max-widths, xxl) / 12) * 4);
         min-height: calc($screenHeight / 5);
         max-height: $screenHeight;
 
@@ -38,12 +38,13 @@
         &__body {
             margin-top: 0.75rem;
             flex-grow: 1;
+            text-align: justify;
         }
         .btn {
             margin: 1.5rem auto 0;
-            min-width: 50%;
+            max-width: 50%;
             @include bp(sm) {
-                width: 100%;
+                min-width: 100%;
             }
         }
         .modal-info {
@@ -52,7 +53,7 @@
             text-align: justify;
         }
         @include bp(sm) {
-            max-width: map-get($container-max-widths, xs);
+            width: map-get($container-max-widths, xs);
         }
     }
 
@@ -142,5 +143,15 @@
             width: 10rem;
             height: 10rem;
         }
+    }
+}
+
+// * MODAL SURVEY
+
+.modal-dialog--survey {
+    .form-conroller__label.navlink {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 1rem;
     }
 }
