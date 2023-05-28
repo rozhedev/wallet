@@ -155,3 +155,23 @@
         margin-bottom: 1rem;
     }
 }
+
+.form-survey-finish {
+    text-align: center;
+    svg {
+        width: 4.5rem;
+        height: 4.5rem;
+        stroke: $dark-color;
+        stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
+    }
+    &__info {
+        margin: 1rem 0;
+        .navlink {
+            letter-spacing: 0.02em;
+            cursor: text;
+            span {
+                color: $primary-accent-color;
+            }
+        }
+    }
+}

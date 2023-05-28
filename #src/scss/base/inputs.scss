@@ -71,7 +71,8 @@
             border-color: $primary-accent-color;
         }
     }
-    &--filled-sm, &--outline-sm {
+    &--filled-sm,
+    &--outline-sm {
         padding: 0.5rem 0.75rem;
     }
 }
@@ -171,11 +172,6 @@
     &:not(:first-of-type) {
         margin-top: 1rem;
     }
-    &__input {
-        &:disabled {
-            pointer-events: none;
-        }
-    }
     &__label {
         display: block;
         padding-left: 2rem;
@@ -234,6 +230,10 @@
 .radio__input:disabled ~ .radio__label:hover::before,
 .checkbox__input:disabled ~ .checkbox__label:hover::before {
     box-shadow: none;
+}
+
+.checkbox__input:disabled {
+    pointer-events: none;
 }
 
 // * TOGGLE

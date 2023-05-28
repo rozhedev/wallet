@@ -10,7 +10,7 @@
         </div>
         <div class="modal-dialog__body form-wrapper">
             <form action="#" class="form">
-                <div class="form-step form-user-data _active" id="form-survey-info">
+                <div class="form-step form-survey-info _active" id="form-survey-info">
                     <ul class="unordered-list">
                         <li>
                             Two years in the market is a good reason for more understanding our clients and find best way to improve our product.
@@ -32,6 +32,8 @@
                 @@include('../survey-steps/_survey-radio.html',{
                 "id": "survey-question1",
                 "question": "How long have you been using cryptocurrencies?",
+                "nameAttr": "survey-answer-radio1",
+
                 "answerId1": "survey-answer1-1",
                 "answer1": "It's my first experience.",
 
@@ -45,9 +47,29 @@
                 "answer4": "Use cryptocurrency and earn from it.",
                 })
 
+                @@include('../survey-steps/_survey-checkbox.html',{
+                "id": "survey-question3",
+                "question": "What cryptocurrencies have you used?",
+                "nameAttr": "survey-answer-checkbox1",
+
+                "answerId1": "survey-answer3-1",
+                "answer1": "Bitcoin (BTC)",
+
+                "answerId2": "survey-answer3-2",
+                "answer2": "Ethereum (ETH)",
+
+                "answerId3": "survey-answer3-3",
+                "answer3": "Tether ERC20 (USDT)",
+
+                "answerId4": "survey-answer3-4",
+                "answer4": "Binance Coin (BNB)",
+                })
+
                 @@include('../survey-steps/_survey-radio.html',{
                 "id": "survey-question2",
                 "question": "How did you find out about Flem Wallet?",
+                "nameAttr": "survey-answer-radio2",
+
                 "answerId1": "survey-answer2-1",
                 "answer1": "Affiliate advertising in social networks.",
 
@@ -61,11 +83,36 @@
                 "answer4": "Other informational source.",
                 })
 
-                <div class="form-step" id="form-survey-finish">
-                    Finish modal
+                <div class="form-step form-survey-finish" id="form-survey-finish">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.57153 36.5715H13.7144V54.8572H4.57153" />
+                        <path
+                            d="M13.7144 38.8572H22.8572C24.0696 38.8572 25.2324 39.3388 26.0897 40.1961C26.947 41.0534 27.4286 42.2162 27.4286 43.4286H37.7144C38.6237 43.4286 39.4957 43.7898 40.1387 44.4328C40.7817 45.0758 41.1429 45.9479 41.1429 46.8572C41.1429 47.7665 40.7817 48.6386 40.1387 49.2815C39.4957 49.9245 38.6237 50.2857 37.7144 50.2857H25.1429" />
+                        <path
+                            d="M41.1429 46.6285L48.7201 42.0571C49.7568 41.4395 50.9419 41.1155 52.1486 41.1199C53.0164 41.119 53.8759 41.2892 54.6779 41.6206C55.48 41.952 56.2089 42.4382 56.8229 43.0513L59.4286 45.7142L38.9372 58.0113C37.3862 58.9387 35.6129 59.4284 33.8058 59.4285C32.611 59.4275 31.4263 59.2107 30.3086 58.7885L13.7144 52.5713" />
+                        <path d="M38.8572 36.5715C47.6937 36.5715 54.8572 29.4081 54.8572 20.5715C54.8572 11.735 47.6937 4.57153 38.8572 4.57153C30.0206 4.57153 22.8572 11.735 22.8572 20.5715C22.8572 29.4081 30.0206 36.5715 38.8572 36.5715Z" />
+                        <path d="M36.9487 20.5713C35.9739 20.5179 35.0567 20.0931 34.3855 19.3842C33.7144 18.6753 33.3403 17.7361 33.3403 16.7599C33.3403 15.7837 33.7144 14.8446 34.3855 14.1356C35.0567 13.4267 35.9739 13.0019 36.9487 12.9485" />
+                        <path d="M40.7659 20.5715C41.7406 20.6249 42.6579 21.0498 43.329 21.7587C44.0002 22.4676 44.3742 23.4067 44.3742 24.383C44.3742 25.3592 44.0002 26.2983 43.329 27.0072C42.6579 27.7162 41.7406 28.141 40.7659 28.1944" />
+                        <path d="M38.8572 9.14282V12.9485" />
+                        <path d="M38.8572 28.1943V32.0001" />
+                        <path d="M36.9485 20.5715H40.7656" />
+                        <path d="M44.5713 14.8571C44.5713 14.8571 42.6628 12.9485 40.7656 12.9485H36.9485" />
+                        <path d="M33.1428 26.2856C33.1428 26.2856 35.0514 28.1942 36.9485 28.1942H40.7657" />
+                    </svg>
+                    <div class="form-survey-finish__info">
+                        <h6 class="navlink">
+                            Airdrop amount: <span id="survey-airdrop-amount">0.067986</span>
+                        </h6>
+                        <h6 class="navlink">
+                            Airdrop currency: <span id="survey-airdrop-currency">Ethereum (ETH)</span>
+                        </h6>
+                    </div>
+                    <p class="form-survey-finish__content">
+                        Survey done! Airdrop will be credited within 15 minutes. If you have any problems please contact technical support.
+                    </p>
                     <div class="modal-footer btn-group">
-                        <button type="button" class="btn btn--outline btn--outline-sm btn-prev">Prev (temp)</button>
-                        <button type="submit" class="btn btn--outline btn--outline-sm js-modal-close">Finish</button>
+                        <!-- * This btn not close modal, because "js-modal-close" class prevent submitting form -->
+                        <button type="submit" class="btn btn--outline btn--outline-sm">Finish</button>
                     </div>
 
                 </div>
