@@ -116,6 +116,15 @@ svg, svg * {
     stroke-miterlimit: 5;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
 /* Убираем стандартный маркер Chrome */
 // details summary::-webkit-details-marker {
 //     display: none;

@@ -128,11 +128,11 @@
             width: 90%;
             word-break: break-all;
         }
-        svg {
-            width: 1.5rem;
-            height: 1.5rem;
+        img {
+            width: 2rem;
+            height: 2rem;
             stroke: $dark-color;
-            stroke-width: 1.75;
+            stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
         }
     }
     .modal-dialog__body-qr-code {
