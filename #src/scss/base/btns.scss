@@ -1,0 +1,99 @@
+// * .btn -- is service style used for local styling, margins etc.
+
+@mixin btn($padding-y, $padding-x, $color, $bgcolor, $text-shadow) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $padding-y $padding-x;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    color: $color;
+
+    background-color: $bgcolor;
+    border-radius: $sm-border-radius;
+    border: 2px solid $primary-accent-color;
+    text-shadow: $text-shadow;
+    transition: $transition;
+
+    span ~ svg {
+        margin-left: 0.5rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        stroke-width: map-get($map: $stroke-width, $key: md);
+        transition: $transition;
+    }
+    svg {
+        stroke: $color;
+    }
+}
+
+@mixin btn-filled-anim {
+    background-color: $btn-darken-accent;
+    border-color: darken($color: $darken-accent, $amount: 1);
+    text-shadow: none;
+    box-shadow: $btn-dark-inset-shadow;
+}
+
+@mixin btn-outline-anim {
+    color: $dark-color;
+    background-color: $white-color;
+    border-color: $btn-darken-accent;
+    box-shadow: $btn-dark-inset-shadow;
+    svg {
+        stroke: $dark-color;
+    }
+}
+
+@mixin btn-disabled($disabled-color) {
+    color: $disabled-color;
+    background-color: $white-color;
+    border: 2px solid $disabled-color;
+    box-shadow: $btn-dark-inset-shadow;
+    svg {
+        stroke: $disabled-color;
+    }
+}
+
+.btn-fill,
+.btn-fill-sm {
+    @include btn(0.8rem, 1.6rem, $white-color, $primary-accent-color, $btn-light-text-shadow);
+    @include hover {
+        @include btn-filled-anim();
+    }
+    &:active {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.btn-outline,
+.btn-outline-sm {
+    @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
+    @include hover {
+        @include btn-outline-anim();
+    }
+    &:active {
+        box-shadow: none;
+        border-color: $primary-accent-color;
+    }
+}
+
+.btn-fill-sm,
+.btn-outline-sm {
+    padding: 0.5rem 0.75rem;
+}
+
+.btn-fill:disabled,
+.btn-fill-sm:disabled,
+.btn-outline:disabled,
+.btn-outline-sm:disabled {
+    @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
+    @include btn-disabled($dark-color36);
+    @include hover {
+        border-color: initial;
+        background-color: initial;
+    }
+    cursor: not-allowed;
+}

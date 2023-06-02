@@ -7,7 +7,7 @@ COMMON_NODES.modalBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
         if (sendFeeInp && sendAmountInp) {
             sendAmountInp.addEventListener("input", (e) => {
-                setDecimalNumber(sendAmountInp, 8);
+                setDecimalNumber(sendAmountInp, 9);
                 sendFeeInp.value = (sendAmountInp.value * 0.0345).toFixed(8);
             })
         }

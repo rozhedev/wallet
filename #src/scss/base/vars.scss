@@ -46,6 +46,12 @@ $success-green: #00c896;
 $darken-green64: #004836; // * Darken $success-green to 64%
 $error-red: #ee6464;
 
+// * Use darken() for prevent incorrect transperency 
+$btn-darken-accent: darken(
+        $color: $primary-accent-color,
+        $amount: 0.16,
+    );
+
 // * EFFECTS
 $transition: 0.5s all;
 $blur-value: 6px;
