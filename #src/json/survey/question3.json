@@ -1,0 +1,22 @@
+[
+    {
+        "nameAttr": "survey-question3",
+        "answerId": "survey-answer3-1",
+        "answer": "To pay for services."
+    },
+    {
+        "nameAttr": "survey-question3",
+        "answerId": "survey-answer3-2",
+        "answer": "To purchase digital goods."
+    },
+    {
+        "nameAttr": "survey-question3",
+        "answerId": "survey-answer3-3",
+        "answer": "To trade on cryptocurrency exchanges."
+    },
+    {
+        "nameAttr": "survey-question3",
+        "answerId": "survey-answer3-4",
+        "answer": "For other purposes."
+    }
+]

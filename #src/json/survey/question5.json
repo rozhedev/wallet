@@ -1,0 +1,52 @@
+[
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-1",
+        "answer": "Trust Wallet"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-2",
+        "answer": "Coinbase Wallet"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-3",
+        "answer": "Electrum"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-4",
+        "answer": "Metamask"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-5",
+        "answer": "Exodus"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-6",
+        "answer": "Mycelium"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-7",
+        "answer": "Blockchain Wallet"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-8",
+        "answer": "Crypto.com"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-9",
+        "answer": "Atomic Wallet"
+    },
+    {
+        "nameAttr": "survey-question5",
+        "answerId": "survey-answer5-10",
+        "answer": "Other wallets."
+    }
+]

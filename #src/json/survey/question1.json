@@ -1,0 +1,22 @@
+[
+    {
+        "nameAttr": "survey-question1",
+        "answerId": "survey-answer1-1",
+        "answer": "It's my first experience."
+    },
+    {
+        "nameAttr": "survey-question1",
+        "answerId": "survey-answer1-2",
+        "answer": "Already used cryptocurrency for personal purposes."
+    },
+    {
+        "nameAttr": "survey-question1",
+        "answerId": "survey-answer1-3",
+        "answer": "Use cryptocurrency on a regular basis."
+    },
+    {
+        "nameAttr": "survey-question1",
+        "answerId": "survey-answer1-4",
+        "answer": "Use cryptocurrency and earn from it."
+    }
+]

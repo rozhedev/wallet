@@ -1,0 +1,22 @@
+[
+    {
+        "nameAttr": "survey-question4",
+        "answerId": "survey-answer4-1",
+        "answer": "Yes, I use."
+    },
+    {
+        "nameAttr": "survey-question4",
+        "answerId": "survey-answer4-2",
+        "answer": "I prefer cold wallets."
+    },
+    {
+        "nameAttr": "survey-question4",
+        "answerId": "survey-answer4-3",
+        "answer": "I prefer desktop software or mobile app."
+    },
+    {
+        "nameAttr": "survey-question4",
+        "answerId": "survey-answer4-4",
+        "answer": "I don't have funds in cryptocurrency."
+    }
+]

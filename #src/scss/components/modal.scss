@@ -1,5 +1,5 @@
 .modal {
-    $screenHeight: 80vh;
+    $screenHeight: 90vh;
     $modal-types: (
         'success': #00c896,
         'error': #ee6464,
@@ -153,6 +153,9 @@
         font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 1rem;
+    }
+    .radio-group, .checkbox-group {
+        width: 100%;    
     }
 }
 

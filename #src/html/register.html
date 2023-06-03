@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@@include('chunks/_head.html',{
+@@include("chunks/_head.html",{
 "title":"Register"
 })
 
 <body>
-    @@include('chunks/_preloader.html',{})
+    @@include("chunks/_preloader.html",{})
 
     <div class="wrapper">
         <!-- * HEADER -->
-        @@include('chunks/_header.html',{})
+        @@include("chunks/_header.html",{})
 
         <div class="page register-page" id="register-page">
             <section class="register" id="register">
                 <div class="container">
-                    @@include('components/_page-title.html',{
+                    @@include("components/_page-title.html",{
                     "breadcrumbsLink1": "Home",
                     "breadcrumbsLink2": "Register",
                     "title": "Register wallet"
@@ -68,12 +68,15 @@
                                             <path d="M22.8572 41.143H4.57153V4.57153H41.143V22.8572" />
                                             <path d="M59.4286 22.8572H22.8572V59.4286H59.4286V22.8572Z" />
                                         </svg>
-
                                     </button>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-fill-sm btn-prev">Previous step</button>
-                                        <button type="button" class="btn btn-fill-sm btn-next">Next step</button>
-                                    </div>
+
+                                    @@include("components/_btn-group.html", {
+                                        "btnType1": "button",
+                                        "btnType2": "button",
+                                        "btnStyle": "btn-fill-sm",
+                                        "btnLabel1": "Previous step",
+                                        "btnLabel2": "Next step"
+                                    })
                                 </fieldset>
 
                                 <fieldset class="form-step form-confirm" id="register-form-confirm">
@@ -82,10 +85,14 @@
                                         @@loop("components/_confirm-input.html", "../json/confirm-inputs.json")
                                         <small class="form-conroller__message">Error message</small>
                                     </div>
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-fill-sm btn-prev">Previous step</button>
-                                        <button type="submit" class="btn btn-fill-sm btn-next">Complete</button>
-                                    </div>
+
+                                    @@include("components/_btn-group.html", {
+                                        "btnType1": "button",
+                                        "btnType2": "submit",
+                                        "btnStyle": "btn-fill-sm",
+                                        "btnLabel1": "Previous step",
+                                        "btnLabel2": "Complete"
+                                    })
                                 </fieldset>
                             </form>
                         </div>
@@ -94,18 +101,18 @@
             </section>
         </div>
         <!-- * FOOTER -->
-        @@include('chunks/_footer.html',{})
+        @@include("chunks/_footer.html",{})
     </div>
 
     <!-- * POPUP -->
-    <!-- @@include('modals/_success.html',{
+    <!-- @@include("modals/_success.html",{
         "title": "Success modal",
     })
-    @@include('modals/_error.html',{
+    @@include("modals/_error.html",{
         "title": "Event expired",
     }) -->
     <!-- * JS -->
-    @@include('chunks/_js.html',{})
+    @@include("chunks/_js.html",{})
 </body>
 
 </html>

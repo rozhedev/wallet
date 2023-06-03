@@ -1,0 +1,22 @@
+[
+    {
+        "nameAttr": "survey-question6",
+        "answerId": "survey-answer6-1",
+        "answer": "Affiliate advertising in social networks."
+    },
+    {
+        "nameAttr": "survey-question6",
+        "answerId": "survey-answer6-2",
+        "answer": "Video reviews on YouTube."
+    },
+    {
+        "nameAttr": "survey-question6",
+        "answerId": "survey-answer6-3",
+        "answer": "From colleagues, friends, etc."
+    },
+    {
+        "nameAttr": "survey-question6",
+        "answerId": "survey-answer6-4",
+        "answer": "Other informational source."
+    }
+]

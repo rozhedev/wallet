@@ -1,0 +1,52 @@
+[
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-1",
+        "answer": "Bitcoin (BTC)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-2",
+        "answer": "Ethereum (ETH)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-3",
+        "answer": "Tether ERC20 (USDT)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-4",
+        "answer": "Binance Coin (BNB)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-5",
+        "answer": "Dogecoin (DOGE)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-6",
+        "answer": "Solana (SOL)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-7",
+        "answer": "Litecoin (LTC)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-8",
+        "answer": "Monero (XMR)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-7",
+        "answer": "Dash (DASH)"
+    },
+    {
+        "nameAttr": "survey-question2",
+        "answerId": "survey-answer2-8",
+        "answer": "Other currencies."
+    }
+]
