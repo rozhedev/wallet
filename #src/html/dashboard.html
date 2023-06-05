@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html',{
+"title":"Dashboard"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <div class="page">
+            @@include('components/_cabinet-navbar.html',{})
+
+            <section class="dashboard" id="dashboard">
+                <div class="dashboard__content">
+                    <span class="dashboard__content-title">Dashboard</span>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- * POPUP -->
+    <!-- @@include('modals/_success.html',{
+        "title": "Success modal",
+    })
+    @@include('modals/_error.html',{
+        "title": "Event expired",
+    }) -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>

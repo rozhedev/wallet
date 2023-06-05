@@ -17,7 +17,6 @@
 
 // * UI & DONE CLASSES>
 @import "base/ui.scss";
-// * All buttons styles in inputs.scss
 @import "base/btns.scss";
 @import "base/inputs.scss";
 
@@ -37,6 +36,7 @@
 @import "components/promoactions-item.scss";
 @import "components/modal.scss";
 @import "components/progressbar.scss";
+@import "components/cabinet-navbar.scss";
 
 // * CHUNKS
 @import 'chunks/preloader.scss';
@@ -46,4 +46,5 @@
 // * PAGES
 @import "pages/main.scss";
 @import "pages/pages-layout.scss";
+@import "pages/cabinet.scss";
 @import "pages/test.scss";

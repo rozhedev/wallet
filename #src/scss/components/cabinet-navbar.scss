@@ -1,0 +1,249 @@
+$aside-width-open: 15rem;
+$aside-width-close: 5rem;
+
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: $aside-width-open;
+    background: $light-color;
+    z-index: 10;
+    transition: $transition;
+    padding: 0rem 1.5rem;
+    box-shadow: 0 0 8px 3px rgba($color: $dark-color, $alpha: 0.4);
+
+    .logo {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        img {
+            width: 1.7rem;
+            height: 1.7rem;
+            transition: $transition;
+        }
+        &__text {
+            margin-left: 0.75rem;
+            font-size: 1.75rem;
+        }
+    }
+}
+
+// * Navigation
+
+.aside .nav {
+    padding: 1.75rem 0;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &-item {
+        position: relative;
+        white-space: nowrap;
+        transition: $transition;
+        &--promo {
+            .nav-item__link svg {
+                stroke: $darken-secondary-accent;
+            }
+        }
+        &:not(:first-of-type) {
+            margin-top: 1.25rem;
+        }
+        @include hover {
+            svg {
+                stroke: $primary-accent-color;
+            }
+            span {
+                color: $primary-accent-color;
+            }
+        }
+
+        &__dropdown {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        svg {
+            width: 1.75rem;
+            height: 1.75rem;
+            stroke: $dark-color;
+            stroke-width: map-get($map: $stroke-width, $key: xs);
+            cursor: pointer;
+            transition: $transition;
+        }
+
+        // * show submenu class
+        &._show-submenu {
+            .nav-item__link {
+                svg {
+                    stroke: $primary-accent-color;
+                }
+                span.nav-item__text {
+                    color: $primary-accent-color;
+                }
+            }
+            .nav-item__dropdown {
+                padding-bottom: 0.8rem;
+            }
+            .nav-item__submenu {
+                display: block;
+                border-top: 2px solid $dark-color;
+            }
+            .menu-arrow {
+                transform: rotate(-180deg);
+            }
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        &__text {
+            color: $dark-color;
+            margin-left: 0.5rem;
+            transition: $transition;
+        }
+        &__submenu {
+            display: none;
+            padding: 0.2rem 0rem 0.8rem;
+            background: $light-color;
+            span {
+                display: none;
+            }
+
+            &-link {
+                display: block;
+                padding: 0.5rem 0;
+                color: $dark-color;
+                white-space: nowrap;
+                transition: $transition;
+                @include hover {
+                    color: $primary-accent-color;
+                }
+            }
+            .nav-item__text {
+                opacity: 1;
+                width: initial;
+            }
+            &._blank {
+                opacity: 1;
+                pointer-events: auto;
+                padding: 3px 20px 6px 16px;
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+// * CLOSE STATE
+
+.aside._close {
+    width: $aside-width-close;
+    padding: 0rem 1.25rem;
+
+    .logo {
+        img {
+            width: 2.25rem;
+            height: 2.25rem;
+        }
+        &__text {
+            opacity: 0;
+            transition-delay: 0s;
+            pointer-events: none;
+        }
+    }
+    .nav {
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+            &__dropdown {
+                display: block;
+            }
+            .menu-arrow {
+                display: none;
+            }
+            &__text {
+                opacity: 0;
+                width: 0;
+                pointer-events: none;
+            }
+            &__submenu {
+                position: absolute;
+                left: 100%;
+                top: -1rem;
+                margin-top: 0;
+                padding: 0.5rem 0.5rem 0.5rem 1rem;
+                border-radius: 0 4px 4px 0;
+                opacity: 0;
+                display: block;
+                pointer-events: none;
+                white-space: nowrap;
+                transition: 0s;
+
+                .nav-item__text {
+                    opacity: 1;
+                    width: initial;
+                }
+            }
+            @include hover {
+                .nav-item__submenu {
+                    span {
+                        display: block;
+                        color: $dark-color;
+                    }
+                    top: -0.4rem;
+                    opacity: 1;
+                    width: initial;
+                    pointer-events: auto;
+                    transition: $transition;
+                }
+            }
+        }
+    }
+}
+
+// * PROFILE
+.aside .profile {
+    position: fixed;
+    padding: 0.75rem 0.5rem 0.75rem 1.5rem;
+    left: 0;
+    bottom: 0;
+    width: $aside-width-open;
+    display: flex;
+    align-items: center;
+    background-color: $primary-lightgray-color;
+    transition: $transition;
+    svg {
+        stroke: $dark-color;
+    }
+    &__content-name {
+        margin-left: 0.75rem;
+        font-weight: 400;
+        color: $dark-color;
+        white-space: nowrap;
+    }
+}
+.aside._close .profile {
+    background-color: $primary-lightgray-color;
+    width: $aside-width-close;    
+    .profile__content-name {
+        display: none;
+    }
+}
+
+.aside._close ~ .dashboard {
+    left: calc($aside-width-open / 2);
+    width: calc(100% - $aside-width-open / 2);
+}
+
+@media (max-width: 420px) {
+    .aside._close .nav-item__submenu {
+        display: none;
+    }
+}
