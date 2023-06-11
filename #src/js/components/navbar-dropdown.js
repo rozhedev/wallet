@@ -10,7 +10,7 @@ if (arrow) {
     }
 }
 
-const sidebar = document.querySelector(".aside");
+const sidebar = document.querySelector(".aside-cab");
 const sidebarBtn = document.querySelector(".dashboard__content-title");
 
 if (sidebar && sidebarBtn) {

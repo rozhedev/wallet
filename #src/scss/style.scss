@@ -36,9 +36,9 @@
 @import "components/promoactions-item.scss";
 @import "components/modal.scss";
 @import "components/progressbar.scss";
-@import "components/cabinet-navbar.scss";
 
 // * CHUNKS
+@import "chunks/cabinet-navbar.scss";
 @import 'chunks/preloader.scss';
 @import 'chunks/header.scss';
 @import "chunks/footer.scss";
