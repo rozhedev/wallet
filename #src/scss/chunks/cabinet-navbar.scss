@@ -1,6 +1,7 @@
 $aside-width-open: 15rem;
 $aside-width-close: 5rem;
 
+
 .aside-cab {
     position: fixed;
     top: 0;
@@ -78,10 +79,10 @@ $aside-width-close: 5rem;
         // * show submenu class
         &._show-submenu {
             svg {
-                stroke: $darken-accent;
+                stroke: $dark-color;
             }
             span.aside-nav-item__text {
-                color: $darken-accent;
+                color: $dark-color;
             }
             .aside-nav-item__dropdown {
                 padding-bottom: 0.8rem;

@@ -1,5 +1,5 @@
 @mixin hover {
-    @media (any-hover:hover) {
+    @media (any-hover: hover) {
         &:hover {
             @content;
         }
@@ -11,7 +11,7 @@
     transition: $transition;
     cursor: pointer;
     &::after {
-        content: "";
+        content: '';
         position: absolute;
         left: 0;
         bottom: -0.3rem;

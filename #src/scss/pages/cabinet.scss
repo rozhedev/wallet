@@ -1,34 +1,33 @@
 // * DASHBOARD
 
 .dashboard {
-    $left-position: 18rem;
     position: relative;
     height: 100vh;
-    left: $left-position;
-    width: calc(100% - $left-position);
-    transition: all 0.5s ease;
-
-    &__content {
-        height: 60px;
-        display: flex;
-        align-items: center;
-
-        .aside-menu,
-        &-title {
-            font-size: 35px;
-        }
-        .aside-menu {
-            margin: 0 15px;
-            cursor: pointer;
-        }
-        &-title {
-            font-size: 26px;
-            font-weight: 600;
-        }
+    transition: $transition;
+    .inner {
+        margin: 2rem 0;
     }
 }
 
+.aside-cab ~ .dashboard {
+    max-width: calc(map-get($map: $container-max-widths, $key: xxl) - ($aside-width-open - $aside-width-close));
+    left: 6.5rem;
+    @include bp(sm) {
+        left: 0;
+        max-width: map-get($map: $container-max-widths, $key: xs);
+    }
+}
 .aside-cab._close ~ .dashboard {
-    left: calc($aside-width-open / 2);
-    width: calc(100% - $aside-width-open / 2);
+    max-width: map-get($map: $container-max-widths, $key: xxl);
+    left: 1.5rem;
+    @include bp(sm) {
+        left: 0;
+        max-width: map-get($map: $container-max-widths, $key: xs);
+    }
+}
+
+@media (max-width: 420px) {
+    .aside-cab._close .aside-nav-item__submenu {
+        display: none;
+    }
 }

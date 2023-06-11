@@ -244,7 +244,7 @@ select {
     }
 
     min-width: 9rem;
-    max-width: 20rem;
+    max-width: 30rem;
 
     border: 2px solid $dark-color24;
     border-radius: $sm-border-radius;
@@ -299,12 +299,12 @@ option {
 }
 
 .select--header {
-    display: none;
+    display: inline-flex;
     border: none;
     min-width: 0rem;
-    padding: 0;
     background-color: transparent;
     svg {
+        margin-right: 0.4rem;
         width: 2.5rem;
         height: 2.5rem;
         stroke: $white-color;

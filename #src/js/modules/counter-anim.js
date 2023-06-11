@@ -1,7 +1,7 @@
 const counterList = document.querySelectorAll(".value");
 // * Upper timeoutCount - slowly, upper renderSpeed - faster
-const renderSpeed = 200;
-let timeoutCount = 300;
+const renderSpeed = 400;
+let timeoutCount = 400;
 
 let removeListenerValue = 2000;
 let renderInterval;
