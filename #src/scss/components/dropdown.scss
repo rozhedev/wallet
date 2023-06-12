@@ -38,9 +38,9 @@
     padding: 0.5rem 0.75rem;
     min-width: $min-width;
 
-    background-color: $light-color;
+    background-color: $white-color;
     border-radius: $sm-border-radius;
-    border: 3px solid rgba($color: $dark-color, $alpha: 0.4);
+    border: 3px solid $primary-lightgray-color;
     box-shadow: $item-shadow;
     transform: translate(0, -0.5rem);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;

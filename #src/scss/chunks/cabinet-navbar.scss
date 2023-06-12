@@ -23,6 +23,7 @@
         &__text {
             margin-left: 0.75rem;
             font-size: 1.75rem;
+            text-transform: uppercase;
             cursor: text;
         }
     }
@@ -178,10 +179,14 @@
         left: 100%;
         top: -1rem;
         margin-top: 0;
-        padding: 0.5rem 0.5rem 0.5rem 1rem;
-        border-radius: 0 4px 4px 0;
         opacity: 0;
         display: block;
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+        border-radius: 0 0.25rem 0.25rem 0;
+        border-top: 2px solid $primary-lightgray-color;
+        border-right: 2px solid $primary-lightgray-color;
+        border-bottom: 2px solid $primary-lightgray-color;
         pointer-events: none;
         white-space: nowrap;
         transition: 0s;

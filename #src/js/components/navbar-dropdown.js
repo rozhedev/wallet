@@ -17,7 +17,6 @@ const sidemarLabel = document.querySelector(".header-cab__trigger span");
 if (sidebar && sidebarBtn) {
     sidebarBtn.addEventListener("click", () => {
         sidebar.classList.toggle("_close");
-        sidemarLabel.textContent = "close";
-        if (sidebar.classList.contains("_close")) sidemarLabel.textContent = "menu";
+        sidebar.classList.contains("_close") ? sidemarLabel.textContent = "menu" : sidemarLabel.textContent = "close";
     });
 }
