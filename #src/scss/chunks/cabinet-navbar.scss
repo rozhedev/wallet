@@ -1,10 +1,6 @@
-$aside-width-open: 15rem;
-$aside-width-close: 5rem;
-
-
 .aside-cab {
     position: fixed;
-    top: 0;
+    top: $header-height-mobile;
     left: 0;
     height: 100vh;
     width: $aside-width-open;
@@ -32,7 +28,7 @@ $aside-width-close: 5rem;
     }
 }
 
-// * Navigation
+// * NAVIGATION
 
 .aside-cab .nav {
     padding: 1.5rem 0;
@@ -105,6 +101,8 @@ $aside-width-close: 5rem;
             margin-left: 0.5rem;
             transition: $transition;
         }
+
+        // * submenu navbar
         &__submenu {
             display: none;
             padding: 0.2rem 0rem 0.8rem;
@@ -208,8 +206,32 @@ $aside-width-close: 5rem;
     }
 }
 
-@media (max-width: 420px) {
+// * MOBILE VERSION
+
+@include bp(lg) {
+    .aside-cab {
+        // * Use shadow as navbar overlay. Position Y = $shadow-width
+        $shadow-width: 800px;
+        left: 0;
+        box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
+
+    }
+    .aside-cab._close {
+        left: -100%;
+    }
     .aside-cab._close .aside-nav-item__submenu {
         display: none;
+    }
+}
+@include bp(md) {
+    .aside-cab {
+        $shadow-width: 600px;
+        box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
+    }
+}
+@include bp(xs) {
+    .aside-cab {
+        $shadow-width: 200px;
+        box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
     }
 }

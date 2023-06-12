@@ -1,12 +1,14 @@
-.header {
+.header, .header-cab {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
-    background-color: $dark-color;
-    padding: 1rem 0rem;
+    background-color: rgba($color: $dark-color, $alpha: 0.95);
+}
 
+.header {
+    padding: 1rem 0rem;
     .promo & {
         position: static;
         background-color: transparent;

@@ -1,33 +1,39 @@
-// * DASHBOARD
+// * .page-cab (dashboard, assets etc.)
 
-.dashboard {
+.page-cab {
     position: relative;
     height: 100vh;
     transition: $transition;
     .inner {
-        margin: 2rem 0;
+        margin: 7rem 0 2rem;
+    }
+    .dropdown {
+        .navlink {
+            text-align: left;
+        }
     }
 }
 
-.aside-cab ~ .dashboard {
-    max-width: calc(map-get($map: $container-max-widths, $key: xxl) - ($aside-width-open - $aside-width-close));
-    left: 6.5rem;
-    @include bp(sm) {
-        left: 0;
-        max-width: map-get($map: $container-max-widths, $key: xs);
-    }
-}
-.aside-cab._close ~ .dashboard {
-    max-width: map-get($map: $container-max-widths, $key: xxl);
-    left: 1.5rem;
-    @include bp(sm) {
-        left: 0;
-        max-width: map-get($map: $container-max-widths, $key: xs);
+// * Cabinet page position
+.aside-cab ~ .page-cab {
+    left: calc($aside-width-open / 2.5);
+    .container {
+        width: calc(100% - $aside-width-open * 1.5);
     }
 }
 
-@media (max-width: 420px) {
-    .aside-cab._close .aside-nav-item__submenu {
-        display: none;
+.aside-cab._close ~ .page-cab {
+    left: calc($aside-width-close / 2.5);
+    .container {
+        width: calc(100% - $aside-width-close * 2.5);
+    }
+}
+
+.aside-cab ~ .page-cab, .aside-cab._close ~ .page-cab {
+    @include bp(lg) {
+        left: 0;
+        .container, .inner {
+            width: 100%;
+        }
     }
 }

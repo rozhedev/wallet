@@ -11,10 +11,13 @@ if (arrow) {
 }
 
 const sidebar = document.querySelector(".aside-cab");
-const sidebarBtn = document.querySelector(".dashboard__content-title");
+const sidebarBtn = document.querySelector(".header-cab__trigger");
+const sidemarLabel = document.querySelector(".header-cab__trigger span");
 
 if (sidebar && sidebarBtn) {
     sidebarBtn.addEventListener("click", () => {
         sidebar.classList.toggle("_close");
+        sidemarLabel.textContent = "close";
+        if (sidebar.classList.contains("_close")) sidemarLabel.textContent = "menu";
     });
 }

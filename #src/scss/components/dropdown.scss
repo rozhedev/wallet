@@ -33,24 +33,36 @@
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: calc(100% + 0.5rem);
+    top: calc(100% + 0.65rem);
     left: 0;
     padding: 0.5rem 0.75rem;
     min-width: $min-width;
 
     background-color: $light-color;
     border-radius: $sm-border-radius;
-    font-size: 1.1rem;
-    text-align: center;
-    border: 3px solid $dark-color36;
-    transform: translate(-25%, -0.5rem);
+    border: 3px solid rgba($color: $dark-color, $alpha: 0.4);
+    box-shadow: $item-shadow;
+    transform: translate(0, -0.5rem);
     transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
 
 .dropdown.active > .navlink + .dropdown-menu {
     opacity: 1;
-    transform: translate(-25%, 0);
+    transform: translate(0, 0);
     pointer-events: auto;
+}
+
+// * Hard styling for prevent use !important
+.dropdown .dropdown-links .navlink {
+    svg {
+        stroke: $dark-color;
+        stroke-width: map-get($map: $stroke-width, $key: xs);
+    }
+    @include hover {
+        svg {
+            stroke: $darken-accent;
+        }
+    }
 }
 
 .header .menu__list .dropdown-links,
@@ -61,8 +73,8 @@
         margin-top: 0.4rem;
     }
     .navlink {
+        font-size: 1.15rem;
         white-space: nowrap;
-        font-weight: 400;
         color: $dark-color;
         &::after {
             display: none;

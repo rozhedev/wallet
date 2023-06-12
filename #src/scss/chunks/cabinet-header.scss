@@ -1,0 +1,44 @@
+.header-cab {
+    height: $header-height-mobile;
+    padding: 0.75rem 0;
+    .container, .inner {
+        min-height: 100%;
+        width: 100%;
+    }
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__trigger {
+        color: $white-color;
+        text-transform: uppercase;
+        svg {
+            fill: $white-color;
+            margin: 0 0.4rem 0 0;
+        }
+    }
+    .dropdown {
+        svg:first-of-type {
+            margin: 0 0.4rem 0 0;
+        }
+    }
+    .dropdown.active svg:first-of-type {
+        transform: rotate(0deg);
+    }
+    @include bp(lg) {
+        .header-cab__trigger .navlink, .menu .navlink {
+            font-size: 1.25rem;
+        }
+        // * reset from header.scss
+        .menu__body {
+            position: static;
+            width: initial;
+            height: initial;
+            padding: 0;
+            overflow: visible;
+            background-color: inherit;
+        } 
+    }
+}
+
