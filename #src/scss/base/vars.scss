@@ -103,6 +103,7 @@ $stroke-width: (
 $sm-border-radius: 0.25rem;
 $header-height: 80px;
 $header-height-mobile: 68px;
+$header-height-slim: calc($header-height-mobile / 1.2);
 
 $aside-width-open: 15rem;
 $aside-width-close: 5rem;

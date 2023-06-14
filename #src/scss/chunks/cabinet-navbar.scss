@@ -7,7 +7,7 @@
     background: $light-color;
     z-index: 10;
     transition: $transition;
-    padding: 0rem 1.5rem;
+    padding: 0rem 1.25rem;
     box-shadow: 0 0 8px 3px rgba($color: $dark-color, $alpha: 0.4);
 
     .logo {
@@ -58,15 +58,17 @@
                 color: $primary-accent-color;
             }
         }
-
-        &__dropdown {
+        &--dropdown .aside-nav-item__link {
+            width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            span {
+                flex-grow: 1;
+            }
         }
         svg {
-            width: 1.75rem;
-            height: 1.75rem;
+            width: 1.5rem;
+            height: 1.5rem;
             stroke: $dark-color;
             stroke-width: map-get($map: $stroke-width, $key: xs);
             cursor: pointer;
@@ -81,7 +83,7 @@
             span.aside-nav-item__text {
                 color: $dark-color;
             }
-            .aside-nav-item__dropdown {
+            .aside-nav-item__link {
                 padding-bottom: 0.8rem;
             }
             .aside-nav-item__submenu {
@@ -98,8 +100,9 @@
             text-decoration: none;
         }
         &__text {
-            color: $dark-color;
             margin-left: 0.5rem;
+            font-size: 1.15rem;
+            color: $dark-color;
             transition: $transition;
         }
 
@@ -145,8 +148,8 @@
 
     .logo {
         img {
-            width: 2.25rem;
-            height: 2.25rem;
+            width: 2rem;
+            height: 2rem;
         }
         &__text {
             opacity: 0;
@@ -163,7 +166,7 @@
 }
 
 .aside-cab._close .aside-nav-item {
-    &__dropdown {
+    &__link {
         display: block;
     }
     .menu-arrow {
@@ -215,11 +218,7 @@
 
 @include bp(lg) {
     .aside-cab {
-        // * Use shadow as navbar overlay. Position Y = $shadow-width
-        $shadow-width: 800px;
         left: 0;
-        box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
-
     }
     .aside-cab._close {
         left: -100%;
@@ -228,15 +227,12 @@
         display: none;
     }
 }
-@include bp(md) {
-    .aside-cab {
-        $shadow-width: 600px;
-        box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
-    }
-}
 @include bp(xs) {
     .aside-cab {
+        // * Use shadow as navbar overlay. Position Y = $shadow-width
         $shadow-width: 200px;
+
         box-shadow: 0 $shadow-width 0 $shadow-width rgba($color: $dark-color, $alpha: 0.8);
+        top: $header-height-slim;
     }
 }

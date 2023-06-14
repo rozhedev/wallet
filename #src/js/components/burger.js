@@ -19,24 +19,6 @@ const isMobile = {
     }
 };
 
-// * SUBMENU
-
-if (isMobile.any()) {
-    document.body.classList.add("_touch");
-
-    let dropdownList = document.querySelectorAll(".dropdown");
-    if (dropdownList.length > 0) {
-        for (let i = 0; i < dropdownList.length; i++) {
-            const dropdownItem = dropdownList[i];
-            dropdownItem.addEventListener("click", function (e) {
-                dropdownItem.classList.toggle("_active");
-            });
-        }
-    }
-} else {
-    document.body.classList.add("_pc");
-}
-
 // * BURGER
 
 const iconMenu = document.querySelector(".menu__icon");

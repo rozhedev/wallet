@@ -14,19 +14,16 @@
     }
 }
 
-// * Cabinet page position
+// * Cabinet page position TODO
 .aside-cab ~ .page-cab {
-    left: calc($aside-width-open / 2.5);
+    left: calc($aside-width-open / 2);
     .container {
-        width: calc(100% - $aside-width-open * 1.5);
+        width: calc(map-get($map: $container-max-widths, $key: xl) + 6rem);
     }
 }
 
 .aside-cab._close ~ .page-cab {
-    left: calc($aside-width-close / 2.5);
-    .container {
-        width: calc(100% - $aside-width-close * 2.5);
-    }
+    left: calc($aside-width-close / 1.5);
 }
 
 .aside-cab ~ .page-cab, .aside-cab._close ~ .page-cab {

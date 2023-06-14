@@ -1,7 +1,8 @@
 .header-cab {
     height: $header-height-mobile;
     padding: 0.75rem 0;
-    .container, .inner {
+    .container,
+    .inner {
         min-height: 100%;
         width: 100%;
     }
@@ -14,7 +15,11 @@
         color: $white-color;
         text-transform: uppercase;
         svg {
+            width: 2rem;
+            height: 2rem;
+            stroke: $white-color;
             fill: $white-color;
+            stroke-width: map-get($map: $stroke-width, $key: xs);
             margin: 0 0.4rem 0 0;
         }
     }
@@ -27,7 +32,8 @@
         transform: rotate(0deg);
     }
     @include bp(lg) {
-        .header-cab__trigger .navlink, .menu .navlink {
+        .header-cab__trigger .navlink,
+        .menu .navlink {
             font-size: 1.25rem;
         }
         // * reset from header.scss
@@ -38,7 +44,28 @@
             padding: 0;
             overflow: visible;
             background-color: inherit;
-        } 
+        }
+    }
+    @include bp(xs) {
+        height: $header-height-slim;
+        .header-cab__trigger svg,
+        .dropdown svg {
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        .header-cab__trigger span, .dropdown .navlink {
+            font-size: 1.15rem;
+        }
+        .dropdown-menu {
+            left: -2.4rem;
+        }
     }
 }
 
+// * Menu icon anim
+.aside-cab + .header-cab .header-cab__trigger svg {
+    transform: rotate(0deg);
+}
+.aside-cab._close + .header-cab .header-cab__trigger svg {
+    transform: rotate(180deg);
+}
