@@ -69,3 +69,27 @@
 .aside-cab._close + .header-cab .header-cab__trigger svg {
     transform: rotate(180deg);
 }
+
+// * Disable .header-cab dropdown, when aside menu open in mobile device
+@include bp(xs) {
+    .aside-cab + .header-cab .dropdown {
+        overflow: hidden;
+        pointer-events: none;
+        button.navlink {
+            color: $dark-color36;
+            svg {
+                stroke: $dark-color36;
+            }
+        }
+    }
+    .aside-cab._close + .header-cab .dropdown {
+        overflow: visible;
+        pointer-events: all;
+        button.navlink {
+            color: $white-color;
+            svg {
+                stroke: $white-color;
+            }
+        }
+    }
+}

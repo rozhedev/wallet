@@ -37,7 +37,8 @@
         padding: 0 calc( $grid-gap-side * 0.75 );
     }
     @include bp(xs) {
-        max-width: map-get($container-max-widths, xs) + ($grid-gap-side * 0.75);
+        max-width: map-get($container-max-widths, xs);
+        padding: 0 calc( $grid-gap-side * 0.375);
     }
 }
 

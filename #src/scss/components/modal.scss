@@ -1,5 +1,5 @@
 .modal {
-    $screenHeight: 90vh;
+    $screenHeight: 99vh;
     $modal-types: (
         'success': #00c896,
         'error': #ee6464,
@@ -26,7 +26,7 @@
         flex-direction: column;
     }
     &-dialog {
-        width: calc((map-get($container-max-widths, xxl) / 12) * 4);
+        width: map-get($map: $container-max-widths, $key: xs);
         min-height: calc($screenHeight / 5);
         max-height: $screenHeight;
 
@@ -53,7 +53,8 @@
             text-align: justify;
         }
         @include bp(sm) {
-            width: map-get($container-max-widths, xs);
+            // * 0.75rem - padding from both sides. Width = 336px
+            width: calc(map-get($container-max-widths, xs) - 0.75rem);
         }
     }
 

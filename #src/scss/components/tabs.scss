@@ -43,6 +43,7 @@
             }
             @include bp(sm) {
                 border-bottom: 4px solid $secondary-lightgray-color;
+                justify-content: center;
             }
             &:not(:first-of-type) {
                 margin-left: 2rem;
