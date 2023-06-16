@@ -90,6 +90,9 @@ $advant-inset-shadow: inset 4px -4px 8px 0px rgba(
         $color: $dark-color,
         $alpha: 0.24,
     );
+    
+$card-cab-shadow: 56px 56px 32px rgba(0, 0, 0, 0.02), 32px 32px 27px rgba(0, 0, 0, 0.06),
+    14px 14px 20px rgba(0, 0, 0, 0.11), 4px 4px 11px rgba(0, 0, 0, 0.12), 0px 0px 0px rgba(0, 0, 0, 0.13);
 
 // * Stroke-width
 $stroke-width: (

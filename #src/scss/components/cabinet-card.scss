@@ -1,0 +1,33 @@
+.page-cab .cabinet-card {
+    padding: 1rem;
+}
+.cabinet-card {
+    @include card-rect;
+    max-width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 5);
+    height: fit-content;
+}
+.dashboard-nav {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0.75rem;
+        li:not(:last-of-type) {
+            margin-right: 0.75rem;
+            padding-right: 0.75rem;
+            border-right: 1px solid $dark-color24;
+        }
+    }
+    .navlink {
+        color: $dark-color;
+        font-weight: 400;
+        @include hover {
+            color: $primary-accent-color;
+        }
+    }
+    &-link {
+    }
+}
+.modal-header {
+}
+.h4 {
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "imgPath": "../img/icons/crypto/bitcoin-BTC.svg",
+        "imgAlt": "bitcoin-BTC",
+        "curName": "Bitcoin (BTC)",
+        "curAmountId": "bitcoin-cur-amount",
+        "usdAmountId": "bitcoin-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/ethereum-ETH.svg",
+        "imgAlt": "ethereum-ETH",
+        "curName": "Ethereum (ETH)",
+        "curAmountId": "ethereum-cur-amount",
+        "usdAmountId": "ethereum-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/tether-USDT.svg",
+        "imgAlt": "tether-USDT",
+        "curName": "Tether (USDT)",
+        "curAmountId": "tether-cur-amount",
+        "usdAmountId": "tether-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/binance-coin-BNB.svg",
+        "imgAlt": "binance-coin-BNB",
+        "curName": "Binance Coin (BNB)",
+        "curAmountId": "binance-coin-cur-amount",
+        "usdAmountId": "binance-coin-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/usd-coin-USDC.svg",
+        "imgAlt": "usd-coin-USDC",
+        "curName": "USD Coin (USDC)",
+        "curAmountId": "usd-coin-cur-amount",
+        "usdAmountId": "usd-coin-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/xrp-XRP.svg",
+        "imgAlt": "xrp-XRP",
+        "curName": "XRP (XRP)",
+        "curAmountId": "xrp-cur-amount",
+        "usdAmountId": "xrp-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/terra-LUNA.svg",
+        "imgAlt": "terra-LUNA",
+        "curName": "Terra (LUNA)",
+        "curAmountId": "terra-cur-amount",
+        "usdAmountId": "terra-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/cardano-ADA.svg",
+        "imgAlt": "cardano-ADA",
+        "curName": "Cardano (ADA)",
+        "curAmountId": "cardano-cur-amount",
+        "usdAmountId": "cardano-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/solana-SOL.svg",
+        "imgAlt": "solana-SOL",
+        "curName": "Solana (SOL)",
+        "curAmountId": "solana-cur-amount",
+        "usdAmountId": "solana-usd-amount"
+    },
+    {
+        "imgPath": "img/icons/crypto/polkadot-DOT.svg",
+        "imgAlt": "polkadot-DOT",
+        "curName": "Polkadot (DOT)",
+        "curAmountId": "polkadot-cur-amount",
+        "usdAmountId": "polkadot-usd-amount"
+    }
+]

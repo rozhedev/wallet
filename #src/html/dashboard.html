@@ -17,8 +17,41 @@
             <section class="dashboard page-cab" id="dashboard">
                 <div class="container">
                     <div class="inner">
-                        <h3 class="h4 dashboard__content-title">Dashboard</h3>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, vero repudiandae eius ducimus tempore id. Enim possimus repellendus qui mollitia, distinctio totam dignissimos inventore, expedita numquam cupiditate sapiente voluptates dicta.
+                        <div class="cabinet-card dashboard-nav">
+                            <div class="modal-header">
+                                <h4 class="h4">Navigation on site</h4>
+                            </div>
+                            <nav>
+                                <ul class="dashboard-nav__list">
+                                    <li><a href="#" class="navlink dashboard-nav-link">Homepage</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Converter</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Assets</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Promoactions</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Popular questions</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Privacy policy</a></li>
+                                    <li><a href="#" class="navlink dashboard-nav-link">Rules</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="cabinet-card dashboard-stat">
+                            @@loop("components/_dashboard-stat-item.html", "../json/dashboard-stat-items.json")
+                        </div>
+
+                        <div class="cabinet-card dashboard-balance">
+                            @@loop("components/_dashboard-balance-item.html", "../json/dashboard-balance-items.json")
+
+                            <form method="get" action="assets.html">
+                                <button type="button" class="btn btn-outline-xs">
+                                    <span>Edit on Assets</span>
+                                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M54.8571 32V59.4285H4.57141V9.14282H32" />
+                                        <path d="M59.4285 22.8572V4.57153H41.1428" />
+                                        <path d="M36.5714 27.4287L59.4286 4.57153" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

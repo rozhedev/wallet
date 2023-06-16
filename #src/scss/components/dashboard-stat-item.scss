@@ -1,0 +1,21 @@
+.dashboard-stat-item {
+    display: flex;
+    width: fit-content;
+    color: $dark-color;
+    &__icon svg {
+        width: 4rem;
+        height: 4rem;
+        stroke: $dark-color;
+        stroke-width: calc(map-get($map: $stroke-width, $key: xs) / 2);
+    }
+    &__content {
+        margin-left: 0.5rem;
+    }
+    &__title {
+    }
+    &__value {
+    }
+    .output {
+    }
+
+}

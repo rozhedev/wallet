@@ -56,8 +56,10 @@
     }
 }
 
+// * CLASSES
 .btn-fill,
-.btn-fill-sm {
+.btn-fill-sm,
+.btn-fill-xs {
     @include btn(0.8rem, 1.6rem, $white-color, $primary-accent-color, $btn-light-text-shadow);
     @include hover {
         @include btn-filled-anim();
@@ -69,7 +71,8 @@
 }
 
 .btn-outline,
-.btn-outline-sm {
+.btn-outline-sm,
+.btn-outline-xs {
     @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
     @include hover {
         @include btn-outline-anim();
@@ -85,10 +88,48 @@
     padding: 0.5rem 0.75rem;
 }
 
+
+.btn-fill-xs,
+.btn-outline-xs {
+    padding: 0.375rem 0.65rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    span ~ svg {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}
+
+.btn-fill-xs {
+    @include hover {
+        box-shadow: none;
+        background-color: $darken-accent;
+        &:active {
+            box-shadow: none;
+            background-color: $primary-accent-color;
+        }
+    }
+}
+
+.btn-outline-xs {
+    @include hover {
+        box-shadow: $inp-focus-shadow;
+        background-color: $light-color;
+        border-color: $darken-accent;
+        &:active {
+            box-shadow: none;
+            background-color: $white-color;
+            border-color: $primary-accent-color;
+        }
+    }
+}
+
 .btn-fill:disabled,
 .btn-fill-sm:disabled,
+.btn-fill-xs:disabled,
 .btn-outline:disabled,
-.btn-outline-sm:disabled {
+.btn-outline-sm:disabled,
+.btn-outline-xs:disabled {
     @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
     @include btn-disabled($dark-color36);
     @include hover {

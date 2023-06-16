@@ -32,6 +32,15 @@
     border-radius: calc($sm-border-radius * 2);
 }
 
+@mixin card-rect {
+    background-color: $white-color;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-radius: calc($sm-border-radius * 2);
+    box-shadow: $card-cab-shadow;
+}
+
 @mixin centering {
     display: flex;
     justify-content: center;

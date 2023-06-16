@@ -26,7 +26,7 @@
         flex-direction: column;
     }
     &-dialog {
-        width: map-get($map: $container-max-widths, $key: xs);
+        width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 4);
         min-height: calc($screenHeight / 5);
         max-height: $screenHeight;
 
