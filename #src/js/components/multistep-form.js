@@ -7,34 +7,7 @@ const nextBtns = document.querySelectorAll(".btn-next");
 const formSteps = document.querySelectorAll(".form-step");
 const progressSteps = document.querySelectorAll(".progress-step");
 const progressLineActive = document.getElementById("progress-line-active");
-
 let formStepsNum = 0;
-
-if (nextBtns && prevBtns) {
-    nextBtns.forEach((btn) => {
-        if (btn.getAttribute("type") != "submit") {
-            btn.addEventListener("click", (e) => {
-                formStepsNum++;
-                updateFormsSteps();
-                
-                if (progressLineActive) {
-                    updateProgressbar();
-                }
-            })
-        }
-    })
-
-    prevBtns.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-            formStepsNum--;
-            updateFormsSteps();
-
-            if (progressLineActive) {
-                updateProgressbar();
-            }
-        })
-    })
-}
 
 function updateFormsSteps() {
     formSteps.forEach((stepItem) => {
@@ -50,6 +23,28 @@ function updateProgressbar() {
     })
 
     const progressStepsActive = document.querySelectorAll(".progress-step._active");
-
     progressLineActive.style.width = (progressStepsActive.length - 1) / (progressSteps.length - 1) * 100 + "%";
+}
+
+if (nextBtns && prevBtns) {
+    nextBtns.forEach((btn) => {
+        if (btn.getAttribute("type") != "submit") {
+            btn.addEventListener("click", (e) => {
+                if (formSteps.length !== 0) {
+                    formStepsNum++;
+                    updateFormsSteps();    
+                }
+                if (progressLineActive) updateProgressbar();
+            })
+        }
+    })
+    prevBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            if (formSteps.length !== 0) {
+                formStepsNum--;
+                updateFormsSteps();   
+            }
+            if (progressLineActive) updateProgressbar(); 
+        })
+    })
 }

@@ -24,13 +24,13 @@
                             </div>
                             <nav>
                                 <ul class="dashboard-nav__list">
-                                    <li><a href="#" class="navlink dashboard-nav-link">Homepage</a></li>
+                                    <li><a href="index.html" class="navlink dashboard-nav-link">Homepage</a></li>
                                     <li><a href="#" class="navlink dashboard-nav-link">Converter</a></li>
-                                    <li><a href="#" class="navlink dashboard-nav-link">Assets</a></li>
-                                    <li><a href="#" class="navlink dashboard-nav-link">Promoactions</a></li>
-                                    <li><a href="#" class="navlink dashboard-nav-link">Popular questions</a></li>
-                                    <li><a href="#" class="navlink dashboard-nav-link">Privacy policy</a></li>
-                                    <li><a href="#" class="navlink dashboard-nav-link">Rules</a></li>
+                                    <li><a href="assets.html" class="navlink dashboard-nav-link">Assets</a></li>
+                                    <li><a href="promoactions.html" class="navlink dashboard-nav-link">Promoactions</a></li>
+                                    <li><a href="faq.html" class="navlink dashboard-nav-link">Popular questions</a></li>
+                                    <li><a href="privacy-policy.html" class="navlink dashboard-nav-link">Privacy policy</a></li>
+                                    <li><a href="terms.html" class="navlink dashboard-nav-link">Terms</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -49,7 +49,7 @@
                                 </button>
                             </form>
                         </div>
-                        
+
                         <!-- * STAT -->
                         <div class="cabinet-card dashboard-stat">
                             @@loop("components/_dashboard-stat-item.html", "../json/dashboard-stat-items.json")
@@ -71,6 +71,20 @@
                                 </button>
                             </form>
                         </div>
+                    </div>
+                    <div class="floating-bar-popup cabinet-card">
+                        <span>🎉 Participate in our survey to get an airdrop in honor of Flem Wallet two-year anniversary</span>
+
+                        @@include('components/_btn-group.html',{
+                        "type1": "button",
+                        "type2": "button",
+                        "style1": "btn-outline-xs",
+                        "style2": "btn-fill-xs",
+                        "id1": "floating-bar-btn-close",
+                        "id2": "floating-bar-btn-open",
+                        "label1": "Maybe later",
+                        "label2": "Get involved"
+                        })
                     </div>
                 </div>
             </section>

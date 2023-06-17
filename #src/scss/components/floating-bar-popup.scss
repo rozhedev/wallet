@@ -1,0 +1,10 @@
+.floating-bar-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+
+    .btn-group {
+        max-width: 19rem;
+    }
+}
