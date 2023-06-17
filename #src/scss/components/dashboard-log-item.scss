@@ -1,0 +1,78 @@
+.dashboard-log-item {
+    $log-types: (
+        'get': #00c896,
+        'send': #ee6464,
+        'wait': #676767,
+        'info': #8685ef,
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:first-of-type {
+        margin-top: 0.75rem;
+    }
+    &:not(:first-of-type) {
+        margin-top: 0.5rem;
+    }
+    color: $dark-color;
+    &__type {
+        display: flex;
+        align-items: center;
+        flex-basis: 20%;
+        min-width: 7.3rem;
+
+        & > svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            stroke-width: map-get($map: $stroke-width, $key: xs);
+        }
+        .navlink {
+            margin-left: 0.375rem;
+            font-weight: 400;
+            line-height: 2.375rem;
+            letter-spacing: 0.02em;
+        }
+    }
+
+    &__info {
+        margin-left: 1.25rem;
+        flex-basis: 40%;
+        div {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: $dark-color24;
+            &:last-of-type {
+                margin-top: 0.25rem;
+            }
+        }
+        .dashboard-log-item__wallet {
+            padding-left: 0.25rem;
+            width: 10.25rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.25rem;
+        }
+    }
+    &__amount {
+        flex-basis: 40%;
+    }
+    &__num {
+        margin: 0 0.5rem 0 1rem;
+    }
+
+    // * Color for log types
+    @each $type, $color in $log-types {
+        &--#{$type} {
+            .dashboard-log-item__num,
+            .dashboard-log-item__cur-sign {
+                color: $color;
+            }
+            .dashboard-log-item__type > svg {
+                stroke: $color;
+            }
+        }
+    }
+}

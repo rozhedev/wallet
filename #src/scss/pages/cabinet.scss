@@ -2,7 +2,7 @@
 
 .page-cab {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     transition: $transition;
     background-color: rgba($color: $primary-accent-color, $alpha: 0.125);
     .inner {

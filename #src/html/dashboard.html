@@ -17,6 +17,7 @@
             <section class="dashboard page-cab" id="dashboard">
                 <div class="container">
                     <div class="inner">
+                        <!-- * NAV -->
                         <div class="cabinet-card dashboard-nav">
                             <div class="modal-header">
                                 <h4 class="h4">Navigation on site</h4>
@@ -34,13 +35,9 @@
                             </nav>
                         </div>
 
-                        <div class="cabinet-card dashboard-stat">
-                            @@loop("components/_dashboard-stat-item.html", "../json/dashboard-stat-items.json")
-                        </div>
-
+                        <!-- * BALANCE -->
                         <div class="cabinet-card dashboard-balance">
                             @@loop("components/_dashboard-balance-item.html", "../json/dashboard-balance-items.json")
-
                             <form method="get" action="assets.html">
                                 <button type="button" class="btn btn-outline-xs">
                                     <span>Edit on Assets</span>
@@ -48,6 +45,28 @@
                                         <path d="M54.8571 32V59.4285H4.57141V9.14282H32" />
                                         <path d="M59.4285 22.8572V4.57153H41.1428" />
                                         <path d="M36.5714 27.4287L59.4286 4.57153" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <!-- * STAT -->
+                        <div class="cabinet-card dashboard-stat">
+                            @@loop("components/_dashboard-stat-item.html", "../json/dashboard-stat-items.json")
+                        </div>
+
+                        <!-- * SHORT LOGS -->
+                        <div class="cabinet-card dashboard-log">
+                            <div class="modal-header">
+                                <h4 class="h4">Recent actions</h4>
+                            </div>
+                            @@loop("components/_dashboard-log-item.html", "../json/dashboard-log-items.json")
+                            <form method="get" action="history.html">
+                                <button type="button" class="btn btn-outline-xs">
+                                    <span>View all</span>
+                                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M59.4287 32.0001C59.4287 32.0001 50.2858 50.2858 32.0001 50.2858C13.7144 50.2858 4.57153 32.0001 4.57153 32.0001C4.57153 32.0001 13.7144 13.7144 32.0001 13.7144C50.2858 13.7144 59.4287 32.0001 59.4287 32.0001Z" />
+                                        <circle cx="32" cy="32" r="8.14286" />
                                     </svg>
                                 </button>
                             </form>
