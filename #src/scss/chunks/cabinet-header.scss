@@ -75,7 +75,7 @@
     .aside-cab + .header-cab .dropdown {
         overflow: hidden;
         pointer-events: none;
-        button.navlink {
+        & > button.navlink {
             color: $dark-color36;
             svg {
                 stroke: $dark-color36;
@@ -85,7 +85,7 @@
     .aside-cab._close + .header-cab .dropdown {
         overflow: visible;
         pointer-events: all;
-        button.navlink {
+        & > button.navlink {
             color: $white-color;
             svg {
                 stroke: $white-color;

@@ -147,7 +147,8 @@
 
 // * Input grid
 .register .form .form-inp-grid,
-.signin .form .form-inp-grid {
+.signin .form .form-inp-grid,
+.modal-dialog--connect .form-inp-grid {
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     grid-auto-flow: row dense;
@@ -156,6 +157,10 @@
     @include bp(sm) {
         grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     }
+}
+
+.modal-dialog--connect .form-inp-grid {
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
 }
 
 .form-user-data .checkbox__label {
@@ -211,6 +216,13 @@
     text-align: center;
 }
 
+.form-conroller .form-step__descr {
+    margin-top: 1rem;
+    p:not(:first-of-type) {
+        margin-top: 0.75rem;
+    }
+}
+
 .btn-group {
     width: 100%;
     display: flex;
@@ -221,7 +233,7 @@
         }
     }
     @include bp(sm) {
-        flex-direction: column;
+        flex-direction: column-reverse;
         .btn:not(:first-of-type) {
             margin-left: 0;
             margin-top: 1.5rem;

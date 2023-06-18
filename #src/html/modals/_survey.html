@@ -31,7 +31,7 @@
 
                 <!-- * 1 -->
                 <fieldset class="form-step form-survey-step" id="survey-question1">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">How long have you been using cryptocurrencies?</legend>
 
                         @@loop("../components/_form-radio.html", "../json/survey/question1.json")
@@ -52,7 +52,7 @@
 
                 <!-- * 2 -->
                 <fieldset class="form-step form-survey-step" id="survey-question2">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">What cryptocurrencies have you used?</legend>
 
                         @@loop("../components/_form-checkbox.html", "../json/survey/question2.json")
@@ -73,7 +73,7 @@
 
                 <!-- * 3 -->
                 <fieldset class="form-step form-survey-step" id="survey-question3">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">For what purposes did you use cryptocurrency?</legend>
 
                         @@loop("../components/_form-checkbox.html", "../json/survey/question3.json")
@@ -94,7 +94,7 @@
 
                 <!-- * 4 -->
                 <fieldset class="form-step form-survey-step" id="survey-question4">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">Do you use crypto exchanges to store your personal funds?</legend>
 
                         @@loop("../components/_form-radio.html", "../json/survey/question4.json")
@@ -115,7 +115,7 @@
 
                 <!-- * 5 -->
                 <fieldset class="form-step form-survey-step" id="survey-question5">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">What wallets have you used before?</legend>
 
                         @@loop("../components/_form-checkbox.html", "../json/survey/question5.json")
@@ -136,7 +136,7 @@
 
                 <!-- * 6 -->
                 <fieldset class="form-step form-survey-step" id="survey-question6">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">How did you find out about Flem Wallet?</legend>
 
                         @@loop("../components/_form-radio.html", "../json/survey/question6.json")
@@ -157,7 +157,7 @@
 
                 <!-- * 7 -->
                 <fieldset class="form-step form-survey-step" id="survey-question7">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">Do you have NFT tokens?</legend>
 
                         @@loop("../components/_form-radio.html", "../json/survey/question7.json")
@@ -178,7 +178,7 @@
 
                 <!-- * 8 -->
                 <fieldset class="form-step form-survey-step" id="survey-question8">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">
                             Would you like to participate in the Flem Wallet Preview Program?
                         </legend>
@@ -201,7 +201,7 @@
 
                 <!-- * 9 -->
                 <fieldset class="form-step form-survey-step" id="survey-question8">
-                    <div class="radio-group">
+                    <div class="form-conroller radio-group">
                         <legend class="form-conroller__label navlink">
                             Select the currency in which you want to receive the airdrop:
                         </legend>
@@ -247,9 +247,11 @@
                             Airdrop currency: <span id="survey-airdrop-currency">Ethereum (ETH)</span>
                         </h6>
                     </div>
-                    <p class="form-survey-finish__content">
-                        Survey done! Airdrop will be credited within 15 minutes. If you have any problems please contact technical support.
-                    </p>
+                    <div class="form-step__descr">
+                        <p>
+                            Survey done! Airdrop will be credited within 15 minutes. If you have any problems please contact technical support.
+                        </p>
+                    </div>
                     <div class="modal-footer btn-group">
                         <!-- * This btn not close modal, because "js-modal-close" class prevent submitting form -->
                         <button type="submit" class="btn btn-outline-sm"><span>Finish</span></button>

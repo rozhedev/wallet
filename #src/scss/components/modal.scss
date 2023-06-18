@@ -149,14 +149,15 @@
 
 // * MODAL SURVEY
 
-.modal-dialog--survey {
+.modal-dialog {
     .form-conroller__label.navlink {
         font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 1rem;
     }
-    .radio-group, .checkbox-group {
-        width: 100%;    
+    .radio-group,
+    .checkbox-group {
+        width: 100%;
     }
 }
 
@@ -169,7 +170,7 @@
         stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
     }
     &__info {
-        margin: 1rem 0;
+        margin-top: 1rem;
         .navlink {
             letter-spacing: 0.02em;
             cursor: text;
@@ -178,5 +179,35 @@
                 color: $primary-accent-color;
             }
         }
+    }
+}
+
+// * MODAL CONNECT
+
+.modal-dialog--connect {
+    .form-label-legend.navlink {
+        font-weight: 400;
+    }
+    .form-inp-grid {
+        margin-top: 1rem;
+        .inp {
+            min-width: 6rem;
+        }
+    }
+    .form-connect-promo svg,
+    .form-connect-success svg,
+    .form-connect-error svg {
+        width: 4rem;
+        height: 4rem;
+        stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
+    }
+    .form-connect-promo svg {
+        stroke: $primary-accent-color;
+    }
+    .form-connect-success svg {
+        stroke: $success-green;
+    }
+    .form-connect-error svg {
+        stroke: $error-red;
     }
 }
