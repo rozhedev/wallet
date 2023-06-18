@@ -187,6 +187,7 @@
 .modal-dialog--connect {
     .form-label-legend.navlink {
         font-weight: 400;
+        text-align: center;
     }
     .form-inp-grid {
         margin-top: 1rem;
@@ -197,8 +198,8 @@
     .form-connect-promo svg,
     .form-connect-success svg,
     .form-connect-error svg {
-        width: 4rem;
-        height: 4rem;
+        width: 4.5rem;
+        height: 4.5rem;
         stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
     }
     .form-connect-promo svg {

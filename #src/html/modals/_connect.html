@@ -37,10 +37,16 @@
                         @@loop("../components/_confirm-input.html", "../json/signin-confirm-inputs.json")
                         <small class="form-conroller__message">Error message</small>
                     </div>
-                    <div class="btn-group">
-                        <button type="button" class="btn btn-outline-sm btn-prev"><span>Cancel</span></button>
-                        <button type="button" class="btn btn-outline-sm btn-next"><span>Confirm connect</span></button>
-                    </div>
+                    @@include("../components/_btn-group.html", {
+                    "type1": "button",
+                    "type2": "button",
+                    "style1": "btn-outline-sm",
+                    "style2": "btn-outline-sm",
+                    "id1": "",
+                    "id2": "",
+                    "label1": "Cancel",
+                    "label2": "Confirm connect"
+                    })
                 </fieldset>
 
                 <!-- * Connect success -->
@@ -60,8 +66,6 @@
                         </p>
                     </div>
                     <div class="modal-footer btn-group">
-                        <button type="button" class="btn btn-outline-sm btn-prev"><span>Previous</span></button>
-
                         <!-- * This btn not close modal, because "js-modal-close" class prevent submitting form -->
                         <!-- * Don't forget change to submit -->
                         <button type="button" class="btn btn-outline-sm btn-next"><span>Finish</span></button>
@@ -83,11 +87,10 @@
                             There are not enough funds on the external wallet to pay the network fee.
                         </p>
                         <p>
-                            To ensure the safety of cryptocurrency transfers between wallets, the amount of the first wallet shouldn't be less than 25-35% of the amount of the second.
+                            To ensure the safety of cryptocurrency transfers between wallets, the amount in the first wallet should not be less than 25-35% of the amount in the second wallet.
                         </p>
                     </div>
                     <div class="modal-footer btn-group">
-                        <button type="button" class="btn btn-outline-sm btn-prev"><span>Previous</span></button>
                         <!-- * This btn not close modal, because "js-modal-close" class prevent submitting form -->
                         <button type="submit" class="btn btn-outline-sm"><span>Close</span></button>
                     </div>
