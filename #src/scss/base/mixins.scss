@@ -41,6 +41,13 @@
     box-shadow: $card-cab-shadow;
 }
 
+@mixin str-trim {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @mixin centering {
     display: flex;
     justify-content: center;

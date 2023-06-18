@@ -9,35 +9,69 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include bp(xl) {
+        flex-wrap: wrap;
+        padding-bottom: 0.75rem;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $dark-color24;
+        }
+    }
     &:first-of-type {
         margin-top: 0.75rem;
     }
     &:not(:first-of-type) {
         margin-top: 0.5rem;
     }
-    color: $dark-color;
     &__type {
         display: flex;
         align-items: center;
         flex-basis: 20%;
         min-width: 7.3rem;
 
+        @include bp(xl) {
+            order: 1;
+        }
+        @include bp(md) {
+            flex-basis: 67%;
+        }
+        @include bp(sm) {
+            flex-basis: 56%;
+        }
+        @include bp(sm) {
+            flex-basis: 25%;
+        }
         & > svg {
             width: 1.5rem;
             height: 1.5rem;
             stroke-width: map-get($map: $stroke-width, $key: xs);
         }
         .navlink {
+            @include str-trim;
             margin-left: 0.375rem;
             font-weight: 400;
             line-height: 2.375rem;
             letter-spacing: 0.02em;
+            width: max-content;
         }
     }
 
     &__info {
         margin-left: 1.25rem;
         flex-basis: 40%;
+
+        @include bp(xl) {
+            order: 3;
+            flex-basis: 100%;
+            margin-left: 0;
+            margin-top: 0.5rem;
+            width: 100%;
+            & > div .dashboard-log-item__wallet {
+                max-width: 100%;
+            }
+        }
+        @include bp(lg) {
+           flex-basis: 100%;
+        }
         div {
             display: flex;
             align-items: center;
@@ -48,17 +82,20 @@
             }
         }
         .dashboard-log-item__wallet {
+            @include str-trim;
             padding-left: 0.25rem;
-            width: 10.25rem;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            max-width: 10.25rem;
             line-height: 1.25rem;
         }
     }
     &__amount {
         flex-basis: 40%;
         font-weight: 400;
+        @include bp(xl) {
+            order: 2;
+            text-align: right;
+            flex-basis: 30%;
+        }
     }
     &__num {
         margin: 0 0.5rem 0 1rem;

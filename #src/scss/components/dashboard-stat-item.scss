@@ -7,15 +7,25 @@
         height: 4rem;
         stroke: $dark-color;
         stroke-width: calc(map-get($map: $stroke-width, $key: xs) / 2);
+        @include bp(xl) {
+            width: 3rem;
+            height: 3rem;
+        }
     }
     &__content {
         margin-left: 0.5rem;
     }
     &__title {
         font-size: 1.25rem;
+        @include bp(xl) {
+            font-size: 1rem;
+        }
     }
     .output {
         font-size: 1.625rem;
+        @include bp(xl) {
+            font-size: 1.33rem;
+        }
     }
 
 }

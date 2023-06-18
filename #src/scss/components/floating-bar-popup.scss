@@ -7,4 +7,13 @@
     .btn-group {
         max-width: 19rem;
     }
+    @include bp(sm) {
+        flex-direction: column;
+        .btn-group {
+            max-width: 100%;
+            .btn {
+                margin-top: 1.5rem;
+            }
+        }
+    }
 }
