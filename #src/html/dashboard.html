@@ -16,6 +16,22 @@
 
             <section class="dashboard page-cab" id="dashboard">
                 <div class="container">
+                    @@include('components/_floating-bar-popup.html',{
+                    "popupId": "survey-notif-popup",
+                    "descr": "🎉 Participate in our survey to get an airdrop in honor of Flem Wallet two-year anniversary",
+                    "action1": "#",
+                    "formTrigger1": "",
+                    "btnStyle1": "btn-outline-xs",
+                    "btnId1": "survey-notif-popup-close",
+                    "btnLabel1": "Maybe later",
+
+                    "action2": "#modal-connect",
+                    "formTrigger2": "js-modal-open",
+                    "btnStyle2": "btn-fill-xs",
+                    "btnId2": "survey-notif-open",
+                    "btnLabel2": "Get involved",
+                    })
+
                     <div class="inner">
                         <!-- * NAV -->
                         <div class="cabinet-card dashboard-nav">
@@ -71,22 +87,6 @@
                             </form>
                         </div>
                     </div>
-
-                    @@include('components/_floating-bar-popup.html',{
-                    "popupId": "survey-notif-popup",
-                    "descr": "🎉 Participate in our survey to get an airdrop in honor of Flem Wallet two-year anniversary",
-                    "action1": "#",
-                    "formTrigger1": "",
-                    "btnStyle1": "btn-outline-xs",
-                    "btnId1": "survey-notif-popup-close",
-                    "btnLabel1": "Maybe later",
-
-                    "action2": "#modal-connect",
-                    "formTrigger2": "js-modal-open",
-                    "btnStyle2": "btn-fill-xs",
-                    "btnId2": "survey-notif-open",
-                    "btnLabel2": "Get involved",
-                    })
                 </div>
             </section>
         </div>

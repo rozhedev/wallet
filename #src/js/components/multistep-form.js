@@ -9,6 +9,7 @@ const progressSteps = document.querySelectorAll(".progress-step");
 const progressLineActive = document.getElementById("progress-line-active");
 let formStepsNum = 0;
 
+// TODO Rewrite call for different multistep forms
 function updateFormsSteps() {
     formSteps.forEach((stepItem) => {
         if (stepItem.classList.contains(CLASS_LIST.active)) stepItem.classList.remove(CLASS_LIST.active)

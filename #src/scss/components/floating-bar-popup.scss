@@ -28,6 +28,7 @@
         flex-direction: column;
         .btn-group {
             max-width: 100%;
+            margin-left: 0rem;
             form:not(:first-of-type) {
                 margin-left: 0;
             }

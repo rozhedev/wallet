@@ -46,8 +46,13 @@
 
 .cabinet-card {
     @include card-rect;
-    max-width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 5);
     height: fit-content;
+}
+.dashboard .cabinet-card {
+    max-width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 5);
+}
+.dashboard .floating-bar-popup._show {
+    margin-bottom: 2rem;
 }
 
 .floating-bar-popup.cabinet-card {

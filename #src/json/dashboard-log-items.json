@@ -31,7 +31,7 @@
         "svgIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32 25.6H41.1428V17.0667L59.4285 29.8666L41.1428 42.6666V34.1333H22.8571V25.6L4.57141 38.4L22.8571 51.2V42.6666H32'/></svg>",
         "operationType": "Exchange",
         "date": "05.27.2020, at 12:30 PM",
-        "walletAddress": "bc1uf5tdn... to bc1uf5tdn...",
+        "walletAddress": "Bitcoin &#10142; Ethereum",
         "num": "0.00056788",
         "curSign": "DASH"
     },

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html',{
+"title":"Aviable assets"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <div class="page">
+            <!-- * First must include cabinet navbar for correct work menu icon anim -->
+            @@include('chunks/_cabinet-navbar.html',{})
+            @@include('chunks/_cabinet-header.html',{})
+
+            <section class="assets-cab page-cab" id="assets-cab">
+                <div class="container">
+                    <div class="inner">
+                        <div class="assets-cab-list cabinet-card">
+                            <div class="asset-cab-item">Hello</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+   
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>
