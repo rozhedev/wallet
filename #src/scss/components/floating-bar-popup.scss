@@ -1,19 +1,47 @@
 .floating-bar-popup {
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 100%;
+    transition: $transition;
 
+    .page-cab &.cabinet-card {
+        height: 0;
+        padding: 0;
+    }
     .btn-group {
         max-width: 19rem;
+        margin-left: 1rem;
+        form,
+        .btn {
+            flex-grow: 1;
+            width: 100%;
+        }
+        form:not(:first-of-type) {
+            margin-left: 1.5rem;
+        }
     }
     @include bp(sm) {
         flex-direction: column;
         .btn-group {
             max-width: 100%;
+            form:not(:first-of-type) {
+                margin-left: 0;
+            }
             .btn {
-                margin-top: 1.5rem;
+                margin: 1.5rem 0 0 0;
             }
         }
     }
+}
+
+.page-cab .floating-bar-popup._show {
+    opacity: 1;
+    overflow: visible;
+    pointer-events: all;
+    height: fit-content;
+    padding: 1rem;
 }

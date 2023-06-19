@@ -20,8 +20,8 @@
             @include bp(sm) {
                 max-width: 13rem;
             }
-            @include bp(sm) {
-                max-width: 9.5rem;
+            @include bp(xs) {
+                max-width: 10rem;
             }
         }
     }

@@ -39,6 +39,9 @@
 
 .page-cab .cabinet-card {
     padding: 1rem;
+    @include bp(sm) {
+        padding: 1rem 0.75rem;
+    }
 }
 
 .cabinet-card {

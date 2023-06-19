@@ -35,7 +35,7 @@
                         </div>
 
                         <!-- * BALANCE -->
-                    <div class="cabinet-card dashboard-balance">
+                        <div class="cabinet-card dashboard-balance">
                             @@loop("components/_dashboard-balance-item.html", "../json/dashboard-balance-items.json")
                             <form method="get" action="assets.html">
                                 <button type="button" class="btn btn-outline-xs">
@@ -71,20 +71,22 @@
                             </form>
                         </div>
                     </div>
-                    <div class="floating-bar-popup cabinet-card">
-                        <span>🎉 Participate in our survey to get an airdrop in honor of Flem Wallet two-year anniversary</span>
 
-                        @@include('components/_btn-group.html',{
-                        "type1": "button",
-                        "type2": "button",
-                        "style1": "btn-outline-xs",
-                        "style2": "btn-fill-xs",
-                        "id1": "floating-bar-btn-close",
-                        "id2": "floating-bar-btn-open",
-                        "label1": "Maybe later",
-                        "label2": "Get involved"
-                        })
-                    </div>
+                    @@include('components/_floating-bar-popup.html',{
+                    "popupId": "survey-notif-popup",
+                    "descr": "🎉 Participate in our survey to get an airdrop in honor of Flem Wallet two-year anniversary",
+                    "action1": "#",
+                    "formTrigger1": "",
+                    "btnStyle1": "btn-outline-xs",
+                    "btnId1": "survey-notif-popup-close",
+                    "btnLabel1": "Maybe later",
+
+                    "action2": "#modal-connect",
+                    "formTrigger2": "js-modal-open",
+                    "btnStyle2": "btn-fill-xs",
+                    "btnId2": "survey-notif-open",
+                    "btnLabel2": "Get involved",
+                    })
                 </div>
             </section>
         </div>
@@ -92,7 +94,7 @@
 
     <!-- * POPUP -->
     @@include('modals/_connect.html',{
-        "title": "WalletConnect",
+    "title": "WalletConnect",
     })
     <!-- * JS -->
     @@include('chunks/_js.html',{})
