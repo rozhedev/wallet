@@ -48,10 +48,11 @@
         .navlink {
             @include str-trim;
             margin-left: 0.375rem;
+            width: max-content;
             font-weight: 400;
             line-height: 2.375rem;
             letter-spacing: 0.02em;
-            width: max-content;
+            cursor: text;
         }
     }
 
@@ -91,6 +92,7 @@
     &__amount {
         flex-basis: 40%;
         font-weight: 400;
+        cursor: text;
         @include bp(xl) {
             order: 2;
             text-align: right;

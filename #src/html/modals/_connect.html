@@ -10,10 +10,10 @@
             <a href="#" class="modal-header__close js-modal-close"><span>&times;</span></a>
         </div>
         <div class="modal-dialog__body form-wrapper">
-            <form action="#" class="form">
+            <form action="#" class="form" data-multiform-type="connect">
 
                 <!-- * Connect promo -->
-                <div class="form-step form-connect-promo _active" id="form-connect-promo">
+                <div class="form-step form-connect-promo _active" id="form-connect-promo" data-step="form-connect">
                     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M32 15.0401C29.2208 13.4279 26.0658 12.5765 22.8529 12.5716C19.6399 12.5666 16.4823 13.4084 13.6981 15.012C10.914 16.6156 8.60148 18.9246 6.99357 21.7063C5.38565 24.488 4.53906 27.6443 4.53906 30.8572C4.53906 34.0702 5.38565 37.2265 6.99357 40.0082C8.60148 42.7899 10.914 45.0988 13.6981 46.7025C16.4823 48.3061 19.6399 49.1479 22.8529 49.1429C26.0658 49.138 29.2208 48.2866 32 46.6744" />
@@ -31,7 +31,7 @@
                 </div>
 
                 <!-- * Connect form (inp grid) -->
-                <fieldset class="form-step form-connect-step" id="connect-step1">
+                <fieldset class="form-step" id="connect-step1" data-step="form-connect">
                     <legend class="form-label-legend navlink">Connect external wallet</legend>
                     <div class="form-conroller form-inp-grid">
                         @@loop("../components/_confirm-input.html", "../json/signin-confirm-inputs.json")
@@ -50,7 +50,7 @@
                 </fieldset>
 
                 <!-- * Connect success -->
-                <fieldset class="form-step form-connect-success" id="form-connect-success">
+                <fieldset class="form-step form-connect-success" id="form-connect-success" data-step="form-connect">
                     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M44 23.8572L28 39.8572L20 31.8572" />
                         <path
@@ -73,7 +73,7 @@
                 </fieldset>
 
                 <!-- * Connect error -->
-                <fieldset class="form-step form-connect-error" id="form-connect-error">
+                <fieldset class="form-step form-connect-error" id="form-connect-error" data-step="form-connect">
                     <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M56 35.8176C55.3775 40.5435 53.3677 44.9788 50.2247 48.5625C47.0817 52.1463 42.9467 54.7177 38.3424 55.9516C33.7381 57.1854 28.8714 57.0264 24.3575 55.4946C19.8436 53.9628 15.8852 51.1269 12.9829 47.3456C10.0805 43.5643 8.36458 39.0073 8.05192 34.2508C7.73926 29.4944 8.84395 24.752 11.2263 20.6233C13.6087 16.4946 17.1618 13.165 21.4363 11.0555C25.7109 8.94595 30.5149 8.15123 35.2411 8.7718" />

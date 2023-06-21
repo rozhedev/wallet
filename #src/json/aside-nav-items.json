@@ -16,7 +16,7 @@
     {
         "modifClass": "aside-nav-item--promo",
         "triggerClass": "js-modal-open",
-        "hrefPath": "#modal-connect",
+        "hrefPath": "#modal-survey",
         "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32 9.14282L39.3257 23.8171L54.8571 26.6057L43.8514 38.4685L46.1257 54.8571L32 47.52L17.8742 54.8571L20.1485 38.4685L9.14282 26.6057L24.6743 23.8171L32 9.14282Z' /></svg>",
         "title": "Survey"
     },

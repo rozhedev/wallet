@@ -15,3 +15,7 @@ import "./components/tabs";
 import "./components/modal";
 import "./components/multistep-form";
 import "./components/navbar-dropdown";
+import "./components/copy-btn";
+import "./components/floating-bar-popup";
+import "./components/passphrase-gen";
+import "./components/small-screen-notice";

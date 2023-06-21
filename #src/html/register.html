@@ -32,8 +32,8 @@
                             </ul>
 
                             <!-- * FORM -->
-                            <form action="#" class="form">
-                                <fieldset class="form-step form-user-data _active" id="form-user-data">
+                            <form action="#" class="form" data-multiform-type="register">
+                                <fieldset class="form-step form-user-data _active" id="form-user-data" data-step="form-register">
                                     <div class="form-conroller">
                                         <input type="text" name="register-username" title="Username" id="register-username" class="inp" placeholder="Username">
                                         <small class="form-conroller__message">Error message</small>
@@ -55,7 +55,7 @@
                                     <span>Already have a wallet? <a href="signin.html" class="link">Sign In</a> </span>
                                 </fieldset>
 
-                                <fieldset class="form-step form-passphrase" id="form-passphrase">
+                                <fieldset class="form-step form-passphrase" id="form-passphrase" data-step="form-register">
                                     <legend class="form-label-legend">Write down or copy these words in the correct order and keep them in a safe place.</legend>
                                     <ol class="ordered-list form-conroller form-inp-grid">
                                         @@loop("components/_passphrase-item.html", "../json/passphrase-items.json")
@@ -82,9 +82,9 @@
                                     })
                                 </fieldset>
 
-                                <fieldset class="form-step form-confirm" id="register-form-confirm">
+                                <fieldset class="form-step form-confirm" id="register-form-confirm" data-step="form-register">
                                     <legend class="form-label-legend">Paste your passphrase from the inputs below to complete registration.</legend>
-                                    <div class="form-conroller form-inp-grid">
+                                    <div class="form-conroller form-register-step form-inp-grid">
                                         @@loop("components/_confirm-input.html", "../json/confirm-inputs.json")
                                         <small class="form-conroller__message">Error message</small>
                                     </div>

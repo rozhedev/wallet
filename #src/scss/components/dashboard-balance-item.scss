@@ -10,6 +10,7 @@
         .navlink {
             @include str-trim;
             max-width: 14rem;
+            cursor: text;
 
             @include bp(xl) {
                 max-width: 10rem;
