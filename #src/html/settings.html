@@ -14,18 +14,52 @@
             @@include('chunks/_cabinet-navbar.html',{})
             @@include('chunks/_cabinet-header.html',{})
 
-            <section class="assets-cab page-cab" id="assets-cab">
+            <section class="settings page-cab" id="settings">
                 <div class="container">
                     <div class="inner">
-                        <div class="assets-cab-list cabinet-card">
-                            <div class="asset-cab-item">Settings</div>
+                        <div class="settings-list cabinet-card">
+                            @@loop("components/_settings-toggle-item.html", "../json/settings-toggle-items.json")
+                        </div>
+                        <div class="personal-data-edit cabinet-card">
+                            <form action="" method="post" id="change-username-form" class="form settings-change-form">
+                                <div class="form-controller">
+                                    <label class="form-controller__label" for="change-username">Change username</label>
+                                    <input type="text" name="change-username" title="Change username" id="change-username" class="inp">
+                                    <small class="form-controller__error"></small>
+                                </div>
+                                <button type="button" class="btn btn-fill-sm">
+                                    <span>Change</span>
+                                </button>
+                            </form>
+
+                            <form action="" method="post" id="signup-form" class="form settings-change-form">
+                                <div class="form-controller">
+                                    <label class="form-controller__label" for="change-email">Change email</label>
+                                    <input type="email" name="change-email" title="test-inp" id="change-email" class="inp">
+                                    <small class="form-controller__error"></small>
+                                </div>
+                                <button type="button" class="btn btn-fill-sm">
+                                    <span>Change</span>
+                                </button>
+                            </form>
+
+                            <form action="" method="post" id="signup-form" class="form settings-change-form">
+                                <div class="form-controller">
+                                    <label class="form-controller__label" for="change-region">Add country or region</label>
+                                    <input type="text" name="change-region" title="test-inp" id="change-region" class="inp">
+                                    <small class="form-controller__error"></small>
+                                </div>
+                                <button type="button" class="btn btn-fill-sm">
+                                    <span>Add</span>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-   
+
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

@@ -1,0 +1,50 @@
+[
+    {
+        "id": "hide-balance-signin",
+        "label": "Hide balance when signing into the wallet",
+        "modifClass": "toggle",
+        "isDisabled": "settings"
+    },
+    {
+        "id": "send-confirm",
+        "label": "Сonfirmation before sending cryptocurrency",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "exchange-confirm",
+        "label": "Сonfirmation before exchanging cryptocurrency",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "signin-same-ip",
+        "label": "Allow signing to wallet ONLY if IP address is the same",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "signature-username",
+        "label": "Use username as a signature for a transaction",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "hide-external-links",
+        "label": "Hide “External Links” widget",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "dashboard-remove-btn-delete",
+        "label": "Remove 'Delete assets' button  from dashboard",
+        "modifClass": "toggle",
+        "isDisabled": ""
+    },
+    {
+        "id": "dark-mode",
+        "label": "Dark mode (Coming soon)",
+        "modifClass": "toggle--disabled",
+        "isDisabled": "disabled"
+    }
+]

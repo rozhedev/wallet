@@ -17,7 +17,7 @@ const FORM_STEPS = {
     register: document.querySelectorAll(FORM_STEPS_ATTR.register),
 }
 
-// * FUNCTION
+// * FUNCTIONS
 function listItemClassRemover(nodeList, { active }) {
     nodeList.forEach((item) => {
         if (item.classList.contains(active)) item.classList.remove(active)

@@ -203,9 +203,11 @@
         visibility: hidden;
     }
     &__label {
-        margin-left: 5px;
         position: relative;
         top: 2px;
+    }
+    .toggle__inner *:first-child {
+        margin-right: 0.5rem;
     }
     &--disabled,
     &--readonly {

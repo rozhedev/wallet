@@ -59,7 +59,7 @@
     max-width: 100%;
 }
 
-.dashboard .inner {
+.dashboard .inner, .settings .inner {
     column-count: 2;
     column-gap: 2rem;
     @include bp(lg) {
@@ -160,5 +160,62 @@
     }
     .btn {
         margin: 1rem auto 0;
+    }
+}
+
+// * SETTINGS
+
+.settings {
+    .toggle .toggle__label {
+        @include bp(xs) {
+            max-width: 15.6rem; // * ~250px
+        }
+    }
+    .settings-toggle-item {
+        &:not(:first-of-type) {
+            margin-top: 0.75rem;
+        }
+        .toggle__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .settings-change-form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        @include bp(xs) {
+            flex-direction: column;
+        }
+
+        &:not(:first-of-type) {
+            margin-top: 1.25rem;
+            @include bp(xs) {
+                margin-top: 1.5rem;
+            }
+        }
+        .form-controller {
+            display: flex;
+            flex-direction: column;
+            width: inherit;           // * 100% from .settings-change-form
+        }
+        .form-controller__label {
+            font-size: 1.125rem;
+        }
+        .inp {
+            margin-top: 0.5rem;
+            min-width: 12rem;
+            width: inherit;     // * 100% from .settings-change-form
+        }
+        .btn {
+            margin: 2rem 0rem 0rem 1rem;
+            min-width: 7.5rem;
+            @include bp(xs) {
+                margin: 1.5rem 0rem 0rem 0rem;
+                width: inherit;
+            }
+        }
     }
 }
