@@ -1,7 +1,6 @@
 import { STATE_LIST } from '../data/values';
 
-const prevBtns = document.querySelectorAll(".btn-prev");
-const nextBtns = document.querySelectorAll(".btn-next");
+const formBtnGroups = document.querySelectorAll(".btn-group");
 const progressSteps = document.querySelectorAll(".progress-step");
 const progressLineActive = document.getElementById("progress-line-active");
 let progressCount = 0;
@@ -25,16 +24,18 @@ function listItemClassRemover(nodeList, { active }) {
     })
 }
 
-function slideNextForm(target, formAttr, { active }) {
+function slideNextForm(target, formAttr, removerFunc, { active }) {
+    removerFunc;
     let form = target.closest(formAttr);
     let nextForm = form.nextSibling.nextElementSibling;
     nextForm.classList.add(active);
 }
 
-function slidePrevForm(target, formAttr, { active }) {
+function slidePrevForm(target, formAttr, removerFunc, { active }) {
+    removerFunc;
     let form = target.closest(formAttr);
-    let nextForm = form.previousSibling.previousElementSibling;
-    nextForm.classList.add(active);
+    let prevForm = form.previousSibling.previousElementSibling;
+    prevForm.classList.add(active);
 }
 
 function updateProgressbar(steps, counter, { active }) {
@@ -46,53 +47,71 @@ function updateProgressbar(steps, counter, { active }) {
     progressLineActive.style.width = (progressStepsActive.length - 1) / (progressSteps.length - 1) * 100 + "%";
 }
 
+function isBtnSubmit(btn) {
+    let bool;
+    btn.getAttribute("type") == "submit" ? bool = true : bool = false;
+    return bool;
+}
+
+function isTargetClosest(target, attr) {
+    let bool;
+    target.closest(attr) ? bool = true : bool = false;
+    return bool;
+}
 
 // * CALL FUNC
-if (nextBtns && prevBtns) {
-    nextBtns.forEach((btn) => {
-        if (btn.getAttribute("type") == "submit") return
+if (formBtnGroups) {
+    formBtnGroups.forEach((item) => {
+        item.addEventListener("click", (e) => {
+            let navBtn = e.target.parentElement;
+            if (isBtnSubmit(navBtn)) return
 
-        btn.addEventListener("click", (e) => {
-            let target = e.target;
-            if (target.closest(FORM_STEPS_ATTR.connect)) {
-                listItemClassRemover(FORM_STEPS.connect, STATE_LIST);
-                slideNextForm(target, FORM_STEPS_ATTR.connect, STATE_LIST);
-
-            } else if (target.closest(FORM_STEPS_ATTR.survey)) {
-                listItemClassRemover(FORM_STEPS.survey, STATE_LIST);
-                slideNextForm(target, FORM_STEPS_ATTR.survey, STATE_LIST);
-
-            } else if (target.closest(FORM_STEPS_ATTR.register)) {
-                listItemClassRemover(FORM_STEPS.register, STATE_LIST);
-                slideNextForm(target, FORM_STEPS_ATTR.register, STATE_LIST);
-            }
-            if (progressLineActive) {
-                progressCount++;
-                updateProgressbar(progressSteps, progressCount, STATE_LIST);
-            }
-        })
-    })
-
-    prevBtns.forEach((btn) => {
-        if (btn.getAttribute("type") == "submit") return
-
-        btn.addEventListener("click", (e) => {
-            let target = e.target;
-            if (target.closest(FORM_STEPS_ATTR.connect)) {
-                listItemClassRemover(FORM_STEPS.connect, STATE_LIST);
-                slidePrevForm(target, FORM_STEPS_ATTR.connect, STATE_LIST);
-
-            } else if (target.closest(FORM_STEPS_ATTR.survey)) {
-                listItemClassRemover(FORM_STEPS.survey, STATE_LIST);
-                slidePrevForm(target, FORM_STEPS_ATTR.survey, STATE_LIST);
-
-            } else if (target.closest(FORM_STEPS_ATTR.register)) {
-                listItemClassRemover(FORM_STEPS.register, STATE_LIST);
-                slidePrevForm(target, FORM_STEPS_ATTR.register, STATE_LIST);
-            }
-            if (progressLineActive) {
-                progressCount--;
-                updateProgressbar(progressSteps, progressCount, STATE_LIST);
+            if (navBtn.classList.contains("btn-prev")) {
+                if (isTargetClosest(navBtn, FORM_STEPS_ATTR.connect)) slidePrevForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.connect,
+                    listItemClassRemover(FORM_STEPS.connect, STATE_LIST),
+                    STATE_LIST
+                );
+                else if (isTargetClosest(navBtn, FORM_STEPS_ATTR.survey)) slidePrevForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.survey,
+                    listItemClassRemover(FORM_STEPS.survey, STATE_LIST),
+                    STATE_LIST
+                );
+                else if (isTargetClosest(navBtn, FORM_STEPS_ATTR.register)) slidePrevForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.register,
+                    listItemClassRemover(FORM_STEPS.register, STATE_LIST),
+                    STATE_LIST
+                );
+                if (progressLineActive) {
+                    progressCount--;
+                    updateProgressbar(progressSteps, progressCount, STATE_LIST);
+                }
+            } else if (navBtn.classList.contains("btn-next")) {
+                if (isTargetClosest(navBtn, FORM_STEPS_ATTR.connect)) slideNextForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.connect,
+                    listItemClassRemover(FORM_STEPS.connect, STATE_LIST),
+                    STATE_LIST
+                );
+                else if (isTargetClosest(navBtn, FORM_STEPS_ATTR.survey)) slideNextForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.survey,
+                    listItemClassRemover(FORM_STEPS.survey, STATE_LIST),
+                    STATE_LIST
+                );
+                else if (isTargetClosest(navBtn, FORM_STEPS_ATTR.register)) slideNextForm(
+                    navBtn,
+                    FORM_STEPS_ATTR.register,
+                    listItemClassRemover(FORM_STEPS.register, STATE_LIST),
+                    STATE_LIST
+                );
+                if (progressLineActive) {
+                    progressCount++;
+                    updateProgressbar(progressSteps, progressCount, STATE_LIST);
+                }
             }
         })
     })

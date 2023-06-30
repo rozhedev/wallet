@@ -10,7 +10,7 @@
     padding: 0rem 1.25rem;
     border-right: 2px solid #e0e0e0;
     box-shadow: 42px 42px 24px rgba(0, 0, 0, 0.015), 24px 24px 20.25px rgba(0, 0, 0, 0.045),
-    10.5px 10.5px 15px rgba(0, 0, 0, 0.0825), 3px 3px 8.25px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.0975);
+        10.5px 10.5px 15px rgba(0, 0, 0, 0.0825), 3px 3px 8.25px rgba(0, 0, 0, 0.09), 0px 0px 0px rgba(0, 0, 0, 0.0975);
 
     .logo {
         margin-top: 1.5rem;
@@ -44,13 +44,13 @@
         position: relative;
         white-space: nowrap;
         transition: $transition;
-        &--promo {
-            .aside-nav-item__link svg {
-                stroke: $darken-secondary-accent;
-            }
-        }
+
         &:not(:first-of-type) {
             margin-top: 1.25rem;
+        }
+        // * Accent color for survey
+        & .aside-nav-item__link[href='#modal-survey'] svg {
+            stroke: $darken-secondary-accent;  
         }
         @include hover {
             svg {

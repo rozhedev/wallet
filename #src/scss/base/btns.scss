@@ -124,17 +124,27 @@
     }
 }
 
-.btn-fill:disabled,
-.btn-fill-sm:disabled,
-.btn-fill-xs:disabled,
-.btn-outline:disabled,
-.btn-outline-sm:disabled,
-.btn-outline-xs:disabled {
-    @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
-    @include btn-disabled($dark-color36);
-    @include hover {
-        border-color: initial;
-        background-color: initial;
+.btn-fill,
+.btn-fill-sm,
+.btn-fill-xs,
+.btn-outline,
+.btn-outline-sm,
+.btn-outline-xs {
+    // * Rules for correct work sailing events in multistep-form.js
+    &:has(svg) span {
+        width: auto;
     }
-    cursor: not-allowed;
+    &:not(:has(svg)) span {
+        width: 100%;
+    }
+    // * ------------------------
+    &:disabled {
+        @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
+        @include btn-disabled($dark-color36);
+        @include hover {
+            border-color: initial;
+            background-color: initial;
+        }
+        cursor: not-allowed;
+    }
 }
