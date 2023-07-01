@@ -1,0 +1,26 @@
+[
+    {
+        "action": "",
+        "formId": "change-username-form",
+        "inpId": "change-username",
+        "inpType": "text",
+        "inpLabel": "Change username",
+        "btnLabel": "Change"
+    },
+    {
+        "action": "",
+        "formId": "change-email-form",
+        "inpId": "change-email",
+        "inpType": "email",
+        "inpLabel": "Change email",
+        "btnLabel": "Change"
+    },
+    {
+        "action": "",
+        "formId": "change-region-form",
+        "inpId": "change-region",
+        "inpType": "text",
+        "inpLabel": "Add country or region",
+        "btnLabel": "Add    "
+    }
+]

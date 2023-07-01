@@ -2,7 +2,7 @@
 <html lang="en">
 
 @@include('chunks/_head.html',{
-"title":"Settings"
+"title":"History"
 })
 
 <body>
@@ -14,14 +14,11 @@
             @@include('chunks/_cabinet-navbar.html',{})
             @@include('chunks/_cabinet-header.html',{})
 
-            <section class="settings page-cab" id="settings">
+            <section class="history page-cab" id="history">
                 <div class="container">
                     <div class="inner">
-                        <div class="settings-list cabinet-card">
-                            @@loop("components/_settings-toggle-item.html", "../json/settings-toggle-items.json")
-                        </div>
-                        <div class="personal-data-edit cabinet-card">
-                            @@loop("components/_settings-change-form.html", "../json/settings-change-forms.json")
+                        <div class="history-filters cabinet-card">
+                            <p>Sort transactions by:</p>
                         </div>
                     </div>
                 </div>
