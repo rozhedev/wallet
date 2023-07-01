@@ -19,3 +19,4 @@ import "./components/copy-btn";
 import "./components/floating-bar-popup";
 import "./components/passphrase-gen";
 import "./components/small-screen-notice";
+import "./components/pagination";

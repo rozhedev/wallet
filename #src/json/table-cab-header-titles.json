@@ -16,15 +16,15 @@
         "title": "Amount"
     },
     {
-        "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='32' cy='32.0001' r='26.4286'/><path d='M32 9.14307V34.2859H45.7143'/></svg>",
-        "title": "Date & time"
+        "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32 11V19' /><path d='M32 53V45'/><path d='M53 32H45'/><path d='M11 32H19'/><path d='M45.9701 18.0298L40.3101 23.6898'/><path d='M18.03 45.9701L23.69 40.3101'/><path d='M45.9701 45.9701L40.3101 40.3101'/><path d='M18.03 18.03L23.69 23.69'/><rect x='5' y='5' width='54' height='54' rx='3'/></svg>",
+        "title": "Status"
     },
     {
         "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32.0001 59.4287C47.1485 59.4287 59.4287 47.1485 59.4287 32.0001C59.4287 16.8517 47.1485 4.57153 32.0001 4.57153C16.8517 4.57153 4.57153 16.8517 4.57153 32.0001C4.57153 47.1485 16.8517 59.4287 32.0001 59.4287Z'/><path d='M32 22.8572V50.2858'/><path d='M32 13.7144V18.2858'/></svg>",
         "title": "Transaction ID"
     },
     {
-        "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M32 11V19' /><path d='M32 53V45'/><path d='M53 32H45'/><path d='M11 32H19'/><path d='M45.9701 18.0298L40.3101 23.6898'/><path d='M18.03 45.9701L23.69 40.3101'/><path d='M45.9701 45.9701L40.3101 40.3101'/><path d='M18.03 18.03L23.69 23.69'/><rect x='5' y='5' width='54' height='54' rx='3'/></svg>",
-        "title": "Status"
+        "itemIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='32' cy='32.0001' r='26.4286'/><path d='M32 9.14307V34.2859H45.7143'/></svg>",
+        "title": "Date & time"
     }
 ]

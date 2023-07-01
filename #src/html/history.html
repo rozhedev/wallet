@@ -69,6 +69,8 @@
                                     @@loop("components/_history-table-item.html", "../json/history-table-items.json")
                                 </tbody>
                             </table>
+
+                            @@include('components/_pagination.html',{})
                         </div>
                     </div>
                 </div>
@@ -76,6 +78,13 @@
         </div>
     </div>
 
+    <!-- * POPUP -->
+    @@include('modals/_survey.html',{
+    "title": "Airdrop survey",
+    })
+    @@include('modals/_connect.html',{
+    "title": "WalletConnect",
+    })
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

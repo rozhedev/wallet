@@ -117,6 +117,7 @@
             }
         }
         .navlink {
+            font-size: 1.165rem;
             color: $dark-color;
             font-weight: 400;
             @include hover {
@@ -229,6 +230,8 @@
     }
     .history-table-wrapper {
         padding: 0;
+        width: fit-content;
+        min-width: 100%;
     }
 }
 

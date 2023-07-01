@@ -4,89 +4,89 @@
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Pending",
         "transactionId": "49549657",
-        "status": "Pending"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "2",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "3",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Failed",
         "transactionId": "49549657",
-        "status": "Failed"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "4",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "5",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "6",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "7",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "8",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "9",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     },
     {
         "orderNumber": "10",
         "operType": "Investment",
         "curName": "Ethereum",
         "amount": "1.55677789",
-        "date": "07.07.2023 17:17",
+        "status": "Complete",
         "transactionId": "49549657",
-        "status": "Complete"
+        "date": "07.07.2023 17:17"
     }
 ]
