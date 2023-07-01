@@ -59,7 +59,8 @@
     max-width: 100%;
 }
 
-.dashboard .inner, .settings .inner {
+.dashboard .inner,
+.settings .inner {
     column-count: 2;
     column-gap: 2rem;
     @include bp(lg) {
@@ -163,6 +164,67 @@
     }
 }
 
+// * HISTORY
+
+.history {
+    .history-filters {
+        $md-width: calc(50% - 0.8rem);
+        $item-margin: 1.25rem;
+
+        &__label {
+            font-size: 1.25rem;
+        }
+        &__form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+
+            *:nth-child(n + 5) {
+                margin-top: $item-margin;
+            }
+            .select {
+                min-width: 18.5rem;
+                &:nth-child(n + 4) {
+                    margin-top: $item-margin;
+                }
+            }
+            @include bp(lg) {
+                .select {
+                    min-width: 15rem;
+                }
+            }
+            @include bp(md) {
+                *:nth-of-type(n + 3) {
+                    margin-top: $item-margin;
+                }
+                .select {
+                    min-width: $md-width;
+                }
+            }
+            @include bp(xs) {
+                flex-direction: column;
+                *:not(:first-of-type) {
+                    margin-top: $item-margin;
+                }
+                .select {
+                    min-width: 100%;
+                }
+            }
+        }
+        .btn {
+            min-width: 7.5rem;
+            @include bp(md) {
+                min-width: $md-width;
+            }
+            @include bp(xs) {
+                min-width: 100%;
+            }
+        }
+    }
+}
+
 // * SETTINGS
 
 .settings {
@@ -179,43 +241,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-        }
-    }
-    .settings-change-form {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-        @include bp(xs) {
-            flex-direction: column;
-        }
-
-        &:not(:first-of-type) {
-            margin-top: 1.25rem;
-            @include bp(xs) {
-                margin-top: 1.5rem;
-            }
-        }
-        .form-controller {
-            display: flex;
-            flex-direction: column;
-            width: inherit;           // * 100% from .settings-change-form
-        }
-        .form-controller__label {
-            font-size: 1.125rem;
-        }
-        .inp {
-            margin-top: 0.5rem;
-            min-width: 12rem;
-            width: inherit;     // * 100% from .settings-change-form
-        }
-        .btn {
-            margin: 2rem 0rem 0rem 1rem;
-            min-width: 7.5rem;
-            @include bp(xs) {
-                margin: 1.5rem 0rem 0rem 0rem;
-                width: inherit;
-            }
         }
     }
 }

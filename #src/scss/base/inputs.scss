@@ -240,22 +240,21 @@ select {
     align-items: center;
     position: relative;
 
-    select,
-    &::after {
-        grid-area: select;
-    }
-
-    min-width: 9rem;
-    max-width: 30rem;
-
+    min-width: 15rem;
+    max-width: 18rem;
     border: 2px solid $dark-color24;
     border-radius: $sm-border-radius;
     padding: 0.75rem;
+
     font-size: 1.25rem;
     cursor: pointer;
     line-height: 1.333;
     background-color: $white-color;
-
+    
+    select,
+    &::after {
+        grid-area: select;
+    }
     &::before {
         content: '';
         display: inline-block;
