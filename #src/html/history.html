@@ -19,6 +19,7 @@
                     <div class="inner">
                         @@include('components/_small-screen-notice.html',{})
 
+                        <!-- * FILTERS -->
                         <div class="history-filters cabinet-card">
                             <p class="history-filters__label">Sort transactions by:</p>
                             <form action="" method="get" class="history-filters__form" id="history-filters">
@@ -56,6 +57,18 @@
                                     <span>Apply</span>
                                 </button>
                             </form>
+                        </div>
+
+                        <!-- * TABLE -->
+                        <div class="history-table-wrapper cabinet-card">
+                            <table class="history-table table">
+                                <thead class="table__header">
+                                    @@loop("components/_table-header-title.html", "../json/table-cab-header-titles.json")
+                                </thead>
+                                <tbody>
+                                    @@loop("components/_history-table-item.html", "../json/history-table-items.json")
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>

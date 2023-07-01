@@ -1,11 +1,9 @@
-$dark-table-color: #f5f5f5;
-
 .table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     box-shadow: $item-shadow;
-    background-color: $light-color;
+    background-color: $white-color;
     border-radius: $sm-border-radius;
 
     @include bp(md) {
@@ -38,6 +36,7 @@ $dark-table-color: #f5f5f5;
     }
 }
 
+// * Table types
 .assets-table {
     .table-header-title {
         padding-left: 0.25rem;
@@ -53,6 +52,11 @@ $dark-table-color: #f5f5f5;
             }
         }
     }
+}
+
+.history-table {
+    text-align: center;
+    box-shadow: none;
 }
 
 // * Table header title
@@ -112,10 +116,10 @@ $dark-table-color: #f5f5f5;
         }
     }
     &:nth-child(2n) {
-        background-color: $light-color;
+        background-color: $white-color;
     }
     &:nth-child(2n + 1) {
-        background-color: $dark-table-color;
+        background-color: darken($color: $secondary-lightgray-color, $amount: 1);
     }
     &__status {
         text-align: center;

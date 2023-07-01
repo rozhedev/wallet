@@ -1,4 +1,5 @@
-.settings-change-form {
+// * For correct inheriting
+.settings .settings-change-form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +27,8 @@
         min-width: 12rem;
         width: inherit; // * 100% from .settings-change-form
     }
-    .btn {
+    // * Hard styling for prevent use !important
+    .btn:nth-child(n) {
         margin: 2rem 0rem 0rem 1rem;
         min-width: 7.5rem;
         @include bp(xs) {

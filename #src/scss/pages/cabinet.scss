@@ -167,6 +167,9 @@
 // * HISTORY
 
 .history {
+    .inner > *:not(:first-of-type) {
+        margin-top: 2rem;
+    }
     .history-filters {
         $md-width: calc(50% - 0.8rem);
         $item-margin: 1.25rem;
@@ -216,12 +219,16 @@
         .btn {
             min-width: 7.5rem;
             @include bp(md) {
+                margin-top: 1.5rem;
                 min-width: $md-width;
             }
             @include bp(xs) {
                 min-width: 100%;
             }
         }
+    }
+    .history-table-wrapper {
+        padding: 0;
     }
 }
 
