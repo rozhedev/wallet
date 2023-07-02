@@ -1,0 +1,80 @@
+[
+    {
+        "orderNumber": "21",
+        "imgPath": "img/icons/crypto/dai-DAI.svg",
+        "imgAlt": "dai-DAI",
+        "curName": "Dai (DAI)"
+    },
+    {
+        "orderNumber": "22",
+        "imgPath": "img/icons/crypto/dash-DASH.svg",
+        "imgAlt": "dash-DASH",
+        "curName": "Dash (DASH)"
+    },
+    {
+        "orderNumber": "23",
+        "imgPath": "img/icons/crypto/decentraland-MANA.svg",
+        "imgAlt": "decentraland-MANA",
+        "curName": "Decentraland (MANA)"
+    },
+    {
+        "orderNumber": "24",
+        "imgPath": "img/icons/crypto/dogecoin-DOGE.svg",
+        "imgAlt": "dogecoin-DOGE",
+        "curName": "Dogecoin (DOGE)"
+    },
+    {
+        "orderNumber": "25",
+        "imgPath": "img/icons/crypto/elrond-EGLD.svg",
+        "imgAlt": "elrond-EGLD",
+        "curName": "Elrond (EGLD)"
+    },
+    {
+        "orderNumber": "26",
+        "imgPath": "img/icons/crypto/enjin-coin-ENJ.svg",
+        "imgAlt": "enjin-coin-ENJ",
+        "curName": "Enjin Coin (ENJ)"
+    },
+    {
+        "orderNumber": "27",
+        "imgPath": "img/icons/crypto/eos-EOS.svg",
+        "imgAlt": "eos-EOS",
+        "curName": "EOS (EOS)"
+    },
+    {
+        "orderNumber": "28",
+        "imgPath": "img/icons/crypto/ethereum-ETH.svg",
+        "imgAlt": "ethereum-ETH",
+        "curName": "Ethereum (ETH)"
+    },
+    {
+        "orderNumber": "29",
+        "imgPath": "img/icons/crypto/ethereum-classic-ETC.svg",
+        "imgAlt": "ethereum-classic-ETC",
+        "curName": "Ethereum Classic (ETC)"
+    },
+    {
+        "orderNumber": "30",
+        "imgPath": "img/icons/crypto/fantom-FTM.svg",
+        "imgAlt": "fantom-FTM",
+        "curName": "Fantom (FTM)"
+    },
+    {
+        "orderNumber": "31",
+        "imgPath": "img/icons/crypto/filecoin-FIL.svg",
+        "imgAlt": "filecoin-FIL",
+        "curName": "Filecoin (FIL)"
+    },
+    {
+        "orderNumber": "32",
+        "imgPath": "img/icons/crypto/flow-FLOW.svg",
+        "imgAlt": "flow-FLOW",
+        "curName": "Flow (FLOW)"
+    },
+    {
+        "orderNumber": "33",
+        "imgPath": "img/icons/crypto/ftx-token-FTX.svg",
+        "imgAlt": "ftx-token-FTX",
+        "curName": "FTX Token (FTT)"
+    }
+]

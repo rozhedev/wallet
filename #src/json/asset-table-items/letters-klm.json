@@ -1,0 +1,44 @@
+[
+    {
+        "orderNumber": "41",
+        "imgPath": "img/icons/crypto/kadena-KDA.svg",
+        "imgAlt": "kadena-KDA",
+        "curName": "Kadena (KDA)"
+    },
+    {
+        "orderNumber": "42",
+        "imgPath": "img/icons/crypto/klaytn-KLAY.svg",
+        "imgAlt": "klaytn-KLAY",
+        "curName": "Klaytn (KLAY)"
+    },
+    {
+        "orderNumber": "43",
+        "imgPath": "img/icons/crypto/ku-coin-token-KCS.svg",
+        "imgAlt": "ku-coin-token-KCS",
+        "curName": "KuCoin Token (KCS)"
+    },
+    {
+        "orderNumber": "44",
+        "imgPath": "img/icons/crypto/kusama-KSM.svg",
+        "imgAlt": "kusama-KSM",
+        "curName": "Kusama (KSM)"
+    },
+    {
+        "orderNumber": "45",
+        "imgPath": "img/icons/crypto/litecoin-LTC.svg",
+        "imgAlt": "litecoin-LTC",
+        "curName": "Litecoin (LTC)"
+    },
+    {
+        "orderNumber": "46",
+        "imgPath": "img/icons/crypto/maker-MKR.svg",
+        "imgAlt": "maker-MKR",
+        "curName": "Maker (MKR)"
+    },
+    {
+        "orderNumber": "47",
+        "imgPath": "img/icons/crypto/monero-XMR.svg",
+        "imgAlt": "monero-XMR",
+        "curName": "Monero (XMR)"
+    }
+]

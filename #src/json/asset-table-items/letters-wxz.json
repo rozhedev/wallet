@@ -1,0 +1,26 @@
+[
+    {
+        "orderNumber": "71",
+        "imgPath": "img/icons/crypto/waves-WAVES.svg",
+        "imgAlt": "waves-WAVES",
+        "curName": "Waves (WAVES)"
+    },
+    {
+        "orderNumber": "72",
+        "imgPath": "img/icons/crypto/wrapped-bitcoin-WBTC.svg",
+        "imgAlt": "wrapped-bitcoin-WBTC",
+        "curName": "Wrapped Bitcoin (WBTC)"
+    },
+    {
+        "orderNumber": "73",
+        "imgPath": "img/icons/crypto/xrp-XRP.svg",
+        "imgAlt": "xrp-XRP",
+        "curName": "XRP (XRP)"
+    },
+    {
+        "orderNumber": "74",
+        "imgPath": "img/icons/crypto/zcash-ZEC.svg",
+        "imgAlt": "zcash-ZEC",
+        "curName": "Zcash (ZEC)"
+    }
+]

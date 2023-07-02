@@ -1,0 +1,122 @@
+[
+    {
+        "orderNumber": "1",
+        "imgPath": "img/icons/crypto/aave-AAVE.svg",
+        "imgAlt": "aave-AAVE",
+        "curName": "Aave (AAVE)"
+    },
+    {
+        "orderNumber": "2",
+        "imgPath": "img/icons/crypto/algorand-ALGO.svg",
+        "imgAlt": "algorand-ALGO",
+        "curName": "Algorand (ALGO)"
+    },
+    {
+        "orderNumber": "3",
+        "imgPath": "img/icons/crypto/amp-AMP.svg",
+        "imgAlt": "amp-AMP",
+        "curName": "Amp (AMP)"
+    },
+    {
+        "orderNumber": "4",
+        "imgPath": "img/icons/crypto/anchor-protocol-ANC.svg",
+        "imgAlt": "anchor-protocol-ANC",
+        "curName": "Anchor Protocol (ANC)"
+    },
+    {
+        "orderNumber": "5",
+        "imgPath": "img/icons/crypto/avalanche-AVAX.svg",
+        "imgAlt": "avalanche-AVAX",
+        "curName": "Avalanche (AVAX)"
+    },
+    {
+        "orderNumber": "6",
+        "imgPath": "img/icons/crypto/axie-infinity-AXS.svg",
+        "imgAlt": "axie-infinity-AXS",
+        "curName": "Axie Infinity (AXS)"
+    },
+    {
+        "orderNumber": "7",
+        "imgPath": "img/icons/crypto/binance-coin-BNB.svg",
+        "imgAlt": "binance-coin-BNB",
+        "curName": "Binance Coin (BNB)"
+    },
+    {
+        "orderNumber": "8",
+        "imgPath": "img/icons/crypto/binance-usd-BUSD.svg",
+        "imgAlt": "binance-usd-BUSD",
+        "curName": "Binance USD (BUSD)"
+    },
+    {
+        "orderNumber": "9",
+        "imgPath": "img/icons/crypto/bitcoin-BTC.svg",
+        "imgAlt": "bitcoin-BTC",
+        "curName": "Bitcoin (BTC)"
+    },
+    {
+        "orderNumber": "10",
+        "imgPath": "img/icons/crypto/bitcoin-bep2-BTCB.svg",
+        "imgAlt": "bitcoin-bep2-BTCB",
+        "curName": "Bitcoin BEP2 (BTCB)"
+    },
+    {
+        "orderNumber": "11",
+        "imgPath": "img/icons/crypto/bitcoin-cash-BCH.svg",
+        "imgAlt": "bitcoin-cash-BCH",
+        "curName": "Bitcoin Cash (BCH)"
+    },
+    {
+        "orderNumber": "12",
+        "imgPath": "img/icons/crypto/bitcoin-sv-BSV.svg",
+        "imgAlt": "bitcoin-sv-BSV",
+        "curName": "Bitcoin SV (BSV)"
+    },
+    {
+        "orderNumber": "13",
+        "imgPath": "img/icons/crypto/bit-torrent-BTT.svg",
+        "imgAlt": "bit-torrent-BTT",
+        "curName": "BitTorrent (BTT)"
+    },
+    {
+        "orderNumber": "14",
+        "imgPath": "img/icons/crypto/cardano-ADA.svg",
+        "imgAlt": "cardano-ADA",
+        "curName": "Cardano (ADA)"
+    },
+    {
+        "orderNumber": "15",
+        "imgPath": "img/icons/crypto/celo-CELO.svg",
+        "imgAlt": "celo-CELO",
+        "curName": "Celo (CELO)"
+    },
+    {
+        "orderNumber": "16",
+        "imgPath": "img/icons/crypto/chainlink-LINK.svg",
+        "imgAlt": "chainlink-LINK",
+        "curName": "Chainlink (LINK)"
+    },
+    {
+        "orderNumber": "17",
+        "imgPath": "img/icons/crypto/chiliz-CHZ.svg",
+        "imgAlt": "chiliz-CHZ",
+        "curName": "Chiliz (CHZ)"
+    },
+    {
+        "orderNumber": "18",
+        "imgPath": "img/icons/crypto/compound-COMP.svg",
+        "imgAlt": "compound-COMP",
+        "curName": "Compound (COMP)"
+    },
+    {
+        "orderNumber": "19",
+        "imgPath": "img/icons/crypto/cosmos-ATOM.svg",
+        "imgAlt": "cosmos-ATOM",
+        "curName": "Cosmos (ATOM)"
+    },
+    {
+        "orderNumber": "20",
+        "imgPath": "img/icons/crypto/cronos-CRO.svg",
+        "imgAlt": "cronos-CRO",
+        "curName": "Cronos (CRO)"
+    }
+]

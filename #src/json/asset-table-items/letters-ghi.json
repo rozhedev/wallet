@@ -1,0 +1,44 @@
+[
+    {
+        "orderNumber": "34",
+        "imgPath": "img/icons/crypto/gala-GALA.svg",
+        "imgAlt": "gala-GALA",
+        "curName": "Gala (GALA)"
+    },
+    {
+        "orderNumber": "35",
+        "imgPath": "img/icons/crypto/harmony-ONE.svg",
+        "imgAlt": "harmony-ONE",
+        "curName": "Harmony (ONE)"
+    },
+    {
+        "orderNumber": "36",
+        "imgPath": "img/icons/crypto/hedera-hashgraph-HBAR.svg",
+        "imgAlt": "hedera-hashgraph-HBAR",
+        "curName": "Hedera (HBAR)"
+    },
+    {
+        "orderNumber": "37",
+        "imgPath": "img/icons/crypto/helium-HNT.svg",
+        "imgAlt": "helium-HNT",
+        "curName": "Helium (HNT)"
+    },
+    {
+        "orderNumber": "38",
+        "imgPath": "img/icons/crypto/holo-HOT.svg",
+        "imgAlt": "holo-HOT",
+        "curName": "Holo (HOT)"
+    },
+    {
+        "orderNumber": "39",
+        "imgPath": "img/icons/crypto/internet-computer-ICP.svg",
+        "imgAlt": "internet-computer-ICP",
+        "curName": "Internet Computer (ICP)"
+    },
+    {
+        "orderNumber": "40",
+        "imgPath": "img/icons/crypto/iota-MIOTA.svg",
+        "imgAlt": "iota-MIOTA",
+        "curName": "IOTA (MIOTA)"
+    }
+]

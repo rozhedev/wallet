@@ -1,0 +1,62 @@
+[
+    {
+        "orderNumber": "48",
+        "imgPath": "img/icons/crypto/near-NEAR.svg",
+        "imgAlt": "near-NEAR",
+        "curName": "NEAR Protocol (NEAR)"
+    },
+    {
+        "orderNumber": "49",
+        "imgPath": "img/icons/crypto/neo-NEO.svg",
+        "imgAlt": "neo-NEO",
+        "curName": "Neo (NEO)"
+    },
+    {
+        "orderNumber": "50",
+        "imgPath": "img/icons/crypto/nexo-NEXO.svg",
+        "imgAlt": "nexo-NEXO",
+        "curName": "Nexo (NEXO)"
+    },
+    {
+        "orderNumber": "51",
+        "imgPath": "img/icons/crypto/polkadot-DOT.svg",
+        "imgAlt": "polkadot-DOT",
+        "curName": "Polkadot (DOT)"
+    },
+    {
+        "orderNumber": "52",
+        "imgPath": "img/icons/crypto/polygon-MATIC.svg",
+        "imgAlt": "polygon-MATIC",
+        "curName": "Polygon (MATIC)"
+    },
+    {
+        "orderNumber": "53",
+        "imgPath": "img/icons/crypto/secret-SCRT.svg",
+        "imgAlt": "secret-SCRT",
+        "curName": "Secret (SCRT)"
+    },
+    {
+        "orderNumber": "54",
+        "imgPath": "img/icons/crypto/shiba-inu-SHIB.svg",
+        "imgAlt": "shiba-inu-SHIB",
+        "curName": "Shiba Inu (SHIB)"
+    }, 
+    {
+        "orderNumber": "55",
+        "imgPath": "img/icons/crypto/solana-SOL.svg",
+        "imgAlt": "solana-SOL",
+        "curName": "Solana (SOL)"
+    },
+    {
+        "orderNumber": "56",
+        "imgPath": "img/icons/crypto/stacks-STX.svg",
+        "imgAlt": "stacks-STX",
+        "curName": "Stacks (STX)"
+    },
+    {
+        "orderNumber": "57",
+        "imgPath": "img/icons/crypto/stellar-XLM.svg",
+        "imgAlt": "stellar-XLM",
+        "curName": "Stellar (XLM)"
+    }
+]

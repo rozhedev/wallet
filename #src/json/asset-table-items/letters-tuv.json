@@ -1,0 +1,80 @@
+[
+    {
+        "orderNumber": "58",
+        "imgPath": "img/icons/crypto/terra-LUNA.svg",
+        "imgAlt": "terra-LUNA",
+        "curName": "Terra (LUNA)"
+    },
+    {
+        "orderNumber": "59",
+        "imgPath": "img/icons/crypto/tether-USDT.svg",
+        "imgAlt": "tether-USDT",
+        "curName": "Tether (USDT)"
+    },
+    {
+        "orderNumber": "60",
+        "imgPath": "img/icons/crypto/tezos-XTZ.svg",
+        "imgAlt": "tezos-XTZ",
+        "curName": "Tezos (XTZ)"
+    },
+    {
+        "orderNumber": "61",
+        "imgPath": "img/icons/crypto/the-graph-GRT.svg",
+        "imgAlt": "the-graph-GRT",
+        "curName": "The Graph (GRT)"
+    },
+    {
+        "orderNumber": "62",
+        "imgPath": "img/icons/crypto/sandbox-SAND.svg",
+        "imgAlt": "sandbox-SAND",
+        "curName": "The Sandbox (SAND)"
+    },
+    {
+        "orderNumber": "63",
+        "imgPath": "img/icons/crypto/theta-THETA.svg",
+        "imgAlt": "theta-THETA",
+        "curName": "Theta Network (THETA)"
+    },
+    {
+        "orderNumber": "64",
+        "imgPath": "img/icons/crypto/thor-chain-RUNE.svg",
+        "imgAlt": "thor-chain-RUNE",
+        "curName": "THORChain (RUNE)"
+    },
+    {
+        "orderNumber": "65",
+        "imgPath": "img/icons/crypto/tron-TRX.svg",
+        "imgAlt": "tron-TRX",
+        "curName": "TRON (TRX)"
+    },
+    {
+        "orderNumber": "66",
+        "imgPath": "img/icons/crypto/uma-UMA.svg",
+        "imgAlt": "uma-UMA",
+        "curName": "UMA (UMA)"
+    },
+    {
+        "orderNumber": "67",
+        "imgPath": "img/icons/crypto/uniswap-UNI.svg",
+        "imgAlt": "uniswap-UNI",
+        "curName": "Uniswap (UNI)"
+    },
+    {
+        "orderNumber": "68",
+        "imgPath": "img/icons/crypto/unus-sed-leo-LEO.svg",
+        "imgAlt": "unus-sed-leo-LEO",
+        "curName": "UNUS SED LEO (LEO)"
+    },
+    {
+        "orderNumber": "69",
+        "imgPath": "img/icons/crypto/usd-coin-USDC.svg",
+        "imgAlt": "usd-coin-USDC",
+        "curName": "USD Coin (USDC)"
+    },
+    {
+        "orderNumber": "70",
+        "imgPath": "img/icons/crypto/ve-chain-VET.svg",
+        "imgAlt": "ve-chain-VET",
+        "curName": "VeChain (VET)"
+    }
+]

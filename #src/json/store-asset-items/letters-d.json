@@ -1,0 +1,30 @@
+[
+    {
+        "label": "Cardano (ADA)",
+        "curIcon": ""
+    },
+    {
+        "label": "Celo (CELO)",
+        "curIcon": ""
+    },
+    {
+        "label": "Chainlink (LINK)",
+        "curIcon": ""
+    },
+    {
+        "label": "Chiliz (CHZ)",
+        "curIcon": ""
+    },
+    {
+        "label": "Compound (COMP)",
+        "curIcon": ""
+    },
+    {
+        "label": "Cosmos (ATOM)",
+        "curIcon": ""
+    },
+    {
+        "label": "Cronos (CRO)",
+        "curIcon": ""
+    }
+]
