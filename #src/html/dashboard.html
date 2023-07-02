@@ -10,7 +10,6 @@
 
     <div class="wrapper">
         <div class="page">
-            <!-- * First must include cabinet navbar for correct work menu icon anim -->
             @@include('chunks/_cabinet-navbar.html',{})
             @@include('chunks/_cabinet-header.html',{})
 
@@ -93,12 +92,6 @@
     </div>
 
     <!-- * POPUP -->
-    @@include('modals/_survey.html',{
-    "title": "Airdrop survey",
-    })
-    @@include('modals/_connect.html',{
-    "title": "WalletConnect",
-    })
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

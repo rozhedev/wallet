@@ -165,6 +165,47 @@
     }
 }
 
+// * ASSETS
+
+.assets-cab {
+    .inner {
+        display: grid;
+        grid-template: repeat(2, 1fr) / 1fr 2.57fr;
+        gap: 2rem;
+    }
+    .assets-cab-portfolio {
+    }
+    .assets-cab-store {
+        .modal-header {
+            padding-bottom: 0.75rem;
+            justify-content: space-between;
+            .inp {
+                font-size: 1rem;
+                padding: 0.35rem 0.5rem;
+                min-width: 15rem;
+            }
+        }
+        &__content {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            // gap: 0.75rem; // * bad support
+
+            .store-asset-item:not(:last-of-type) {
+                margin-right: 0.75rem;
+            }
+            .store-asset-item:nth-of-type(n + 4) {
+                margin-top: 0.75rem;
+            }
+            @include bp(lg) {
+                .store-asset-item:nth-of-type(n + 3) {
+                    margin-top: 0.75rem;
+                }
+            }
+        }
+    }
+}
+
 // * HISTORY
 
 .history {

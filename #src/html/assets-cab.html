@@ -10,15 +10,26 @@
 
     <div class="wrapper">
         <div class="page">
-            <!-- * First must include cabinet navbar for correct work menu icon anim -->
             @@include('chunks/_cabinet-navbar.html',{})
             @@include('chunks/_cabinet-header.html',{})
 
             <section class="assets-cab page-cab" id="assets-cab">
                 <div class="container">
                     <div class="inner">
-                        <div class="assets-cab-list cabinet-card">
-                            <div class="asset-cab-item">Hello</div>
+                        <div class="assets-cab-portfolio cabinet-card">
+                            <div class="modal-header">
+                                <h4 class="h4">Added assets</h4>
+                            </div>
+                            <div class="added-asset">Bitcoin</div>
+                        </div>
+                        <div class="assets-cab-store cabinet-card">
+                            <div class="modal-header">
+                                <h4 class="h4">Supported assets</h4>
+                                <input type="text" name="test-inp" title="test-inp" id="test-inp" class="inp" placeholder="🔎 Search">
+                            </div>
+                            <div class="assets-cab-store__content">
+                                @@loop("components/_store-asset-item.html", "../json/store-asset-items/letters-a.json")
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -27,12 +38,6 @@
     </div>
 
     <!-- * POPUP -->
-    @@include('modals/_survey.html',{
-    "title": "Airdrop survey",
-    })
-    @@include('modals/_connect.html',{
-    "title": "WalletConnect",
-    })
     <!-- * JS -->
     @@include('chunks/_js.html',{})
 </body>

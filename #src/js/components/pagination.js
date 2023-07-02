@@ -1,3 +1,4 @@
+// TODO Add three dots between numbers in React version
 import { STATE_LIST } from "../data/values";
 
 const PAGIN_NODES = {   
@@ -9,9 +10,10 @@ const PAGIN_NODES = {
 const paginationNumbers = document.getElementById(PAGIN_NODES.numWrapper);
 const nextButton = document.getElementById(PAGIN_NODES.nextBtn);
 const prevButton = document.getElementById(PAGIN_NODES.prevButton);
-let listItems = 100;
+const paginNumbersClass = "pagination-number";
+let listItems = 50;
 
-const paginationLimit = 10;
+const paginationLimit = 10;  // * items per page
 const pageCount = Math.ceil(listItems / paginationLimit);
 let currentPage = 1;
 
@@ -40,7 +42,7 @@ if (paginationNumbers) {
     };
 
     const handleActivePageNumber = () => {
-        document.querySelectorAll(".pagination-number").forEach((button) => {
+        document.querySelectorAll(`.${paginNumbersClass}`).forEach((button) => {
             button.classList.remove(STATE_LIST.active);
             const pageIndex = Number(button.getAttribute("page-index"));
             if (pageIndex == currentPage) {
@@ -51,7 +53,7 @@ if (paginationNumbers) {
 
     const appendPageNumber = (index) => {
         const pageNumber = document.createElement("button");
-        pageNumber.className = "pagination-number";
+        pageNumber.className = paginNumbersClass;
         pageNumber.innerHTML = index;
         pageNumber.setAttribute("page-index", index);
         pageNumber.setAttribute("aria-label", "Page " + index);
@@ -82,7 +84,7 @@ if (paginationNumbers) {
             setCurrentPage(currentPage + 1);
         });
 
-        document.querySelectorAll(".pagination-number").forEach((button) => {
+        document.querySelectorAll(`.${paginNumbersClass}`).forEach((button) => {
             const pageIndex = Number(button.getAttribute("page-index"));
             if (pageIndex) {
                 button.addEventListener("click", () => {

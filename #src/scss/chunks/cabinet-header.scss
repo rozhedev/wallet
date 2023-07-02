@@ -63,16 +63,16 @@
 }
 
 // * Menu icon anim
-.aside-cab + .header-cab .header-cab__trigger svg {
+.aside-cab ~ .header-cab .header-cab__trigger svg {
     transform: rotate(0deg);
 }
-.aside-cab._close + .header-cab .header-cab__trigger svg {
+.aside-cab._close ~ .header-cab .header-cab__trigger svg {
     transform: rotate(180deg);
 }
 
 // * Disable .header-cab dropdown, when aside menu open in mobile device
 @include bp(xs) {
-    .aside-cab + .header-cab .dropdown {
+    .aside-cab ~ .header-cab .dropdown {
         overflow: hidden;
         pointer-events: none;
         & > button.navlink {
@@ -82,7 +82,7 @@
             }
         }
     }
-    .aside-cab._close + .header-cab .dropdown {
+    .aside-cab._close ~ .header-cab .dropdown {
         overflow: visible;
         pointer-events: all;
         & > button.navlink {
