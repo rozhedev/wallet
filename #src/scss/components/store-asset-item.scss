@@ -4,7 +4,24 @@
     padding: 0.5rem;
     border: 2px solid $primary-lightgray-color;
     border-radius: $sm-border-radius;
+    transition: $transition;
 
+    &__currency-img {
+        @include centering;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: $sm-border-radius;
+    }
+    &__label {
+        @include str-trim;
+        max-width: 16rem;
+        margin: 0 0.75rem 0 0.375rem;
+        font-weight: 400;
+
+    }
+    &__plus {
+        @include custom-plus(20px, 0.1rem, $dark-color24, 500%, 0%, -5%, -650%);
+    }
     @include bp(xs) {
         width: 100%;
         justify-content: space-between;
@@ -12,37 +29,10 @@
             width: inherit;
         }
     }
-    svg {
-        width: 1.4rem;
-        height: 1.4rem;
-    }
-    & > svg:first-of-type {
-        border-radius: $sm-border-radius;
-    }
-    &__label {
-        margin: 0 0.75rem 0 0.375rem;
-        font-weight: 400;
-    }
-    &__plus {
-        $primary-icon-size: 20px;
-        $secondary-icon-size: 0.1rem;
-        position: relative;
-
-        &::before,
-        &::after {
-            content: '';
-            display: block;
-            background-color: $success-green;
-        }
-        &::before {
-            transform: translateX(500%);
-            width: $secondary-icon-size;
-            height: $primary-icon-size;
-        }
-        &::after {
-            transform: translate(-5%, -650%);
-            width: $primary-icon-size;
-            height: $secondary-icon-size;
+    @include hover {
+        border-color: $primary-accent-color;
+        .store-asset-item__plus::before, .store-asset-item__plus::after {
+            background-color: $primary-accent-color;
         }
     }
 }

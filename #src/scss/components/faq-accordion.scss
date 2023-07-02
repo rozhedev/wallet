@@ -23,29 +23,11 @@
             font-size: 1.125rem;
         }
 
+        .faq-accordion__question {
+            margin-right: 0.75rem;
+        }
         .faq-accordion__icon {
-            $primary-icon-size: 28px;
-            $secondary-icon-size: 2.4px;
-            position: relative;
-            margin-left: 0.75rem;
-            transition: $transition;
-
-            &::before,
-            &::after {
-                content: '';
-                display: block;
-                background-color: $darken-accent;
-            }
-            &::before {
-                transform: translateX(600%);
-                width: $secondary-icon-size;
-                height: $primary-icon-size; 
-            }
-            &::after {
-                transform: translate(5%, -600%);
-                width: $primary-icon-size;
-                height: $secondary-icon-size;
-            }
+            @include custom-plus(28px, 2.4px, $darken-accent, 600%, 0%, 5%, -600%);
         }
     }
     .accordion-content {
@@ -68,7 +50,7 @@
         border-bottom: none;
         cursor: default;
         .faq-accordion__icon::before {
-            width: 0px;
+            opacity: 0;
         }
     }
     &[open] .accordion-content {

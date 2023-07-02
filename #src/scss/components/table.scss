@@ -129,6 +129,8 @@
         text-align: left;
     }
     &__currency-name {
+        @include str-trim;
+        max-width: 16rem;
         display: inline-block;
         margin-left: 0.5rem;
     }

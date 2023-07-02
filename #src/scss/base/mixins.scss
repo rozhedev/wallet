@@ -60,6 +60,28 @@
     align-items: center;
 }
 
+@mixin custom-plus($dash-size-x, $dash-size-y, $bgColor, $translateVertX, $translateVertY, $translateHorizX, $translateHorizY) {
+    position: relative;
+    transition: $transition;
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        background-color: $bgColor;
+        transition: $transition;
+    }
+    &::before {
+        transform: translate($translateVertX, $translateVertY);
+        width: $dash-size-y;
+        height: $dash-size-x;
+    }
+    &::after {
+        transform: translate($translateHorizX, $translateHorizY);
+        width: $dash-size-x;
+        height: $dash-size-y;
+    }
+}
+
 @mixin triangle-bottom($width, $height, $border-color) {
     display: inline-block;
     width: 0;
