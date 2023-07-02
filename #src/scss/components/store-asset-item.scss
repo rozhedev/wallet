@@ -1,10 +1,17 @@
 .store-asset-item {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding: 0.5rem;
-    width: fit-content;
     border: 2px solid $primary-lightgray-color;
     border-radius: $sm-border-radius;
+
+    @include bp(xs) {
+        width: 100%;
+        justify-content: space-between;
+        &__label {
+            width: inherit;
+        }
+    }
     svg {
         width: 1.4rem;
         height: 1.4rem;
@@ -30,12 +37,42 @@
         &::before {
             transform: translateX(500%);
             width: $secondary-icon-size;
-            height: $primary-icon-size; 
+            height: $primary-icon-size;
         }
         &::after {
             transform: translate(-5%, -650%);
             width: $primary-icon-size;
             height: $secondary-icon-size;
+        }
+    }
+}
+
+// * LAYOUT IN CABINET ASSETS PAGE
+
+.assets-cab-store__content .store-asset-item {
+    &:not(:last-of-type) {
+        margin-right: 0.75rem;
+    }
+    &:nth-of-type(n + 5) {
+        margin-top: 0.75rem;
+    }
+    @include bp(lg) {
+        &:nth-of-type(n + 4) {
+            margin-top: 0.75rem;
+        }
+    }
+    @include bp(sm) {
+        &:nth-of-type(n + 3) {
+            margin-top: 0.75rem;
+        }
+    }
+    @include bp(xs) {
+        // * Hard selector for prevent use !important
+        &:nth-of-type(n) {
+            margin-right: 0;
+            &:not(:first-of-type) {
+                margin-top: 0.75rem;
+            }
         }
     }
 }

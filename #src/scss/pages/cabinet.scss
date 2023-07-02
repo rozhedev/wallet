@@ -167,13 +167,20 @@
 
 // * ASSETS
 
+.assets-cab .inner > *:not(:first-of-type),
+.history .inner > *:not(:first-of-type) {
+    margin-top: 2rem;
+}
+
 .assets-cab {
-    .inner {
-        display: grid;
-        grid-template: repeat(2, 1fr) / 1fr 2.57fr;
-        gap: 2rem;
-    }
-    .assets-cab-portfolio {
+    .added-assets {
+        &__content {
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+            gap: 1rem 0.75rem;
+            grid-auto-flow: row dense;
+            margin-top: 1rem;
+        }
     }
     .assets-cab-store {
         .modal-header {
@@ -184,24 +191,21 @@
                 padding: 0.35rem 0.5rem;
                 min-width: 15rem;
             }
+            @include bp(sm) {
+                flex-direction: column;
+                justify-content: start;
+                align-items: start;
+                .inp {
+                    margin-top: 1rem;
+                    width: 100%;
+                }
+            }
         }
         &__content {
             margin-top: 1rem;
             display: flex;
             flex-wrap: wrap;
             // gap: 0.75rem; // * bad support
-
-            .store-asset-item:not(:last-of-type) {
-                margin-right: 0.75rem;
-            }
-            .store-asset-item:nth-of-type(n + 4) {
-                margin-top: 0.75rem;
-            }
-            @include bp(lg) {
-                .store-asset-item:nth-of-type(n + 3) {
-                    margin-top: 0.75rem;
-                }
-            }
         }
     }
 }
@@ -209,9 +213,6 @@
 // * HISTORY
 
 .history {
-    .inner > *:not(:first-of-type) {
-        margin-top: 2rem;
-    }
     .history-filters {
         $md-width: calc(50% - 0.8rem);
         $item-margin: 1.25rem;

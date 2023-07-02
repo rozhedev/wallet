@@ -20,7 +20,17 @@
                             <div class="modal-header">
                                 <h4 class="h4">Added assets</h4>
                             </div>
-                            <div class="added-asset">Bitcoin</div>
+                            <div class="added-assets">
+                                <div class="added-assets__content">
+                                    <div class="added-assets-item">1</div>
+                                    <div class="added-assets-item">2</div>
+                                    <div class="added-assets-item">3</div>
+                                    <div class="added-assets-item">4</div>
+                                    <div class="added-assets-item">5</div>
+                                    <div class="added-assets-item">6</div>
+                                    <div class="added-assets-item">7</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="assets-cab-store cabinet-card">
                             <div class="modal-header">
@@ -29,6 +39,9 @@
                             </div>
                             <div class="assets-cab-store__content">
                                 @@loop("components/_store-asset-item.html", "../json/store-asset-items/letters-a.json")
+                                @@loop("components/_store-asset-item.html", "../json/store-asset-items/letters-b.json")
+                                @@loop("components/_store-asset-item.html", "../json/store-asset-items/letters-c.json")
+                                @@loop("components/_store-asset-item.html", "../json/store-asset-items/letters-c-crv.json")
                             </div>
                         </div>
                     </div>
