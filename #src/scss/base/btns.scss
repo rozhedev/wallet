@@ -94,7 +94,7 @@
     font-size: 1.125rem;
     letter-spacing: 0.04em;
     span ~ svg {
-        @include icon-size(20px, 0);
+        @include icon-size(map-get($icon-size, xs), 0);
         stroke-width: map-get($map: $stroke-width, $key: md);
     }
 }

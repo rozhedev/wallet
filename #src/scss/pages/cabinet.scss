@@ -143,25 +143,14 @@
             justify-items: stretch;
         }
     }
-    .dashboard-balance .dashboard-balance-item:not(:first-of-type) {
+    .dashboard-balance .balance-item:not(:first-of-type) {
         margin-top: 1rem;
-    }
-    .dashboard-balance {
-        @include bp(xs) {
-            .dashboard-balance-item__values {
-                display: flex;
-                flex-direction: column;
-            }
-            .dashboard-balance-item__cur-amount {
-                margin-right: 0;
-                margin-bottom: 0.25rem;
-                padding-right: 0;
-                border: none;
-            }
-        }
     }
     .btn {
         margin: 1rem auto 0;
+        @include bp(sm) {
+            width: 100%;
+        }
     }
 }
 
@@ -175,11 +164,14 @@
 .assets-cab {
     .added-assets {
         &__content {
-            display: grid;
-            grid-template: repeat(2, 1fr) / repeat(4, 1fr);
-            gap: 1rem 0.75rem;
-            grid-auto-flow: row dense;
             margin-top: 1rem;
+            // display: grid;
+            // grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            // gap: 1rem 0.75rem;
+            // grid-auto-flow: row dense;
+            .balance-item:not(:first-of-type) {
+                margin-top: 1rem;
+            }
         }
     }
     .assets-cab-store {

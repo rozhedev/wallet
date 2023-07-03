@@ -24,8 +24,7 @@
 
 .dropdown.active {
     color: $darken-accent;
-    svg {
-        stroke: $darken-accent;
+    .navlink[data-dropdown-button] svg:last-of-type {
         transform: rotate(180deg);
     }
 }

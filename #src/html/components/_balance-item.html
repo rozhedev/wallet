@@ -1,0 +1,66 @@
+<div class="balance-item">
+    <div class="balance-item__content">
+        <img src="@@imgPath" alt="@@imgAlt" class="balance-item__img">
+        <span class="navlink">@@curName</span>
+    </div>
+    <div class="balance-item__values">
+        <span class="balance-item__cur-amount h5" id="@@curAmountId">0.00000000</span>
+        <span class="balance-item__usd-amount h5" id="@@usdAmountId">00000.00$</span>
+    </div>
+
+    @@if (hasItemActions === true) {
+    <nav class="asset-actions">
+        <ul>
+            <li>
+                <a href="#modal-send" class="navlink js-modal-open">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50.2857 22.8572L31.9999 4.57153L13.7142 22.8572" />
+                        <path d="M59.4285 59.4285H4.57141" />
+                        <path d="M32 50.2858V4.57153" />
+                    </svg>
+                    <span>Send</span>
+                </a>
+            </li>
+            <li>
+                <a href="#modal-get" class="navlink js-modal-open">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.7142 32L31.9999 50.2857L50.2857 32" />
+                        <path d="M59.4285 59.4285H4.57141" />
+                        <path d="M32 4.57153V50.2858" />
+                    </svg>
+                    <span>Get</span>
+                </a>
+            </li>
+            <li>
+                <div class="dropdown" data-dropdown>
+                    <button type="button" class="navlink" data-dropdown-button>
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M36 36V28H28V36H36Z" />
+                            <path d="M36 56V48H28V56H36Z" />
+                            <path d="M36 16V8H28V16H36Z" />
+                        </svg>
+                        <span>Actions</span>
+                        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M52.48 21.76L32 42.24L11.52 21.76" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <ul class="dropdown-links">
+                            @@loop("_cabinet-dropdown-link.html", "../json/cabinet-dropdown-links.json")
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- * POPUP -->
+    @@include('../modals/_send.html',{
+        "title": "Send cryptocurrency",
+    })
+    @@include('../modals/_get.html',{
+        "title": "Get cryptocurrency",
+    })
+
+    }
+</div>

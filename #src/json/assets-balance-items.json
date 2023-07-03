@@ -1,11 +1,11 @@
 [
     {
-        "imgPath": "../img/icons/crypto/bitcoin-BTC.svg",
+        "imgPath": "img/icons/crypto/bitcoin-BTC.svg",
         "imgAlt": "bitcoin-BTC",
         "curName": "Bitcoin (BTC)",
         "curAmountId": "bitcoin-cur-amount",
         "usdAmountId": "bitcoin-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/ethereum-ETH.svg",
@@ -13,7 +13,7 @@
         "curName": "Ethereum (ETH)",
         "curAmountId": "ethereum-cur-amount",
         "usdAmountId": "ethereum-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/tether-USDT.svg",
@@ -21,7 +21,7 @@
         "curName": "Tether (USDT)",
         "curAmountId": "tether-cur-amount",
         "usdAmountId": "tether-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/binance-coin-BNB.svg",
@@ -29,7 +29,7 @@
         "curName": "Binance Coin (BNB)",
         "curAmountId": "binance-coin-cur-amount",
         "usdAmountId": "binance-coin-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/usd-coin-USDC.svg",
@@ -37,7 +37,7 @@
         "curName": "USD Coin (USDC)",
         "curAmountId": "usd-coin-cur-amount",
         "usdAmountId": "usd-coin-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/xrp-XRP.svg",
@@ -45,7 +45,7 @@
         "curName": "XRP (XRP)",
         "curAmountId": "xrp-cur-amount",
         "usdAmountId": "xrp-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/terra-LUNA.svg",
@@ -53,7 +53,7 @@
         "curName": "Terra (LUNA)",
         "curAmountId": "terra-cur-amount",
         "usdAmountId": "terra-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/cardano-ADA.svg",
@@ -61,7 +61,7 @@
         "curName": "Cardano (ADA)",
         "curAmountId": "cardano-cur-amount",
         "usdAmountId": "cardano-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/solana-SOL.svg",
@@ -69,7 +69,7 @@
         "curName": "Solana (SOL)",
         "curAmountId": "solana-cur-amount",
         "usdAmountId": "solana-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     },
     {
         "imgPath": "img/icons/crypto/polkadot-DOT.svg",
@@ -77,6 +77,6 @@
         "curName": "Polkadot (DOT)",
         "curAmountId": "polkadot-cur-amount",
         "usdAmountId": "polkadot-usd-amount",
-        "hasItemActions": false
+        "hasItemActions": true
     }
 ]

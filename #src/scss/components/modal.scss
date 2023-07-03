@@ -83,8 +83,7 @@
         @include icon-size(map-get($icon-size, md), 0);
         stroke-width: map-get($map: $stroke-width, $key: sm);
         @include bp(sm) {
-            width: 1.75rem;
-            height: 1.75rem;
+            @include icon-size(28px, 0);
         }
     }
     .h4 {
