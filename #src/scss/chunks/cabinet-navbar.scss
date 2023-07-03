@@ -50,7 +50,7 @@
         }
         // * Accent color for survey
         & .aside-nav-item__link[href='#modal-survey'] svg {
-            stroke: $darken-secondary-accent;  
+            stroke: $darken-secondary-accent;
         }
         @include hover {
             svg {
@@ -69,8 +69,7 @@
             }
         }
         svg {
-            width: 1.5rem;
-            height: 1.5rem;
+            @include icon-size(map-get($icon-size, xs), 0);
             stroke: $dark-color;
             stroke-width: map-get($map: $stroke-width, $key: xs);
             cursor: pointer;
@@ -162,6 +161,9 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        .aside-nav-item svg {
+            @include icon-size(map-get($icon-size, sm), 0);
+        }
     }
 }
 

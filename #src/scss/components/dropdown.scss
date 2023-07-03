@@ -1,6 +1,10 @@
 .dropdown {
     position: relative;
     & > .navlink {
+        span {
+            @include str-trim;
+            max-width: 9rem;
+        }
         display: flex;
         align-items: center;
         svg {

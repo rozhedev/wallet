@@ -6,6 +6,13 @@
     }
 }
 
+@mixin icon-size($size, $bor-radius) {
+    width: $size;
+    height: $size;
+    border-radius: $bor-radius;
+}
+ 
+// * Effects
 @mixin navlink-anim {
     color: $primary-accent-color;
     transition: $transition;
@@ -41,6 +48,7 @@
     box-shadow: $card-cab-shadow;
 }
 
+// * Tricks
 @mixin str-trim {
     display: inline-block;
     white-space: nowrap;
@@ -60,6 +68,7 @@
     align-items: center;
 }
 
+// * Custom symbols
 @mixin custom-plus($dash-size-x, $dash-size-y, $bgColor, $translateVertX, $translateVertY, $translateHorizX, $translateHorizY) {
     position: relative;
     transition: $transition;

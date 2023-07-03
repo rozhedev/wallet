@@ -102,11 +102,20 @@ $stroke-width: (
     lg: 6,
 );
 
+$icon-size: (
+    xs: 22px,
+    sm: 24px,
+    md: 32px,
+    lg: 48px,
+    xl: 64px,
+    xxl: 72px,
+);
+
 // * OTHER
-$sm-border-radius: 0.25rem;
+$sm-border-radius: 4px;
 $header-height: 80px;
 $header-height-mobile: 68px;
 $header-height-slim: calc($header-height-mobile / 1.2);
 
-$aside-width-open: 15rem;
-$aside-width-close: 5rem;
+$aside-width-open: 240px;
+$aside-width-close: 80px;

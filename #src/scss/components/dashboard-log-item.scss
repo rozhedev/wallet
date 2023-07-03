@@ -41,9 +41,11 @@
             flex-basis: 25%;
         }
         & > svg {
-            width: 1.5rem;
-            height: 1.5rem;
+            @include icon-size(map-get($icon-size, sm), 0);
             stroke-width: map-get($map: $stroke-width, $key: xs);
+            @include bp(xs) {
+                @include icon-size(map-get($icon-size, xs), 0);
+            }
         }
         .navlink {
             @include str-trim;
@@ -71,7 +73,7 @@
             }
         }
         @include bp(lg) {
-           flex-basis: 100%;
+            flex-basis: 100%;
         }
         div {
             display: flex;

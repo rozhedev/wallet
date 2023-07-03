@@ -108,9 +108,8 @@
         transition: $transition;
     }
     svg {
+        @include icon-size(map-get($icon-size, sm), 0);
         margin: 0 0 0 0.4rem;
-        width: 1.5rem;
-        height: 1.5rem;
         stroke-width: map-get($map: $stroke-width, $key: sm);
         transition: $transition;
     }

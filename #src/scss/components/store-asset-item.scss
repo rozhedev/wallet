@@ -8,9 +8,10 @@
 
     &__currency-img {
         @include centering;
-        width: 1.5rem;
-        height: 1.5rem;
-        border-radius: $sm-border-radius;
+        @include icon-size(map-get($icon-size, sm), $sm-border-radius);
+        @include bp(xs) {
+            @include icon-size(map-get($icon-size, xs), $sm-border-radius);
+        }
     }
     &__label {
         @include str-trim;
@@ -19,7 +20,7 @@
         font-weight: 400;
 
     }
-    &__plus {
+    .custom-plus-icon {
         @include custom-plus(20px, 0.1rem, $dark-color24, 500%, 0%, -5%, -650%);
     }
     @include bp(xs) {
@@ -27,11 +28,12 @@
         justify-content: space-between;
         &__label {
             width: inherit;
+            text-align-last: left;
         }
     }
     @include hover {
         border-color: $primary-accent-color;
-        .store-asset-item__plus::before, .store-asset-item__plus::after {
+        .custom-plus-icon::before, .custom-plus-icon::after {
             background-color: $primary-accent-color;
         }
     }
