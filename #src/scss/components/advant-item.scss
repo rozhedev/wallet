@@ -39,13 +39,11 @@
     }
     &__img svg,
     svg * {
-        width: 6rem;
-        height: 6rem;
+        @include icon-size(96px, 0);
         stroke: $dark-color;
         stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 3) ;
         @include bp(md) {
-            width: 4rem;
-            height: 4rem;
+            @include icon-size(map-get($icon-size, xl), 0);
         }
     }
 

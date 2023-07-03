@@ -234,9 +234,13 @@
     }
     @include bp(sm) {
         flex-direction: column-reverse;
-        .btn:not(:first-of-type) {
-            margin-left: 0;
-            margin-top: 1.5rem;
+        .btn {
+            &:not(:first-of-type) {
+                margin-left: 0;
+            }
+            &:not(:last-of-type) {
+                margin-top: 1.5rem;
+            }
         }
     }
 }

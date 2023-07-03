@@ -24,11 +24,9 @@
     }
     &__icon img,
     &__dir-icon svg {
-        width: 2rem;
-        height: 2rem;
+        @include icon-size(map-get($icon-size, md), 0);
         @include bp(md) {
-            width: 1.75rem;
-            height: 1.75rem;
+            @include icon-size(28px, $sm-border-radius);
         }
     }
     &__content,

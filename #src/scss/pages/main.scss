@@ -294,15 +294,13 @@
         }
         svg,
         svg * {
+            @include icon-size(36px, 0);
             margin-right: 1rem;
-            width: 2.2rem;
-            height: 2.2rem;
             stroke: $dark-color;
             stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
             @include bp(sm) {
+                @include icon-size(28px, 0);
                 margin-right: 0.5rem;
-                width: 1.7rem;
-                height: 1.7rem;
             }
         }
     }

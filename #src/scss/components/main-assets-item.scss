@@ -6,12 +6,9 @@
         cursor: auto;
     }
     img {
-        border-radius: $sm-border-radius;
-        width: 4rem;
-        height: 4rem;
+        @include icon-size(map-get($icon-size, xl), $sm-border-radius);
         @include bp(md) {
-            width: 3.9rem;
-            height: 3.9rem;
+            @include icon-size(3.875rem, 0);
         }
     }
 }

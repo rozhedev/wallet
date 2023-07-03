@@ -80,8 +80,7 @@
     border-bottom: 1px solid $dark-color24;
     padding-bottom: 0.38rem;
     svg {
-        width: 2rem;
-        height: 2rem;
+        @include icon-size(map-get($icon-size, md), 0);
         stroke-width: map-get($map: $stroke-width, $key: sm);
         @include bp(sm) {
             width: 1.75rem;
@@ -130,8 +129,7 @@
             word-break: break-all;
         }
         img {
-            width: 2rem;
-            height: 2rem;
+            @include icon-size(map-get($icon-size, md), 0);
             stroke: $dark-color;
             stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
         }
@@ -164,8 +162,7 @@
 .form-survey-finish {
     text-align: center;
     svg {
-        width: 4.5rem;
-        height: 4.5rem;
+        @include icon-size(map-get($icon-size, xxl), 0);
         stroke: $dark-color;
         stroke-width: calc(map-get($map: $stroke-width, $key: sm) / 2);
     }

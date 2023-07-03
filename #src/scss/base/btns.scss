@@ -18,9 +18,8 @@
     transition: $transition;
 
     span ~ svg {
+        @include icon-size(map-get($icon-size, xs), 0);
         margin-left: 0.5rem;
-        width: 1.4rem;
-        height: 1.4rem;
         stroke-width: map-get($map: $stroke-width, $key: md);
         transition: $transition;
     }
@@ -95,8 +94,8 @@
     font-size: 1.125rem;
     letter-spacing: 0.04em;
     span ~ svg {
-        width: 1.2rem;
-        height: 1.2rem;
+        @include icon-size(20px, 0);
+        stroke-width: map-get($map: $stroke-width, $key: md);
     }
 }
 
@@ -115,7 +114,6 @@
     @include hover {
         box-shadow: $inp-focus-shadow;
         background-color: $light-color;
-        border-color: $darken-accent;
         &:active {
             box-shadow: none;
             background-color: $white-color;

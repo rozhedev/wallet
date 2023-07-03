@@ -204,8 +204,7 @@
         svg,
         svg *,
         &::after {
-            width: 1.33rem;
-            height: 1.33rem;
+            @include icon-size(map-get($icon-size, xs), 0);
             stroke: $secondary-accent-color;
             stroke-width: 3.5;
             transition: $transition;
