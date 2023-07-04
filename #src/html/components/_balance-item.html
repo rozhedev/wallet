@@ -35,9 +35,28 @@
                 <div class="dropdown" data-dropdown>
                     <button type="button" class="navlink" data-dropdown-button>
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M36 36V28H28V36H36Z" />
-                            <path d="M36 56V48H28V56H36Z" />
-                            <path d="M36 16V8H28V16H36Z" />
+                            <path d="M28 10.5H36" />
+                            <path d="M28 11.5H36" />
+                            <path d="M28 12.5H36" />
+                            <path d="M28 13.5H36" />
+                            <path d="M28 14.5H36" />
+                            <path d="M28 15.5H36" />
+                            <path d="M28 16.5H36" />
+                            <path d="M28 28.5H36" />
+                            <path d="M28 29.5H36" />
+                            <path d="M28 30.5H36" />
+                            <path d="M28 31.5H36" />
+                            <path d="M28 32.5H36" />
+                            <path d="M28 33.5H36" />
+                            <path d="M28 34.5H36" />
+                            <path d="M28 46.5H36" />
+                            <path d="M28 47.5H36" />
+                            <path d="M28 48.5H36" />
+                            <path d="M28 49.5H36" />
+                            <path d="M28 50.5H36" />
+                            <path d="M28 51.5H36" />
+                            <path d="M28 52.5H36" />
+                            <path d="M28 53.5H36" />
                         </svg>
                         <span>Actions</span>
                         <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,7 +65,7 @@
                     </button>
                     <div class="dropdown-menu">
                         <ul class="dropdown-links">
-                            @@loop("_cabinet-dropdown-link.html", "../json/cabinet-dropdown-links.json")
+                            @@loop("../components/_dropdown-link.html", "../json/balance-item-dropdown-links.json")
                         </ul>
                     </div>
                 </div>
@@ -56,10 +75,10 @@
 
     <!-- * POPUP -->
     @@include('../modals/_send.html',{
-        "title": "Send cryptocurrency",
+    "title": "Send cryptocurrency",
     })
     @@include('../modals/_get.html',{
-        "title": "Get cryptocurrency",
+    "title": "Get cryptocurrency",
     })
 
     }

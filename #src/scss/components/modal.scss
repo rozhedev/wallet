@@ -78,16 +78,11 @@
     align-items: center;
     width: 100%;
     border-bottom: 1px solid $dark-color24;
-    padding-bottom: 0.38rem;
+    padding-bottom: 0.375rem;
     svg {
-        @include icon-size(map-get($icon-size, md), 0);
+        @include icon-size(28px, 0);
+        margin-right: 0.5rem;
         stroke-width: map-get($map: $stroke-width, $key: sm);
-        @include bp(sm) {
-            @include icon-size(28px, 0);
-        }
-    }
-    .h4 {
-        margin-left: 0.38rem;
     }
     &-content {
         flex-grow: 1;

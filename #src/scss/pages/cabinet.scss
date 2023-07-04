@@ -143,14 +143,31 @@
             justify-items: stretch;
         }
     }
-    .dashboard-balance .balance-item:not(:first-of-type) {
-        margin-top: 1rem;
+    .dashboard-balance {
+        padding: 0 0 1rem 0;
     }
     .btn {
         margin: 1rem auto 0;
         @include bp(sm) {
             width: 100%;
         }
+    }
+}
+
+.dashboard .inner .dashboard-balance .btn {
+    @include bp(sm) {
+        width: calc(100% - 2rem);
+    }
+}
+
+.dashboard .dashboard-balance, .assets-cab .assets-cab-portfolio {
+    & > .modal-header {
+        padding: 1rem 1rem 0.75rem 1rem;
+        border-bottom: none;
+    }
+    // * Margin from between header & assets list
+    .added-assets {
+        margin-top: 0;
     }
 }
 
@@ -162,17 +179,8 @@
 }
 
 .assets-cab {
-    .added-assets {
-        &__content {
-            margin-top: 1rem;
-            // display: grid;
-            // grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-            // gap: 1rem 0.75rem;
-            // grid-auto-flow: row dense;
-            .balance-item:not(:first-of-type) {
-                margin-top: 1rem;
-            }
-        }
+    .assets-cab-portfolio {
+        padding: 0;
     }
     .assets-cab-store {
         .modal-header {

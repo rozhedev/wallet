@@ -57,6 +57,7 @@
 
 // * Hard styling for prevent use !important
 .dropdown .dropdown-links .navlink {
+    width: 100%;
     svg {
         stroke: $dark-color;
         stroke-width: map-get($map: $stroke-width, $key: xs);

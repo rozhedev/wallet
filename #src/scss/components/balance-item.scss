@@ -3,20 +3,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @include bp(xs) {
-        flex-direction: column;
-        align-items: flex-start;
-        &__values {
-            margin-top: 0.5rem;
-        }
-        &__img {
-            @include icon-size(map-get($icon-size, sm), $sm-border-radius);
-        }
-    }
     &__content {
         display: flex;
         align-items: center;
-        margin-right: 0.5rem;
         @include bp(xs) {
             width: 100%;
         }
@@ -27,7 +16,7 @@
             cursor: text;
 
             @include bp(xl) {
-                max-width: 10rem;
+                max-width: 9.5rem; // * max correct value
             }
             @include bp(md) {
                 max-width: 25rem;
@@ -78,28 +67,73 @@
         color: $dark-color24;
         font-weight: 400;
     }
+    @include bp(xs) {
+        flex-direction: column;
+        align-items: flex-start;
+        &__values {
+            margin-top: 0.5rem;
+        }
+        &__img {
+            @include icon-size(map-get($icon-size, sm), $sm-border-radius);
+        }
+    }
 }
 
-.dashboard .balance-item {
+.dashboard .balance-item,
+.assets-cab .balance-item {
+    padding: 0.75rem 1rem;
+    &:nth-of-type(2n) {
+        background-color: $white-color;
+    }
+    &:nth-of-type(2n + 1) {
+        background-color: darken($color: $secondary-lightgray-color, $amount: 1);
+    }
+    & > *:not(:first-child) {
+        margin-left: 0.5rem;
+        @include bp(xs) {
+            margin-left: 0;
+        }
+    }
+}
+
+// * inner rounding in table of balance-items
+.dashboard .balance-item:first-of-type {
+    border-radius: 7px 7px 0 0;
+}
+
+.assets-cab .balance-item:last-of-type {
+    border-radius: 0 0 7px 7px;
 }
 
 .assets-cab .balance-item {
     justify-content: start;
     align-items: center;
-
-    & > *:not(:first-child) {
-        margin-left: 2rem;
+    .modal {
+        margin-left: 0;
     }
     &__content {
-        flex-basis: 40%;
+        flex-basis: 60%;
+        .navlink {
+            max-width: 30rem;
+            @include bp(lg) {
+                max-width: 20rem;
+            }
+            @include bp(sm) {
+                max-width: 13rem;
+            }
+            @include bp(xs) {
+                max-width: inherit;
+            }
+        }
     }
     &__values {
         display: flex;
-        flex-basis: 40%;
+        flex-basis: 25%;
         justify-content: flex-end;
     }
     .asset-actions {
-        flex-basis: 20%;
+        flex-basis: 15%;
+        margin-left: 2rem;
     }
     .asset-actions > ul > li:not(:first-of-type) {
         margin-left: 0.6rem;
@@ -132,6 +166,24 @@
             svg:last-of-type {
                 margin: 0 0 0 0.4rem;
             }
+        }
+        .dropdown .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+    }
+    @include bp(md) {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .asset-actions {
+            margin: 1rem 0 0 0;
+            flex-basis: auto;
+        }
+    }
+    @include bp(sm) {
+        align-items: flex-start;
+        &__content {
+            flex-basis: auto;
         }
     }
 }
