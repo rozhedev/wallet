@@ -21,19 +21,7 @@
             stroke-width: map-get($map: $stroke-width, $key: xs);
             margin: 0 0.4rem 0 0;
         }
-    }
-    .dropdown {
-        svg:first-of-type {
-            margin: 0 0.4rem 0 0;
-        }
-        .dropdown-menu {
-            left: auto;
-            right: 0;
-        }
-    }
-    .dropdown.active svg:first-of-type {
-        transform: rotate(0deg);
-    }
+    }   
     @include bp(lg) {
         .header-cab__trigger .navlink,
         .menu .navlink {

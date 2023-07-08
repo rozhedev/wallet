@@ -146,9 +146,9 @@
             color: $dark-color;
             font-size: 1.125rem;
             @include hover {
-                color: $primary-accent-color;
+                color: $darken-accent;
                 svg {
-                    stroke: $primary-accent-color;
+                    stroke: $darken-accent;
                 }
             }
             svg {
@@ -156,21 +156,6 @@
                 margin: 0 0.4rem 0 0;
                 stroke: $dark-color;
             }
-        }
-        .dropdown > .navlink[data-dropdown-button] {
-            @include hover {
-                color: $dark-color !important;
-                svg {
-                    stroke: $dark-color;
-                }
-            }
-            svg:last-of-type {
-                margin: 0 0 0 0.4rem;
-            }
-        }
-        .dropdown .dropdown-menu {
-            left: auto;
-            right: 0;
         }
     }
     @include bp(md) {

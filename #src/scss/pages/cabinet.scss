@@ -281,10 +281,19 @@
 }
 
 .watchlist-table {
-    text-align-last: left;
-    .table-header-title__icon--fill {
-        fill: $darken-accent;
-        stroke-width: 0;
+    text-align: left;
+    tr > th:last-of-type {
+        padding: 1rem 0.5rem 1rem 0.75rem;
+    }
+    td:last-of-type {
+        padding: 1rem 0.5rem 1rem 0.4rem;
+    }
+    .table-header-title {
+        text-align: left;
+        &__icon--fill {
+            fill: $darken-accent;
+            stroke-width: 0;
+        }
     }
 }
 

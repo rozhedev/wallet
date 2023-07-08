@@ -58,17 +58,26 @@
 // * Hard styling for prevent use !important
 .dropdown .dropdown-links .navlink {
     width: 100%;
+    transition: $transition;
+    span {
+        transition: $transition;
+    }
     svg {
         stroke: $dark-color;
         stroke-width: map-get($map: $stroke-width, $key: xs);
     }
     @include hover {
+        color: $darken-accent;
         svg {
             stroke: $darken-accent;
+        }
+        span {
+            color: $darken-accent;
         }
     }
 }
 
+// * Local styling
 .header .menu__list .dropdown-links,
 .dropdown-links {
     display: flex;
@@ -83,8 +92,56 @@
         &::after {
             display: none;
         }
+    }
+}
+
+.assets-cab .balance-item .asset-actions ul {
+    .dropdown > .navlink[data-dropdown-button] {
         @include hover {
-            color: $darken-accent;
+            color: $dark-color !important;
+            svg {
+                stroke: $dark-color;
+            }
         }
+        svg:last-of-type {
+            margin: 0 0 0 0.4rem;
+        }
+    }
+    .dropdown .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+.header-cab,
+.assets-table-item {
+    .dropdown {
+        svg:first-of-type {
+            margin: 0 0.4rem 0 0;
+        }
+        .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+    }
+    .dropdown.active svg:first-of-type {
+        transform: rotate(0deg);
+    }
+}
+
+.watchlist .assets-table-item .dropdown {
+    & > .navlink {
+        padding: 0 0.5rem;
+        svg {
+            @include icon-size(24px, 0);
+            margin: 0;
+            stroke: $dark-color;
+        }
+    }
+    &.active svg:first-of-type {
+        transform: rotate(0deg);
+    }
+    .dropdown-links .navlink span {
+        font-weight: 400;
     }
 }
