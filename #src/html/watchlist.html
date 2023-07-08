@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html',{
+"title":"Watchlist"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <div class="page">
+            @@include('chunks/_cabinet-navbar.html',{})
+            @@include('chunks/_cabinet-header.html',{})
+
+            <section class="watchlist page-cab">
+                <div class="container">
+                    <div class="inner">
+                        @@include('components/_small-screen-notice.html',{})
+                        
+                        <div class="table-wrapper cabinet-card">
+                            <table class="watchlist-table table">
+                                <thead class="table__header">
+                                    @@loop("components/_table-header-title.html", "../json/tables/watchlist-header-titles.json")
+                                </thead>
+                                <tbody>
+                                    @@loop("components/_watchlist-table-item.html", "../json/tables/watchlist-items.json")
+                                </tbody>
+                            </table>
+
+                            @@include('components/_pagination.html',{})
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- * POPUP -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>

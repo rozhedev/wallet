@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.3333 31.9999C29.4493 31.9999 28.6014 31.6487 27.9763 31.0236C27.3512 30.3985 27 29.5506 27 28.6666C27 27.7825 27.3512 26.9347 27.9763 26.3096C28.6014 25.6844 29.4493 25.3333 30.3333 25.3333" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M33.6667 32C34.5508 32 35.3986 32.3512 36.0238 32.9763C36.6489 33.6014 37.0001 34.4493 37.0001 35.3333C37.0001 36.2174 36.6489 37.0652 36.0238 37.6904C35.3986 38.3155 34.5508 38.6667 33.6667 38.6667" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 22V25.3333" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 38.6667V42.0001" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M30.3333 32H33.6666" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M36.9999 26.9999C36.9999 26.9999 35.3333 25.3333 33.6666 25.3333H30.3333" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M27 37C27 37 28.6667 38.6667 30.3333 38.6667H33.6667" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 50C41.9411 50 50 41.9411 50 32C50 22.0589 41.9411 14 32 14C22.0589 14 14 22.0589 14 32C14 41.9411 22.0589 50 32 50Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M32 58C46.3594 58 58 46.3594 58 32C58 17.6406 46.3594 6 32 6C17.6406 6 6 17.6406 6 32C6 46.3594 17.6406 58 32 58Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+</svg>

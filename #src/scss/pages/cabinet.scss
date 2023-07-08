@@ -160,7 +160,8 @@
     }
 }
 
-.dashboard .dashboard-balance, .assets-cab .assets-cab-portfolio {
+.dashboard .dashboard-balance,
+.assets-cab .assets-cab-portfolio {
     & > .modal-header {
         padding: 1rem 1rem 0.75rem 1rem;
         border-bottom: none;
@@ -270,10 +271,20 @@
             }
         }
     }
-    .history-table-wrapper {
-        padding: 0;
-        width: fit-content;
-        min-width: 100%;
+}
+
+// * Hard selctor for prevent use !important
+.page-cab .inner .table-wrapper {
+    padding: 0;
+    width: fit-content;
+    min-width: 100%;
+}
+
+.watchlist-table {
+    text-align-last: left;
+    .table-header-title__icon--fill {
+        fill: $darken-accent;
+        stroke-width: 0;
     }
 }
 

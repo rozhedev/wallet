@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('chunks/_head.html',{
+"title":"Bitcoin rate"
+})
+
+<body>
+    @@include('chunks/_preloader.html',{})
+
+    <div class="wrapper">
+        <div class="page">
+            @@include('chunks/_cabinet-navbar.html',{})
+            @@include('chunks/_cabinet-header.html',{})
+
+            <section class="cur-rate page-cab">
+                <div class="container">
+                    <div class="inner">
+                        <div class="cabinet-card cur-stat">
+                            <div class="cur-stat-price">
+                                <img src="../img/icons/crypto/bitcoin-BTC.svg" alt="bitcoin-BTC" class="cur-stat-price__img">
+                                <span>
+                                    <span class="cur-stat-price__badge">Rank #1</span>
+                                    <span class="cur-stat-price__name">Bitcoin (BTC)</span>
+                                </span>
+                                <span class="cur-stat-price__output h1">$ 41.830</span>
+                            </div>
+                            <div class="cur-stat-time-changes">1</div>
+                            <div class="cur-stat-volume">1</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- * POPUP -->
+    <!-- * JS -->
+    @@include('chunks/_js.html',{})
+</body>
+
+</html>
