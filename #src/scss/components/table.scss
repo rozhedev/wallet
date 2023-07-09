@@ -7,9 +7,8 @@
     border-radius: $sm-border-radius;
 
     @include bp(md) {
+        // table-layout: fixed;
         width: map-get($map: $container-max-widths, $key: lg);
-        overflow-x: scroll;
-        overflow-y: hidden;
     }
     &__header {
         border-bottom: 1px solid $dark-color24;
@@ -36,6 +35,17 @@
     }
 }
 
+// * Hard selector for prevent use !important
+.page .page-inner .table-wrapper, .page-cab .inner .table-wrapper {
+    padding: 0;
+    width: fit-content;
+    min-width: 100%;
+    @include bp(md) {
+        overflow: auto;
+        width: map-get($map: $container-max-widths, $key: md);
+    }
+}
+
 // * Table types
 .assets-table {
     .table-header-title {
@@ -54,7 +64,8 @@
     }
 }
 
-.history-table, .watchlist-table {
+.history-table,
+.watchlist-table {
     text-align: center;
     box-shadow: none;
 }

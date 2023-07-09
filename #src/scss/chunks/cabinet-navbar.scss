@@ -49,8 +49,15 @@
             margin-top: 1.25rem;
         }
         // * Accent color for survey
-        & .aside-nav-item__link[href='#modal-survey'] svg {
-            stroke: $darken-secondary-accent;
+        & .aside-nav-item__link[href='#modal-survey'] {
+            svg {
+                stroke: $darken-secondary-accent;
+            }
+            span {
+                @include hover {
+                    color: $darken-secondary-accent;
+                }
+            }
         }
         @include hover {
             svg {

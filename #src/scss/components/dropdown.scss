@@ -95,6 +95,14 @@
     }
 }
 
+.assets-cab .asset-actions ul, .watchlist .assets-table-item {
+    .dropdown .navlink svg {
+        @include icon-size(20px, 0);
+        margin: 0 0.4rem 0 0;
+        stroke: $dark-color;
+    }
+}
+
 .assets-cab .balance-item .asset-actions ul {
     .dropdown > .navlink[data-dropdown-button] {
         @include hover {

@@ -1,0 +1,75 @@
+// * .page-cab (dashboard, assets etc.)
+
+.page-cab {
+    position: relative;
+    min-height: 100vh;
+    transition: $transition;
+    background-color: rgba($color: $primary-accent-color, $alpha: 0.125);
+    padding: 7rem 0rem 2rem;
+    .dropdown {
+        .navlink {
+            text-align: left;
+        }
+    }
+}
+
+.aside-cab ~ .page-cab {
+    left: calc($aside-width-open / 2);
+    .container {
+        width: calc(map-get($map: $container-max-widths, $key: xl) + 6rem);
+    }
+}
+
+.aside-cab._close ~ .page-cab {
+    left: calc($aside-width-close / 1.5);
+}
+
+.aside-cab ~ .page-cab,
+.aside-cab._close ~ .page-cab {
+    @include bp(lg) {
+        left: 0;
+        .container,
+        .inner {
+            width: 100%;
+        }
+    }
+}
+
+// * SHARED
+
+.cabinet-card {
+    @include card-rect;
+    height: fit-content;
+}
+
+.page-cab .cabinet-card {
+    padding: 1rem;
+    @include bp(sm) {
+        padding: 1rem 0.75rem;
+    }
+}
+
+.page-cab .floating-bar-popup._show {
+    margin-bottom: 2rem;
+}
+.page-cab .floating-bar-popup.cabinet-card {
+    max-width: 100%;
+}
+
+.dashboard .dashboard-balance,
+.assets-cab .assets-cab-portfolio {
+    & > .modal-header {
+        padding: 1rem 1rem 0.75rem 1rem;
+        border-bottom: none;
+    }
+    // * Margin from between .modal-header & assets list
+    .added-assets {
+        margin-top: 0;
+    }
+}
+
+.assets-cab .inner > *:not(:first-of-type),
+.history .inner > *:not(:first-of-type),
+.cur-rate .inner > *:not(:first-of-type) {
+    margin-top: 2rem;
+}

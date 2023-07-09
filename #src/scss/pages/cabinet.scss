@@ -1,63 +1,4 @@
-// * .page-cab (dashboard, assets etc.)
-
-.page-cab {
-    position: relative;
-    min-height: 100vh;
-    transition: $transition;
-    background-color: rgba($color: $primary-accent-color, $alpha: 0.125);
-    padding: 7rem 0rem 2rem;
-    .dropdown {
-        .navlink {
-            text-align: left;
-        }
-    }
-}
-
-.aside-cab ~ .page-cab {
-    left: calc($aside-width-open / 2);
-    .container {
-        width: calc(map-get($map: $container-max-widths, $key: xl) + 6rem);
-    }
-}
-
-.aside-cab._close ~ .page-cab {
-    left: calc($aside-width-close / 1.5);
-}
-
-.aside-cab ~ .page-cab,
-.aside-cab._close ~ .page-cab {
-    @include bp(lg) {
-        left: 0;
-        .container,
-        .inner {
-            width: 100%;
-        }
-    }
-}
-
 // * DASHBOARD
-
-.page-cab .cabinet-card {
-    padding: 1rem;
-    @include bp(sm) {
-        padding: 1rem 0.75rem;
-    }
-}
-
-.cabinet-card {
-    @include card-rect;
-    height: fit-content;
-}
-.dashboard .cabinet-card {
-    max-width: calc(map-get($map: $container-max-widths, $key: xxl) / 12 * 5);
-}
-.dashboard .floating-bar-popup._show {
-    margin-bottom: 2rem;
-}
-
-.floating-bar-popup.cabinet-card {
-    max-width: 100%;
-}
 
 .dashboard .inner,
 .settings .inner {
@@ -94,12 +35,10 @@
             order: 4;
         }
     }
-
     & > div {
         break-inside: avoid;
         margin-bottom: 2rem;
     }
-
     // * Nav card
     .dashboard-nav {
         &__list {
@@ -128,7 +67,6 @@
             }
         }
     }
-
     // * Stat card
     .dashboard-stat {
         display: grid;
@@ -160,24 +98,7 @@
     }
 }
 
-.dashboard .dashboard-balance,
-.assets-cab .assets-cab-portfolio {
-    & > .modal-header {
-        padding: 1rem 1rem 0.75rem 1rem;
-        border-bottom: none;
-    }
-    // * Margin from between header & assets list
-    .added-assets {
-        margin-top: 0;
-    }
-}
-
 // * ASSETS
-
-.assets-cab .inner > *:not(:first-of-type),
-.history .inner > *:not(:first-of-type) {
-    margin-top: 2rem;
-}
 
 .assets-cab {
     .assets-cab-portfolio {
@@ -273,30 +194,6 @@
     }
 }
 
-// * Hard selctor for prevent use !important
-.page-cab .inner .table-wrapper {
-    padding: 0;
-    width: fit-content;
-    min-width: 100%;
-}
-
-.watchlist-table {
-    text-align: left;
-    tr > th:last-of-type {
-        padding: 1rem 0.5rem 1rem 0.75rem;
-    }
-    td:last-of-type {
-        padding: 1rem 0.5rem 1rem 0.4rem;
-    }
-    .table-header-title {
-        text-align: left;
-        &__icon--fill {
-            fill: $darken-accent;
-            stroke-width: 0;
-        }
-    }
-}
-
 // * SETTINGS
 
 .settings {
@@ -316,3 +213,25 @@
         }
     }
 }
+
+// * WATCHLIST
+
+.watchlist-table {
+    text-align: left;
+    tr > th:last-of-type {
+        padding: 1rem 0.5rem 1rem 0.75rem;
+    }
+    td:last-of-type {
+        padding: 1rem 0.5rem 1rem 0.4rem;
+    }
+    .table-header-title {
+        text-align: left;
+        &__icon--fill {
+            fill: $darken-accent;
+            stroke-width: 0;
+        }
+    }
+}
+
+// * CUR RATE
+
