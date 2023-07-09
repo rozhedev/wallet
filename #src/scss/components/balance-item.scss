@@ -87,7 +87,7 @@
         background-color: $white-color;
     }
     &:nth-of-type(2n + 1) {
-        background-color: darken($color: $secondary-lightgray-color, $amount: 1);
+        background-color: $darken-secondary-lightgray;
     }
     & > *:not(:first-child) {
         margin-left: 0.5rem;
@@ -145,12 +145,6 @@
         .navlink {
             color: $dark-color;
             font-size: 1.125rem;
-            @include hover {
-                color: $darken-accent;
-                svg {
-                    stroke: $darken-accent;
-                }
-            }
             svg {
                 @include icon-size(20px, 0);
                 margin: 0 0.4rem 0 0;

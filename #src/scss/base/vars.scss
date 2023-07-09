@@ -37,6 +37,7 @@ $dark-color24: #4a4a4a; // * Lighten $dark-color to 24%
 $dark-color36: #676767; // * Lighten $dark-color to 36%
 $primary-lightgray-color: #d9d9d9;
 $secondary-lightgray-color: #f5f5f5;
+$darken-secondary-lightgray: darken($color: $secondary-lightgray-color, $amount: 1);
 $primary-accent-color: #8685ef;
 $lighten-accent: #9999f2;
 $darken-accent: #7170c9;

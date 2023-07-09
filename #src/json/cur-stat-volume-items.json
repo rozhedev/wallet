@@ -1,0 +1,22 @@
+[
+    {
+        "title": "24 Hour Low",
+        "value": "$ 41.830",
+        "outputId": "hour-low-24-output"
+    },
+    {
+        "title": "24 Hour High",
+        "value": "$ 41.830",
+        "outputId": "hour-high-24-output"
+    },
+    {
+        "title": "Market Cap",
+        "value": "$ 41.830",
+        "outputId": "market-cap-output"
+    },
+    {
+        "title": "Circulating Supply",
+        "value": "$ 41.830",
+        "outputId": "circulating-supply-output"
+    }
+]

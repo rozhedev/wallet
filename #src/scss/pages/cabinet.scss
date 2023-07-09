@@ -115,8 +115,8 @@
             }
             @include bp(sm) {
                 flex-direction: column;
-                justify-content: start;
-                align-items: start;
+                justify-content: flex-start;
+                align-items: flex-start;
                 .inp {
                     margin-top: 1rem;
                     width: 100%;
@@ -231,7 +231,127 @@
             stroke-width: 0;
         }
     }
+    .assets-table-item .dropdown .navlink svg {
+        @include hover {
+            stroke: $dark-color;
+            color: $dark-color;
+        }
+    }
 }
 
 // * CUR RATE
 
+.page-cab .cur-stat {
+    column-count: 2;
+    column-gap: 1.75rem;
+    padding: 1.5rem;
+}
+
+.cur-stat-price {
+    break-inside: avoid;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        & > span {
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__img {
+        @include icon-size(map-get($icon-size, xxl), 999px);
+    }
+    &__badge {
+        padding: 0.25rem 0.375rem;
+        background-color: $darken-accent;
+        border-radius: $sm-border-radius;
+        font-size: 1rem;
+        letter-spacing: 0.04em;
+        line-height: 1.25;
+        color: $white-color;
+        text-transform: uppercase;
+    }
+    &__name {
+        margin-top: 0.5rem;
+        font-weight: 400;
+    }
+    .h1 {
+        text-align: right;
+        font-weight: 600;
+    }
+    .time-table {
+        margin: 2rem 0 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // * Flex gap
+    .time-table-column:not(:first-of-type) {
+        margin-left: 0.25rem;
+    }
+    .time-table-column:nth-of-type(7n) {
+        margin-left: 0rem;
+    }
+    .time-table-column:nth-of-type(n + 7) {
+        margin-top: 1rem;
+    }
+    @include bp(xl) {
+        .time-table-column:nth-of-type(n + 6) {
+            margin-top: 1rem;
+        }
+    }
+}
+
+.time-table-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__title,
+    &__output {
+        min-width: 75px;
+        padding: 0.375rem;
+        text-align: center;
+    }
+    &__title {
+        font-weight: 600;
+        background-color: $darken-secondary-lightgray;
+    }
+    &__output {
+        border-left: 3px solid $darken-secondary-lightgray;
+        border-bottom: 3px solid $darken-secondary-lightgray;
+        border-right: 3px solid $darken-secondary-lightgray;
+    }
+}
+
+.time-table-column.top {
+    .time-table-column__output {
+        color: $success-green;
+    }
+}
+.time-table-column.bottom {
+    .time-table-column__output {
+        color: $error-red;
+    }
+}
+
+.cur-stat-volume .cur-stat-volume-item:not(:first-of-type) {
+    margin-top: 1rem;
+}
+
+.cur-stat-volume-item {
+    padding-bottom: 0.375rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $dark-color24;
+    &__title {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,32 @@
+[
+    {
+        "modifClass": "bottom",
+        "title": "1h",
+        "value": "-0.5%"
+    },
+    {
+        "modifClass": "top",
+        "title": "24h",
+        "value": "+12.5%"
+    },
+    {
+        "modifClass": "bottom",
+        "title": "7d",
+        "value": "-99.5%"
+    },
+    {
+        "modifClass": "top",
+        "title": "14d",
+        "value": "+12.5%"
+    },
+    {
+        "modifClass": "top",
+        "title": "30d",
+        "value": "+12.5%"
+    },
+    {
+        "modifClass": "top",
+        "title": "1y",
+        "value": "+99.5%"
+    }
+]
