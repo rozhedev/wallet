@@ -245,6 +245,10 @@
     column-count: 2;
     column-gap: 1.75rem;
     padding: 1.5rem;
+    @include bp(sm) {
+        column-count: 1;
+        padding: 1rem;
+    }
 }
 
 .cur-stat-price {
@@ -253,6 +257,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include bp(xl) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__content {
         display: flex;
@@ -263,9 +271,17 @@
             flex-direction: column;
             align-items: flex-start;
         }
+        @include bp(xs) {
+            & > span {
+                margin-left: 0.75rem;
+            }
+        }
     }
     &__img {
         @include icon-size(map-get($icon-size, xxl), 999px);
+        @include bp(xs) {
+            @include icon-size(map-get($icon-size, lg), 999px);
+        }
     }
     &__badge {
         padding: 0.25rem 0.375rem;
@@ -276,22 +292,41 @@
         line-height: 1.25;
         color: $white-color;
         text-transform: uppercase;
+        @include bp(xs) {
+            font-size: 0.875rem;
+        }
     }
     &__name {
+        @include str-trim;
         margin-top: 0.5rem;
         font-weight: 400;
+        max-width: 17rem;
+        @include bp(md) {
+            max-width: 14.5rem;
+        }
+        @include bp(sm) {
+            font-size: 1.25rem;
+        }
     }
     .h1 {
         text-align: right;
         font-weight: 600;
+        @include bp(xl) {
+            margin-top: 1rem;
+        }
+        @include bp(xs) {
+            font-size: 1.75rem;
+        }
     }
     .time-table {
         margin: 2rem 0 1.5rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @include bp(xs) {
+            margin: 1rem 0 1.5rem;
+        }
     }
-
     // * Flex gap
     .time-table-column:not(:first-of-type) {
         margin-left: 0.25rem;
@@ -303,8 +338,44 @@
         margin-top: 1rem;
     }
     @include bp(xl) {
+        .time-table-column:nth-of-type(6n) {
+            margin-left: 0rem;
+        }
         .time-table-column:nth-of-type(n + 6) {
             margin-top: 1rem;
+        }
+    }
+    @include bp(md) {
+        .time-table-column:not(:first-of-type) {
+            margin-left: 0.375rem;
+        }
+        .time-table-column:nth-of-type(4n) {
+            margin-left: 0rem;
+        }
+        .time-table-column:nth-of-type(n + 4) {
+            margin-top: 1rem;
+        }
+    }
+    @include bp(sm) {
+        .time-table-column:nth-of-type(-n + 5) {
+            margin-top: 0rem;
+        }
+        .time-table-column:nth-of-type(6n) {
+            margin-left: 0rem;
+        }
+        .time-table-column:nth-of-type(n + 6) {
+            margin-top: 1rem;
+        }
+    }
+    @include bp(xs) {
+        .time-table-column:not(:first-of-type) {
+            margin-left: 0.375rem;
+        }
+        .time-table-column:nth-of-type(-n + 5) {
+            margin-top: 1rem;
+        }
+        .time-table-column:nth-of-type(3n + 1) {
+            margin-left: 0rem;
         }
     }
 }
@@ -313,7 +384,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     &__title,
     &__output {
         min-width: 75px;
@@ -342,8 +413,13 @@
     }
 }
 
-.cur-stat-volume .cur-stat-volume-item:not(:first-of-type) {
-    margin-top: 1rem;
+.cur-stat-volume {
+    @include bp(sm) {
+        margin-top: 1.5rem;
+    }
+    .cur-stat-volume-item:not(:first-of-type) {
+        margin-top: 1rem;
+    }
 }
 
 .cur-stat-volume-item {
@@ -355,3 +431,4 @@
         font-weight: 400;
     }
 }
+
