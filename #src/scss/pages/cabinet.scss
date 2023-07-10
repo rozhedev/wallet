@@ -327,57 +327,6 @@
             margin: 1rem 0 1.5rem;
         }
     }
-    // * Flex gap
-    .time-table-column:not(:first-of-type) {
-        margin-left: 0.25rem;
-    }
-    .time-table-column:nth-of-type(7n) {
-        margin-left: 0rem;
-    }
-    .time-table-column:nth-of-type(n + 7) {
-        margin-top: 1rem;
-    }
-    @include bp(xl) {
-        .time-table-column:nth-of-type(6n) {
-            margin-left: 0rem;
-        }
-        .time-table-column:nth-of-type(n + 6) {
-            margin-top: 1rem;
-        }
-    }
-    @include bp(md) {
-        .time-table-column:not(:first-of-type) {
-            margin-left: 0.375rem;
-        }
-        .time-table-column:nth-of-type(4n) {
-            margin-left: 0rem;
-        }
-        .time-table-column:nth-of-type(n + 4) {
-            margin-top: 1rem;
-        }
-    }
-    @include bp(sm) {
-        .time-table-column:nth-of-type(-n + 5) {
-            margin-top: 0rem;
-        }
-        .time-table-column:nth-of-type(6n) {
-            margin-left: 0rem;
-        }
-        .time-table-column:nth-of-type(n + 6) {
-            margin-top: 1rem;
-        }
-    }
-    @include bp(xs) {
-        .time-table-column:not(:first-of-type) {
-            margin-left: 0.375rem;
-        }
-        .time-table-column:nth-of-type(-n + 5) {
-            margin-top: 1rem;
-        }
-        .time-table-column:nth-of-type(3n + 1) {
-            margin-left: 0rem;
-        }
-    }
 }
 
 .time-table-column {
@@ -432,3 +381,7 @@
     }
 }
 
+// * Currency rate graph
+.cur-graph {
+    text-transform: uppercase;
+}
