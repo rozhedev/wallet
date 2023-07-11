@@ -1,14 +1,20 @@
-// * DEFAULT 
+// * DEFAULT
 
 html::-webkit-scrollbar {
-    width: 0.75rem; 
- }
-
-html::-webkit-scrollbar-track {
-  background-color: lightgray;
+    width: 0.75rem;
 }
 
-html::-webkit-scrollbar-thumb {
-  background: darkgrey;
-  border-radius: 999px;
+.chatbox-window__messages::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track,
+.chatbox-window__messages::-webkit-scrollbar-track {
+    background-color: $darken-secondary-lightgray;
+}
+
+html::-webkit-scrollbar-thumb,
+.chatbox-window__messages::-webkit-scrollbar-thumb {
+    background: $primary-lightgray-color;
+    border-radius: 999px;
 }
