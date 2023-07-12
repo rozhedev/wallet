@@ -25,7 +25,7 @@ const dropdownCopyBtn = document.querySelectorAll(".dropdown-copy-btn");
 if (btnAddress && btcWalletAddress) {
     let address = btcWalletAddress.textContent;
     const btnAddressIconSrcset = document.querySelector("#copy-btn-address source");
-    let iconPath = "../img/icons/interface/copytoclipboard_success.svg";
+    let iconPath = "img/icons/interface/copytoclipboard_success.svg";
 
     btnAddress.addEventListener("click", () => {
         getCopyVal(address);

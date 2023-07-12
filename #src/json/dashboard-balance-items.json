@@ -1,6 +1,6 @@
 [
     {
-        "imgPath": "../img/icons/crypto/bitcoin-BTC.svg",
+        "imgPath": "img/icons/crypto/bitcoin-BTC.svg",
         "imgAlt": "bitcoin-BTC",
         "curName": "Bitcoin (BTC)",
         "curAmountId": "bitcoin-cur-amount",
