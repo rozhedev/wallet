@@ -14,4 +14,5 @@ export const STATE_LIST = {
 export const COMMON_NODES = {
     passphraseInputs: document.querySelectorAll(".passphrase-item .inp"),
     modalBtns: document.querySelectorAll(".btn[type='button']"),
+    copyBtns: document.querySelectorAll(".copy-btn"),
 }

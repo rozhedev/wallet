@@ -1,12 +1,1 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M32.0001 59.4287C47.1485 59.4287 59.4287 47.1485 59.4287 32.0001C59.4287 16.8517 47.1485 4.57153 32.0001 4.57153C16.8517 4.57153 4.57153 16.8517 4.57153 32.0001C4.57153 47.1485 16.8517 59.4287 32.0001 59.4287Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M32 11.4285V16.5713" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M32 52.5713V47.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M52.5713 32H47.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M11.4285 32H16.5713" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M46.5486 17.4514L42.9143 21.0857" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M17.4514 46.5486L21.0857 42.9143" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M46.5486 46.5486L42.9143 42.9143" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M17.4514 17.4514L21.0857 21.0857" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-<path d="M32 41.1429C37.0495 41.1429 41.1429 37.0495 41.1429 32C41.1429 26.9506 37.0495 22.8572 32 22.8572C26.9506 22.8572 22.8572 26.9506 22.8572 32C22.8572 37.0495 26.9506 41.1429 32 41.1429Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
-</svg>
+<svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 59.429c15.148 0 27.429-12.28 27.429-27.429 0-15.148-12.28-27.428-27.429-27.428C16.852 4.572 4.572 16.852 4.572 32c0 15.148 12.28 27.43 27.428 27.43zm0-48.001v5.143m0 36V47.43M52.571 32H47.43m-36.002 0h5.143m29.978-14.549l-3.635 3.635M17.451 46.549l3.635-3.635m25.463 3.635l-3.635-3.635M17.451 17.451l3.635 3.635" stroke="#111" stroke-width="2" stroke-miterlimit="5"/><path d="M32 41.143a9.143 9.143 0 100-18.286 9.143 9.143 0 000 18.286z" stroke="#111" stroke-width="2" stroke-miterlimit="5"/></svg>

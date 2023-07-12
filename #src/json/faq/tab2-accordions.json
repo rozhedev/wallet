@@ -1,7 +1,7 @@
 [
     {
         "question": "How many crypto assets does Flem Wallet support?",
-        "answer": "To date, Flem Wallet supports storage of seventy five cryptocurrencies. But due to technical reasons of our product and systems of functioning of the cryptocurrencies we can't provide exchange, sending, receiving to the wallet of some of them. All supported cryptocurrencies and operations with them can be viewed on the <a href='assets.html' class='link'>Assets page</a>"
+        "answer": "To date, Flem Wallet supports storage of seventy four cryptocurrencies. But due to technical reasons of our product and systems of functioning of the cryptocurrencies we can't provide exchange, sending, receiving to the wallet of some of them. All supported cryptocurrencies and operations with them can be viewed on the <a href='assets.html' class='link'>Assets page</a>"
     },
     {
         "question": "Does Flem have transaction fees to send or receive?",

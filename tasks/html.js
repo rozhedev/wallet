@@ -17,13 +17,14 @@ const html = () => {
     return src(path.html.src)
         .pipe(fileInclude())
         .pipe(webpHtml())
-        .pipe(gulpIf(app.isProd, size({
-            title: "HTML before compress",
-        })))
-        .pipe(gulpIf(app.isProd, htmlmin(app.htmlmin)))
-        .pipe(gulpIf(app.isProd, size({
-            title: "HTML after compress",
-        })))
+        // * Incorrect minification in assets-cab.html
+        // .pipe(gulpIf(app.isProd, size({
+        //     title: "HTML before compress",
+        // })))
+        // .pipe(gulpIf(app.isProd, htmlmin(app.htmlmin)))
+        // .pipe(gulpIf(app.isProd, size({
+        //     title: "HTML after compress",
+        // })))
         .pipe(dest(path.html.dest));
 }
 

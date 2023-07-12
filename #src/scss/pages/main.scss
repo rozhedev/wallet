@@ -35,8 +35,6 @@
         }
         @include bp(sm) {
             width: 100%;
-        }
-        @include bp(xs) {
             flex-direction: column-reverse;
             // * Before transfer to React uncomment this & remove "#" styles
             // form .btn {

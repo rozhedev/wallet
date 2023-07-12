@@ -9,7 +9,7 @@
         "href": "#",
         "svgIcon": "<svg viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M22.8572 41.143H4.57153V4.57153H41.143V22.8572'/><path d='M59.4286 22.8572H22.8572V59.4286H59.4286V22.8572Z'/></svg>",
         "label": "Copy address",
-        "triggerClass": ""
+        "triggerClass": "dropdown-copy-btn"
     },
     {
         "href": "cur-rate.html",

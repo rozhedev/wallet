@@ -4,7 +4,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#flemwallet",
         "hashtag3": "#leveltwo",
-        "formAction": "#modal-send",
+        "formAction": "#modal-success",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
@@ -14,7 +14,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#avalanche",
         "hashtag3": "#avax",
-        "formAction": "#modal-get",
+        "formAction": "#modal-error",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
@@ -24,7 +24,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#polygon",
         "hashtag3": "#matic",
-        "formAction": "#modal-survey",
+        "formAction": "#modal-error",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"
@@ -54,7 +54,7 @@
         "hashtag1": "#flemwallet",
         "hashtag2": "#chainlink",
         "hashtag3": "#link",
-        "formAction": "#modal-success",
+        "formAction": "#modal-error",
         "triggerClass": "js-modal-open",
         "btnType": "button",
         "btnLabel": "Get airdrop"

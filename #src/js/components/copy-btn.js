@@ -1,6 +1,5 @@
 import { COMMON_NODES } from "../data/values";
 
-const copyBtns = document.querySelectorAll(".copy-btn");
 const btnPassphrase = document.getElementById("copy-btn-passphrase");
 const btnPassphraseContent = document.querySelector("#copy-btn-passphrase span");
 let passStr = "";
@@ -19,27 +18,24 @@ if (btnPassphrase && btnPassphraseContent) {
     })
 }
 
-COMMON_NODES.modalBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-        const btnAddress = document.getElementById("copy-btn-address");
-        const btcWalletAddress = document.getElementById("btc-address");
-        const btnAddressIconSrcset = document.querySelector("#copy-btn-address source");
-        let iconPath = "../img/icons/interface/copytoclipboard_success.svg";    
+const btnAddress = document.getElementById("copy-btn-address");
+const btcWalletAddress = document.getElementById("btc-address");
+const dropdownCopyBtn = document.querySelectorAll(".dropdown-copy-btn");
 
-        
-        if (btnAddress && btcWalletAddress) {
-            btnAddress.addEventListener("click", () => {
-                let address = btcWalletAddress.textContent;
-                getCopyVal(address);
-                btnAddressIconSrcset.setAttribute("srcset", iconPath);
-            })
-        }
+if (btnAddress && btcWalletAddress) {
+    let address = btcWalletAddress.textContent;
+    const btnAddressIconSrcset = document.querySelector("#copy-btn-address source");
+    let iconPath = "../img/icons/interface/copytoclipboard_success.svg";
+
+    btnAddress.addEventListener("click", () => {
+        getCopyVal(address);
+        btnAddressIconSrcset.setAttribute("srcset", iconPath);
     })
-})
-
-
-// copyBtns.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-       
-//     })
-// })
+    dropdownCopyBtn.forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+            getCopyVal(address);
+            let btnContent = this.querySelector("span");
+            btnContent.textContent = "Address copied";
+        })
+    })
+}

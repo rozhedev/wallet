@@ -1,6 +1,6 @@
 [
     {
-        "action": "",
+        "action": "#",
         "formId": "change-username-form",
         "inpId": "change-username",
         "inpType": "text",
@@ -8,7 +8,7 @@
         "btnLabel": "Change"
     },
     {
-        "action": "",
+        "action": "#",
         "formId": "change-email-form",
         "inpId": "change-email",
         "inpType": "email",
@@ -16,11 +16,11 @@
         "btnLabel": "Change"
     },
     {
-        "action": "",
+        "action": "#",
         "formId": "change-region-form",
         "inpId": "change-region",
         "inpType": "text",
         "inpLabel": "Add country or region",
-        "btnLabel": "Add    "
+        "btnLabel": "Add"
     }
 ]
