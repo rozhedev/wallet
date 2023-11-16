@@ -301,18 +301,19 @@ option {
 
 .select--header {
     display: inline-flex;
-    border: none;
+    padding: 0rem;
     min-width: 0rem;
+    border: none;
     background-color: transparent;
     svg {
-        margin-right: 0.4rem;
-        width: 2.5rem;
-        height: 2.5rem;
+        width: 1.75rem;
+        height: 1.75rem;
         stroke: $white-color;
         stroke-width: 3;
     }
     select {
         color: $white-color;
+        padding: 0rem 0.6rem 0rem 0.4rem;
         option {
             outline: none;
             background-color: $dark-color;
