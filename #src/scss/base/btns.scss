@@ -7,6 +7,7 @@
     padding: $padding-y $padding-x;
     font-size: 1.25rem;
     font-weight: 600;
+    font-family: inherit;
     line-height: 1.4;
     letter-spacing: 0.06em;
     color: $color;
@@ -56,6 +57,7 @@
 }
 
 // * CLASSES
+
 .btn-fill,
 .btn-fill-sm,
 .btn-fill-xs {
@@ -79,23 +81,6 @@
     &:active {
         box-shadow: none;
         border-color: $primary-accent-color;
-    }
-}
-
-.btn-fill-sm,
-.btn-outline-sm {
-    padding: 0.5rem 0.75rem;
-}
-
-
-.btn-fill-xs,
-.btn-outline-xs {
-    padding: 0.375rem 0.65rem;
-    font-size: 1.125rem;
-    letter-spacing: 0.04em;
-    span ~ svg {
-        @include icon-size(map-get($icon-size, xs), 0);
-        stroke-width: map-get($map: $stroke-width, $key: md);
     }
 }
 
@@ -135,14 +120,37 @@
     &:not(:has(svg)) span {
         width: 100%;
     }
-    // * ------------------------
     &:disabled {
         @include btn(0.8rem, 1.6rem, $dark-color24, $white-color, none);
         @include btn-disabled($dark-color36);
         @include hover {
             border-color: initial;
             background-color: initial;
+            box-shadow: $btn-dark-inset-shadow;
         }
-        cursor: not-allowed;
+        cursor: not-allowed;   
+    }
+}
+
+// * Don't change style order for correct save btn size in disabled state
+.btn-fill-sm,
+.btn-outline-sm {
+    padding: 0.5rem 0.75rem;
+    &:disabled {
+        padding: 0.5rem 0.75rem !important;
+    }
+}
+
+.btn-fill-xs,
+.btn-outline-xs {
+    padding: 0.375rem 0.65rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.04em;
+    &:disabled {
+        padding: 0.375rem 0.65rem !important;
+    }
+    span ~ svg {
+        @include icon-size(map-get($icon-size, xs), 0);
+        stroke-width: map-get($map: $stroke-width, $key: md);
     }
 }
