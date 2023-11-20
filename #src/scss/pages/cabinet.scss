@@ -198,6 +198,7 @@
 
 .settings {
     .toggle .toggle__label {
+        padding: 0rem;
         @include bp(xs) {
             max-width: 15.6rem; // * ~250px
         }
@@ -208,6 +209,7 @@
         }
         .toggle__inner {
             display: flex;
+            flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
         }

@@ -205,6 +205,7 @@
     &__label {
         position: relative;
         top: 2px;
+        padding: 0rem 0rem 0rem 0.4rem;
     }
     .toggle__inner *:first-child {
         margin-right: 0.5rem;
@@ -221,7 +222,7 @@
             background-color: $dark-color36;
         }
     }
-    &--readonly .toggle__checkbox[disabled='disabled'][checked='checked'] + .toggle__switch {
+    &--readonly .toggle__checkbox[disabled][checked] + .toggle__switch {
         background: $darken-green64;
         border-color: $darken-green64;
     }

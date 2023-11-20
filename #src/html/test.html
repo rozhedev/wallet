@@ -167,6 +167,19 @@
                 </div>
                 <br>
                 <br>
+                
+                @@include('components/_dropdown.html',{
+                    "dropdownLabel": "Discover",
+                    "href1": "faq.html",
+                    "href2": "privacy-policy.html",
+                    "href3": "terms.html",
+                    "label1": "Popular questions",
+                    "label2": "Privacy Policy",
+                    "label3": "Terms of Service",
+                    })
+
+                <br>
+                <br>
 
                 <div class="form-wrapper">
                     <form action="" id="signup-form" class="form form-test">
@@ -224,7 +237,7 @@
                         <br>
                         <div class="form-conroller toggle--readonly">
                             <label class="toggle__inner" for="toggle-checkbox3">
-                                <input type="checkbox" name="toggle-checkbox2" id="toggle-checkbox2" class="toggle__checkbox" disabled="disabled" checked="checked">
+                                <input type="checkbox" name="toggle-checkbox3" id="toggle-checkbox3" class="toggle__checkbox" disabled checked>
                                 <div class="toggle__switch"></div>
                                 <span class="toggle__label">Wi-fi</span>
                             </label>

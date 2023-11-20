@@ -9,9 +9,10 @@
         align-items: center;
         svg {
             margin: 0rem 0rem 0rem 0.4rem;
+            stroke: $dark-color;
         }
         @include hover {
-            color: $white-color !important;
+            color: initial !important;
             &::after {
                 display: none;
             }
@@ -46,7 +47,9 @@
     border: 3px solid $primary-lightgray-color;
     box-shadow: $item-shadow;
     transform: translate(0, -0.5rem);
-    transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    transition:
+        opacity 150ms ease-in-out,
+        transform 150ms ease-in-out;
 }
 
 .dropdown.active > .navlink + .dropdown-menu {
@@ -60,6 +63,7 @@
     width: 100%;
     transition: $transition;
     span {
+        white-space: nowrap;
         transition: $transition;
     }
     svg {
@@ -78,8 +82,14 @@
 }
 
 // * Local styling
+
+.header .dropdown > .navlink {
+    @include hover {
+        color: $white-color !important;
+    }
+}
 .header .menu__list .dropdown-links,
-.dropdown-links {
+.dropdown-links { // * <- correct selector
     display: flex;
     flex-direction: column;
     li:not(:first-of-type) {
@@ -87,7 +97,6 @@
     }
     .navlink {
         font-size: 1.15rem;
-        white-space: nowrap;
         color: $dark-color;
         &::after {
             display: none;
@@ -95,12 +104,14 @@
     }
 }
 
-.assets-cab .asset-actions ul, .watchlist .assets-table-item {
+// * Items in asset & watchlist
+.assets-cab .asset-actions ul,
+.watchlist .assets-table-item {
     .dropdown .navlink {
         svg {
             @include icon-size(20px, 0);
             margin: 0 0.4rem 0 0;
-            stroke: $dark-color;    
+            stroke: $dark-color;
         }
         @include hover {
             color: $darken-accent;
@@ -113,8 +124,8 @@
 
 .assets-cab .balance-item .asset-actions ul {
     .dropdown > .navlink[data-dropdown-button] {
+        // * Necessary nesting for prevent use !important
         @include hover {
-            color: $dark-color !important;
             svg {
                 stroke: $dark-color;
             }

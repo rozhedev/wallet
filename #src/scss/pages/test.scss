@@ -9,8 +9,8 @@
     }
 }
 
-.test .select--header {
-    background-color: $dark-color;
+.test .select--header, .test > .container .dropdown {
+    background-color: $dark-color36;
 }
 
 .form-test {
