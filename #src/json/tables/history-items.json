@@ -1,92 +1,102 @@
 [
     {
         "orderNumber": "1",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Pending",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "2",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "3",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Failed",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "4",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "5",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "6",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "7",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "8",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "9",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     },
     {
         "orderNumber": "10",
-        "operType": "Investment",
+        "operType": "Replenish",
         "curName": "Ethereum",
         "amount": "1.55677789",
         "status": "Complete",
         "transactionId": "49549657",
-        "date": "07.07.2023 17:17"
+        "date": "07.07.2023 17:17",
+        "recipient": "bc1uf5tdn87k2uz7r2kl5zrfww362ch3746lq5vse7"
     }
 ]

@@ -36,7 +36,8 @@
 }
 
 // * Hard selector for prevent use !important
-.page .page-inner .table-wrapper, .page-cab .inner .table-wrapper {
+.page .page-inner .table-wrapper,
+.page-cab .inner .table-wrapper {
     padding: 0;
     width: fit-content;
     min-width: 100%;
@@ -98,6 +99,7 @@
 
 // * Asset table item
 .assets-table-item {
+    font-size: 1rem;
     &:last-of-type {
         & > td {
             vertical-align: text-bottom;
@@ -172,5 +174,34 @@
         &:last-of-type {
             fill-opacity: 0.24;
         }
+    }
+}
+
+// * History table
+
+.history-table {
+    .table__header tr > th {
+        width: fit-content;
+        // padding: 0.75rem 0.125rem;
+        // &:first-of-type {
+        //     padding: 1rem 0.125rem 1rem 2rem;
+        // }
+        // &:last-of-type {
+        //     padding: 1rem 2rem 1rem 0.125rem;
+        // }
+    }
+    .table-header-title {
+        svg {
+            @include icon-size(map-get($icon-size, xs), 0);
+            margin-top: 0.2rem;
+        }
+        &__content {
+            font-size: 1.125rem;
+        }
+    }
+    .history-table-item--recipient span {
+        @include str-trim;
+        width: max-content;
+        max-width: 8rem;
     }
 }

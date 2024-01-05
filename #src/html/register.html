@@ -34,20 +34,20 @@
                             <!-- * FORM -->
                             <form action="#" class="form" data-multiform-type="register">
                                 <fieldset class="form-step form-user-data _active" id="form-user-data" data-step="form-register">
-                                    <div class="form-conroller">
+                                    <div class="form-controller">
                                         <input type="text" name="register-username" title="Username" id="register-username" class="inp" placeholder="Username">
-                                        <small class="form-conroller__message">Error message</small>
+                                        <small class="form-controller__message">Error message</small>
                                     </div>
-                                    <div class="form-conroller">
+                                    <div class="form-controller">
                                         <input type="email" name="register-email" title="Email" id="register-email" class="inp" placeholder="Email">
-                                        <small class="form-conroller__message">Error message</small>
+                                        <small class="form-controller__message">Error message</small>
                                     </div>
-                                    <div class="form-conroller checkbox">
-                                        <input type="checkbox" name="signup-checkbox" class="checkbox__input form-conroller__checkbox"
+                                    <div class="form-controller checkbox">
+                                        <input type="checkbox" name="signup-checkbox" class="checkbox__input form-controller__checkbox"
                                             id="signup-checkbox">
                                         <label for="signup-checkbox" class="checkbox__label">I accept <a href="privacy-policy.html" class="link">Privacy policy</a> and agree with the <a href="terms.html" class="link">Terms of Service</a>
                                         </label>
-                                        <small class="form-conroller__message">Error message</small>
+                                        <small class="form-controller__message">Error message</small>
                                     </div>
                                     <div class="btn-group">
                                         <button type="button" class="btn btn-fill-sm btn-next"><span>Next step</span></button>
@@ -57,10 +57,10 @@
 
                                 <fieldset class="form-step form-passphrase" id="form-passphrase" data-step="form-register">
                                     <legend class="form-label-legend">Write down or copy these words in the correct order and keep them in a safe place.</legend>
-                                    <ol class="ordered-list form-conroller form-inp-grid">
+                                    <ol class="ordered-list form-controller form-inp-grid">
                                         @@loop("components/_passphrase-item.html", "../json/passphrase-items.json")
 
-                                        <small class="form-conroller__message">Error message</small>
+                                        <small class="form-controller__message">Error message</small>
                                     </ol>
                                     <button type="button" class="copy-btn" id="copy-btn-passphrase">
                                         <span>Copy to clipboard</span>
@@ -84,9 +84,9 @@
 
                                 <fieldset class="form-step form-confirm" id="register-form-confirm" data-step="form-register">
                                     <legend class="form-label-legend">Paste your passphrase from the inputs below to complete registration.</legend>
-                                    <div class="form-conroller form-register-step form-inp-grid">
+                                    <div class="form-controller form-register-step form-inp-grid">
                                         @@loop("components/_confirm-input.html", "../json/confirm-inputs.json")
-                                        <small class="form-conroller__message">Error message</small>
+                                        <small class="form-controller__message">Error message</small>
                                     </div>
 
                                     @@include("components/_btn-group.html", {

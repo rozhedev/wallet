@@ -1,8 +1,8 @@
 .modal {
     $modal-types: (
-        'success': #00c896,
-        'error': #ee6464,
-        'info': #8685ef,
+        "success": #00c896,
+        "error": #ee6464,
+        "info": #8685ef
     );
 
     visibility: hidden;
@@ -103,7 +103,7 @@
 
 .modal-dialog--send {
     // * every form-controller contain 1 input
-    .form-conroller .inp {
+    .form-controller .inp {
         width: 100%;
         margin-top: 1rem;
     }
@@ -141,7 +141,7 @@
 // * MODAL SURVEY
 
 .modal-dialog {
-    .form-conroller__label.navlink {
+    .form-controller__label.navlink {
         font-size: 1.2rem;
         font-weight: 500;
         margin-bottom: 1rem;

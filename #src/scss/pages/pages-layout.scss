@@ -53,7 +53,7 @@
 // * REGISTER
 
 .register-page {
-    background-image: url('../img/photos/bg/register.svg');
+    background-image: url("../img/photos/bg/register.svg");
     background-position: center;
     background-size: 150%;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 }
 
 .signin-page {
-    background: url('../img/photos/bg/signin.svg') center / cover no-repeat;
+    background: url("../img/photos/bg/signin.svg") center / cover no-repeat;
     .form-step {
         display: flex;
     }
@@ -84,7 +84,6 @@
 .signin-page .page-title .breadcrumbs a {
     color: $white-color;
 }
-
 
 // * form content
 .form,
@@ -116,7 +115,7 @@
         & > *:not(:first-child) {
             margin-top: 1.5rem;
         }
-        .form-conroller,
+        .form-controller,
         .inp,
         .btn-group {
             width: 100%;
@@ -183,7 +182,7 @@
     color: $dark-color;
 }
 
-.form-conroller .passphrase-item {
+.form-controller .passphrase-item {
     position: relative;
     margin: 0;
 
@@ -206,7 +205,7 @@
     }
 }
 
-.form-conroller .confirm-inp {
+.form-controller .confirm-inp {
     padding: 0.4rem;
     border-radius: 0;
     border-top: none;

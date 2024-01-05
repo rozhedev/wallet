@@ -33,9 +33,9 @@
                 <!-- * Connect form (inp grid) -->
                 <fieldset class="form-step" id="connect-step1" data-step="form-connect">
                     <legend class="form-label-legend navlink">Connect external wallet</legend>
-                    <div class="form-conroller form-inp-grid">
+                    <div class="form-controller form-inp-grid">
                         @@loop("../components/_confirm-input.html", "../json/signin-confirm-inputs.json")
-                        <small class="form-conroller__message">Error message</small>
+                        <small class="form-controller__message">Error message</small>
                     </div>
                     @@include("../components/_btn-group.html", {
                     "type1": "button",

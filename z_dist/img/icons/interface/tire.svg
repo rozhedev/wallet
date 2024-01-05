@@ -1,1 +1,12 @@
-<svg width="64" height="64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 59.428c15.148 0 27.428-12.28 27.428-27.428 0-15.148-12.28-27.43-27.428-27.43C16.852 4.571 4.57 16.851 4.57 32c0 15.148 12.28 27.428 27.429 27.428z" stroke="#111" stroke-width="2" stroke-miterlimit="5"/><path d="M32 45.714c7.574 0 13.714-6.14 13.714-13.714 0-7.574-6.14-13.714-13.714-13.714-7.574 0-13.714 6.14-13.714 13.714 0 7.574 6.14 13.714 13.714 13.714zm9.143-22.857h18.285M41.143 41.143h18.285m-18.285 0v18.285M22.857 41.143v18.285m0-18.285H4.571m18.286-18.286H4.571m18.286 0V4.571m18.286 18.286V4.571" stroke="#111" stroke-width="2" stroke-miterlimit="5"/></svg>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M31.9999 59.4284C47.1482 59.4284 59.4284 47.1482 59.4284 31.9999C59.4284 16.8515 47.1482 4.57129 31.9999 4.57129C16.8515 4.57129 4.57129 16.8515 4.57129 31.9999C4.57129 47.1482 16.8515 59.4284 31.9999 59.4284Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M31.9999 45.7142C39.5741 45.7142 45.7142 39.5741 45.7142 31.9999C45.7142 24.4257 39.5741 18.2856 31.9999 18.2856C24.4257 18.2856 18.2856 24.4257 18.2856 31.9999C18.2856 39.5741 24.4257 45.7142 31.9999 45.7142Z" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M41.1428 22.8569H59.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M41.1428 41.1428H59.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M41.1428 41.1428V59.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M22.8569 41.1428V59.4285" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M22.857 41.1428H4.57129" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M22.857 22.8569H4.57129" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M22.8569 22.857V4.57129" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+<path d="M41.1428 22.857V4.57129" stroke="#111111" stroke-width="2" stroke-miterlimit="5"/>
+</svg>

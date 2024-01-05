@@ -49,7 +49,7 @@
         vertical-align: top;
         cursor: pointer;
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
@@ -61,7 +61,7 @@
             border-radius: 999px;
         }
         &::after {
-            content: '';
+            content: "";
             opacity: 0;
             position: absolute;
             top: 4px;
@@ -101,7 +101,7 @@
         cursor: pointer;
         transition: $transition;
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0px;
             left: 0px;
@@ -114,7 +114,7 @@
             background-color: $white-color;
         }
         &::after {
-            content: '✓';
+            content: "✓";
             opacity: 0;
             position: absolute;
             top: -0.05rem;
@@ -176,7 +176,7 @@
         vertical-align: middle;
         &:before,
         &:after {
-            content: '';
+            content: "";
         }
         &:before {
             display: block;
@@ -237,7 +237,7 @@ select {
 .select {
     position: relative;
     display: grid;
-    grid-template-areas: 'select';
+    grid-template-areas: "select";
     align-items: center;
     position: relative;
 
@@ -251,13 +251,13 @@ select {
     cursor: pointer;
     line-height: 1.333;
     background-color: $white-color;
-    
+
     select,
     &::after {
         grid-area: select;
     }
     &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 0.6rem;
@@ -268,7 +268,7 @@ select {
     }
     // Custom arrow
     &::after {
-        content: '';
+        content: "";
         justify-self: end;
         width: 0.75em;
         height: 0.5em;
@@ -331,13 +331,13 @@ option {
 }
 
 // * ERROR MESSAGE UNDER INPUT
-.form-conroller__message {
+.form-controller__message {
     display: block;
     visibility: hidden;
     height: 0;
 }
 
-.form-conroller__message._active {
+.form-controller__message._active {
     visibility: visible;
     height: auto;
 }

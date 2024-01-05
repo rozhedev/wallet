@@ -216,6 +216,28 @@
     }
 }
 
+// * Styles correct for react
+// .settings {
+//     .settings-list .form-controller {
+//         width: 100%;
+//         &:not(:first-of-type) {
+//             margin-top: 0.75rem;
+//         }
+//         .toggle__inner {
+//             display: flex;
+//             flex-direction: row-reverse;
+//             justify-content: space-between;
+//             align-items: center;
+//         }
+//         .toggle__label {
+//             padding: 0rem;
+//             @include bp(xs) {
+//                 max-width: 15.6rem; // * ~250px
+//             }
+//         }
+//     }
+// }
+
 // * WATCHLIST
 
 .watchlist-table {
